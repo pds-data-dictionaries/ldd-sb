@@ -1,0 +1,3 @@
+Exception in thread "main" java.lang.NullPointerException
+	at gov.nasa.pds.model.plugin.GetDOMModel.getDOMModel(GetDOMModel.java:290)
+	at gov.nasa.pds.model.plugin.DMDocument.main(DMDocument.java:598)

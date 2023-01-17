@@ -7,28 +7,24 @@
    potentially mysterious cases.
 -->
 
-# {dictionary name} ({prefix:}) {"Discipline" or "Local"} Dictionary
-<!-- EXAMPLES
-   Spectral (sp:) Discipline Dictionary
-   DART Mission (dart:) Local Dictionary
--->
+# Small Bodies (sb:) Discipline Dictionary
 
-The {dictionary name} dictionary provides classes and attributes for
-{brief functional description}
+The Small Bodies dictionary provides classes and attributes related to the
+standard techniques and processes used in the production and analysis of 
+data for the purposes of studying small bodies.
 
 ### Steward
-{steward name} ({steward GitHub handle}), {steward node}
-<!-- EXAMPLE
-     Anne Raugh (@acraugh), Small Bodies Node (SBN)
--->
+Anne Raugh (@acraugh), Small Bodies Node (SBN)
 
 # Documentation
 
 <!-- The following assumes the complete documentation set exists. If it
 does not, edit the sentence and link accordingly. -->
 The User's Guide and detailed documentation for using this dictionary in
-label design and processing
-are located at https://pds-data-dictionaries.github.io/{repo id}.
+label design and processing are in development. Once draft versions have
+been created you will be able to view them at 
+https://pds-data-dictionaries.github.io/ldd-sb. Issues related to that
+documentation may be posted to this repo.
 <!-- EXAMPLE
      are located at https://pds-data-dictionaries.github.io/ldd-template.
 -->
@@ -55,7 +51,7 @@ are located at https://pds-data-dictionaries.github.io/{repo id}.
        * Review the [Change Log] (ChangeLog.md)
        * Review the [Change Log] (src/CHANGELOG.md)
 -->     
-* Download dictionary files from the [PDS Data Dictionaries Page](https://pds.nasa.gov/datastandards/dictionaries/#{dictionary prefix})
+* Download dictionary files from the [PDS Data Dictionaries Page](https://pds.nasa.gov/datastandards/dictionaries/#sb)
 * On [GitHub](../../releases/latest)
 * Review the [Change log]({change log file name})
 
@@ -92,7 +88,7 @@ GitHub repo URL.-->
 
 There is a common place to request enhancements and report problems for
 any PDS-curated dictionary - the [PDS4 Issue Repo](https://github.com/pds-data-dictionaries/PDS4-LDD-Issue-Repo/issues/new/choose).
-Search for the \[{repo id}\] update request block and click the green
+Search for the \[ldd-sb\] update request block and click the green
 "Get Started" button.
 
 ## Contribute Code or documentation

@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Example Namespace Documentation
-===================================
+Small Bodies Namespace Documentation
+====================================
 
 .. include:: intro.md
 
@@ -17,7 +17,11 @@ Example Namespace Documentation
 
     
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
     :caption: Detailed Documentation
 
-    detailed/example
+    detailed/outline
+    detailed/SB_Metadata
+    detailed/Observation_Parameters
+    detailed/Calibration_Information
+    detailed/Additional_Image_Metadata

@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Example Namespace'
+project = 'Small Bodies Namespace'
 # copyright = overidden by CSS specified below
-author = 'NASA Planetary Data System'
+author = 'Anne Raugh, NASA Planetary Data System'
 
 
 # -- General configuration ---------------------------------------------------

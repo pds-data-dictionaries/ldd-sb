@@ -6,7 +6,7 @@ contains all other SB classes and must be included to use them.
 
 <sb:SB_Metadata>
 
-* :doc:`Observation_Parameters` 
+* :doc:`\<sb:Observation_Parameters\> <Observation_Parameters>` 
 
   * <sb:Exposure>
   
@@ -39,7 +39,7 @@ contains all other SB classes and must be included to use them.
     * <sb:stop_time_UTC_JD>
     * <sb:comment>
     
-* :doc:`Calibration_Information`
+* :doc:`\<sb:Calibration_Information\> <Calibration_Information>`
 
   * <sb:Raw_Data_Product>
 
@@ -98,7 +98,7 @@ contains all other SB classes and must be included to use them.
         * <pds:reference_type>
         * <pds:comment>
 
-* :doc:`Additional_Image_Metadata`
+* :doc:`\<sb:Additional_Image_Metadata\> <Additional_Image_Metadata>`
 
   * <pds:Local_Internal_Reference>
 
@@ -120,6 +120,7 @@ contains all other SB classes and must be included to use them.
         * <pds:comment>
 
       * <sb:Quality_Map_Definition>
+      
         * <sb:flags_are_bit_flags>
         * <sb:best_quality_value>
         * <sb:Quality_Flag_Definition>

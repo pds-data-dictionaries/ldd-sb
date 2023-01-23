@@ -2116,15 +2116,15 @@
     </DD_Rule_Statement>
   </DD_Rule>
   
-  <!-- Raw_Data_Product_Map/pds:Local_Internal_Reference -->
+  <!-- Raw_Data_Product_Map/pds:Internal_Reference -->
   
   <DD_Rule>
-    <local_identifier>rawdp_lir</local_identifier>
-    <rule_context>sb:Raw_Data_Product/pds:Local_Internal_Reference</rule_context>
+    <local_identifier>rawdp_ir</local_identifier>
+    <rule_context>sb:Raw_Data_Product/pds:Internal_Reference</rule_context>
     <DD_Rule_Statement>
       <rule_type>Assert</rule_type>
-      <rule_test>pds:local_reference_type eq 'processed_data_to_raw_data'</rule_test>
-      <rule_message>In sb:Raw_Data_Product/pds:Local_Internal_Reference, pds:local_reference_type must be "processed_data_to_raw_data".</rule_message>
+      <rule_test>pds:reference_type eq 'processed_data_to_raw_data'</rule_test>
+      <rule_message>In sb:Raw_Data_Product/pds:Internal_Reference, pds:reference_type must be "processed_data_to_raw_data".</rule_message>
     </DD_Rule_Statement>
   </DD_Rule>
   

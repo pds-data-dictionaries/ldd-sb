@@ -77,4 +77,4 @@ to the namespace outline, which lists all classes and attributes available in la
 This dictionary is in active development. The */test* directory of the repo contains a mock label
 that shows the full structure of the namespace, but should not be used as a source of cutting and 
 pasting for label design as it is not logically meaningful or complete with respect to the other
-discipline namespace that should be present.
+discipline namespaces that should be present.

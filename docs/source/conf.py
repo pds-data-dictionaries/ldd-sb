@@ -96,3 +96,6 @@ myst_enable_extensions = [
     "deflist",
     "fieldlist"
     ]
+
+latex_elements = { 'maxlistdepth' : '10' }
+    

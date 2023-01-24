@@ -89,3 +89,10 @@ html_theme_options = {
     'includehidden': True,
     'titles_only': False
 }
+
+# ----------- Messing around ------------------
+
+myst_enable_extensions = [
+    "deflist",
+    "fieldlist"
+    ]

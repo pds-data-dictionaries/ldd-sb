@@ -20,6 +20,7 @@ Small Bodies Namespace Documentation
     :maxdepth: 2
     :caption: Detailed Documentation
 
+    detailed/test
     detailed/outline
     detailed/SB_Metadata
     detailed/Observation_Parameters

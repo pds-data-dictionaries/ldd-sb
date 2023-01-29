@@ -23,9 +23,9 @@
         </Time_Coordinates>
         <Investigation_Area>
             <name>None</name>
-            <type>Mission</type>
+            <type>Individual</type>
             <Internal_Reference>
-                <lid_reference>urn:nasa:pds:bundle:collection:none</lid_reference>
+                <lid_reference>urn:nasa:pds:context:investigation:individual.none</lid_reference>
                 <reference_type>data_to_investigation</reference_type>
             </Internal_Reference>
         </Investigation_Area>

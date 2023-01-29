@@ -23,9 +23,9 @@
         </Time_Coordinates>
         <Investigation_Area>
             <name>None</name>
-            <type>Mission</type>
+            <type>Individual</type>
             <Internal_Reference>
-                <lid_reference>urn:nasa:pds:bundle:collection:none</lid_reference>
+                <lid_reference>urn:nasa:pds:context:investigation:individual.none</lid_reference>
                 <reference_type>data_to_investigation</reference_type>
             </Internal_Reference>
         </Investigation_Area>
@@ -141,88 +141,6 @@
                 <sequence_number>3</sequence_number>
             </Axis_Array>
         </Array_3D_Image>
-        
-        <Array_3D>
-            <name>Error map</name>
-            <local_identifier>ErrorMap</local_identifier>
-            <offset unit="byte">10</offset>
-            <axes>3</axes>
-            <axis_index_order>Last Index Fastest</axis_index_order>
-            <Element_Array>
-                <data_type>IEEE754MSBSingle</data_type>
-                <unit>Percent</unit>
-            </Element_Array>
-            <Axis_Array>
-                <axis_name>Line</axis_name>
-                <elements>1</elements>
-                <sequence_number>1</sequence_number>
-            </Axis_Array>
-            <Axis_Array>
-                <axis_name>Sample</axis_name>
-                <elements>1</elements>
-                <sequence_number>2</sequence_number>
-            </Axis_Array>
-            <Axis_Array>
-                <axis_name>Error Estimate</axis_name>
-                <elements>5</elements>
-                <sequence_number>3</sequence_number>
-            </Axis_Array>
-        </Array_3D>
-        
-        <Array_3D>
-            <local_identifier>QualityMap</local_identifier>
-            <offset unit="byte">20</offset>
-            <axes>3</axes>
-            <axis_index_order>Last Index Fastest</axis_index_order>
-            <description>
-                The elements in this array are quality bit-flag fields.
-            </description>
-            <Element_Array>
-                <data_type>UnsignedByte</data_type>
-            </Element_Array>
-            <Axis_Array>
-                <axis_name>Line</axis_name>
-                <elements>1</elements>
-                <sequence_number>1</sequence_number>
-            </Axis_Array>
-            <Axis_Array>
-                <axis_name>Sample</axis_name>
-                <elements>1</elements>
-                <sequence_number>2</sequence_number>
-            </Axis_Array>
-            <Axis_Array>
-                <axis_name>Quality Flags</axis_name>
-                <elements>5</elements>
-                <sequence_number>3</sequence_number>
-            </Axis_Array>
-        </Array_3D>
-        
-        <Array_2D>
-            <local_identifier>SNRMap</local_identifier>
-            <offset unit="byte">30</offset>
-            <axes>2</axes>
-            <axis_index_order>Last Index Fastest</axis_index_order>
-            <description>
-                Another array to test the SNR option.
-            </description>
-            <Element_Array>
-                <data_type>UnsignedByte</data_type>
-            </Element_Array>
-            <Axis_Array>
-                <axis_name>Line</axis_name>
-                <elements>1</elements>
-                <sequence_number>1</sequence_number>
-            </Axis_Array>
-            <Axis_Array>
-                <axis_name>Sample</axis_name>
-                <elements>1</elements>
-                <sequence_number>2</sequence_number>
-            </Axis_Array>
-            <Special_Constants>
-                <error_constant>1</error_constant>
-            </Special_Constants>
-        </Array_2D>
-        
     </File_Area_Observational>
     
 </Product_Observational>

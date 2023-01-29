@@ -1,12 +1,22 @@
 Small Bodies Dictionary - Outline
 ##################################################
 
-*<sb:SM_Metadata>* is the public entry point to the Small Bodies namespace. This class 
-contains all other SB classes and must be included to use them.
+*<sb:SB_Metadata>* is the public entry point to the Small Bodies namespace. This class 
+contains all other SB classes and must be included to use them. Below is a summary 
+outline of *all* classes and attributes in the Small Bodies dictionary, in the order
+in which they would appear in a label if every single one was used. Most classes 
+are optional at the higher levels, and the majority of attributes are optional as
+well. 
+
+**Note** that in many cases in which the *<Internal_Reference>* class from the core
+*pds:* dictionary is used to reference a related file, the referring Small Bodies
+class **requires** a reference to a specific version of that file - a *lidvid_reference*
+rather than a *lid_reference*. When either is acceptable, both are listed as 
+alternatives in this outline.
 
 <sb:SB_Metadata>
 
-* :doc:`\<sb:Observation_Parameters\> <Observation_Parameters>` 
+* <sb:Observation_Parameters> 
 
   * <sb:Exposure>
   
@@ -39,7 +49,7 @@ contains all other SB classes and must be included to use them.
     * <sb:stop_time_UTC_JD>
     * <sb:comment>
     
-* :doc:`\<sb:Calibration_Information\> <Calibration_Information>`
+* <sb:Calibration_Information>
 
   * <sb:Raw_Data_Product>
 
@@ -98,7 +108,7 @@ contains all other SB classes and must be included to use them.
         * <pds:reference_type>
         * <pds:comment>
 
-* :doc:`\<sb:Additional_Image_Metadata\> <Additional_Image_Metadata>`
+* <sb:Additional_Image_Metadata>
 
   * <pds:Local_Internal_Reference>
 

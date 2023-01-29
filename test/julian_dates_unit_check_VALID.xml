@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+     This label should produce no validation errors of any kind.
+-->
+
+<Product_Observational 
+    xmlns="http://pds.nasa.gov/pds4/pds/v1" 
+    xmlns:sb="http://pds.nasa.gov/pds4/sb/v0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:bundle:collection:product</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Scratch space for designing dictionary classes</title>
+        <information_model_version>1.19.0.0</information_model_version>
+        <product_class>Product_Observational</product_class>
+    </Identification_Area>
+    <Observation_Area>
+        <Time_Coordinates>
+            <start_date_time xsi:nil="true" nilReason="inapplicable"/>
+            <stop_date_time xsi:nil="true" nilReason="inapplicable"/>
+        </Time_Coordinates>
+        <Investigation_Area>
+            <name>None</name>
+            <type>Mission</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:bundle:collection:none</lid_reference>
+                <reference_type>data_to_investigation</reference_type>
+            </Internal_Reference>
+        </Investigation_Area>
+        <Observing_System>
+            <Observing_System_Component>
+                <name>None</name>
+                <type>Host</type>
+            </Observing_System_Component>
+        </Observing_System>
+        <Target_Identification>
+            <name>None</name>
+            <type>Comet</type>
+        </Target_Identification>
+
+        <Discipline_Area>
+
+            <sb:SB_Metadata>
+                <sb:Observation_Parameters>
+
+                    <sb:Timing>
+                        <sb:midobservation_time_UTC_JD unit="julian day">2459959.1234</sb:midobservation_time_UTC_JD>
+                        <sb:start_time_UTC_JD unit="julian day">2459959.1111</sb:start_time_UTC_JD>
+                        <sb:stop_time_UTC_JD unit="julian day">2459959.2222</sb:stop_time_UTC_JD>
+                    </sb:Timing>
+                </sb:Observation_Parameters>
+
+                <sb:Additional_Image_Metadata>
+                    <Local_Internal_Reference>
+                        <comment>something</comment>
+                        <local_identifier_reference>Image</local_identifier_reference>
+                        <local_reference_type>image_to_additional_metadata</local_reference_type>
+                    </Local_Internal_Reference>
+                    
+                    <sb:image_observation_type>Frame Sequence</sb:image_observation_type>
+
+                    <sb:Additional_Geometry_Metadata>
+                        <sb:comment>something</sb:comment>
+                        <sb:Geometry_Vector_Time> <!-- This class is still in development. Use with the expectation it will change. -->
+                            <sb:position_velocity_vectors>Spacecraft_to_Target</sb:position_velocity_vectors>
+                            <sb:time_at_target_UTC_JD unit="julian day">2459925.987</sb:time_at_target_UTC_JD>
+                        </sb:Geometry_Vector_Time>
+                        <sb:Geometry_Vector_Time> <!-- This class is still in development. Use with the expectation it will change. -->
+                            <sb:position_velocity_vectors>Earth_to_Target</sb:position_velocity_vectors>
+                            <sb:time_at_Earth_UTC_JD unit="julian day">2459925.987</sb:time_at_Earth_UTC_JD>
+                        </sb:Geometry_Vector_Time>
+                        <sb:Geometry_Vector_Time> <!-- This class is still in development. Use with the expectation it will change. -->
+                            <sb:position_velocity_vectors>Sun_to_Spacecraft</sb:position_velocity_vectors>
+                            <sb:time_at_Sun_UTC_JD unit="julian day">2459925.987</sb:time_at_Sun_UTC_JD>
+                        </sb:Geometry_Vector_Time>
+                    </sb:Additional_Geometry_Metadata>
+
+                    <!-- "Per_Frame_Metadata" is only valid for "Frame Sequence" data. Repeated for each frame. -->
+
+                    <sb:Per_Frame_Metadata>
+                        <sb:frame_number>0</sb:frame_number>
+                        <sb:frame_exposure_duration unit="s">10.5</sb:frame_exposure_duration>
+                        <sb:comment>something</sb:comment>
+                        <sb:Midframe_Time>
+                            <sb:midobservation_time_UTC_JD unit="julian day">2459955.5678</sb:midobservation_time_UTC_JD>
+                        </sb:Midframe_Time>
+                    </sb:Per_Frame_Metadata>
+
+                </sb:Additional_Image_Metadata>
+            </sb:SB_Metadata>
+        </Discipline_Area>
+
+    </Observation_Area>
+
+    <File_Area_Observational>
+        <File>
+            <file_name>No.Data</file_name>
+        </File>
+        
+        <Array_3D_Image>
+            <name>Image Data</name>
+            <local_identifier>Image</local_identifier>
+            <offset unit="byte">0</offset>
+            <axes>3</axes>
+            <axis_index_order>Last Index Fastest</axis_index_order>
+            <Element_Array>
+                <data_type>SignedByte</data_type>
+                <unit>DN</unit>
+            </Element_Array>
+            <Axis_Array>
+                <axis_name>Line</axis_name>
+                <elements>1</elements>
+                <sequence_number>1</sequence_number>
+            </Axis_Array>
+            <Axis_Array>
+                <axis_name>Sample</axis_name>
+                <elements>1</elements>
+                <sequence_number>2</sequence_number>
+            </Axis_Array>
+            <Axis_Array>
+                <axis_name>Frame</axis_name>
+                <elements>5</elements>
+                <sequence_number>3</sequence_number>
+            </Axis_Array>
+        </Array_3D_Image>
+    </File_Area_Observational>
+    
+</Product_Observational>

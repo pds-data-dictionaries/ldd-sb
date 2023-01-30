@@ -19,7 +19,7 @@
         </Time_Coordinates>
         <Investigation_Area>
             <name>None</name>
-            <type>individual</type>
+            <type>Individual Investigation</type>
             <Internal_Reference>
                 <lid_reference>urn:nasa:pds:context:investigation:individual.none</lid_reference>
                 <reference_type>data_to_investigation</reference_type>

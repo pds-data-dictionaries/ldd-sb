@@ -40,7 +40,7 @@
 
         <Investigation_Area>
             <name>New Horizons Kuiper Belt Extended Mission 1</name>
-            <type>Individual</type>
+            <type>Individual Investigation</type>
             <Internal_Reference>
                 <lid_reference>urn:nasa:pds:context:investigation:individual.none</lid_reference>
                 <reference_type>data_to_investigation</reference_type>

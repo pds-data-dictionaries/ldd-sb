@@ -3,16 +3,16 @@ PDS4 Local Data Dictionary Processing Report
 Configuration:
    LDDTool Version        14.1.2
    LDD Version Id:        0.1.0.0
-   LDD Label Version Id:  1.24
+   LDD Label Version Id:  1.25
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Mon Jan 30 00:40:07 UTC 2023
-   Common Schema          [PDS4_PDS_1I00.xsd]
-   Common Schematron      [PDS4_PDS_1I00.sch]
-   IM Version Id:         1.18.0.0
+   Time                   Mon Jan 30 11:57:06 UTC 2023
+   Common Schema          [PDS4_PDS_1J00.xsd]
+   Common Schematron      [PDS4_PDS_1J00.sch]
+   IM Version Id:         1.19.0.0
    IM Namespace Id:       pds
-   IM Label Version Id:   1.24
+   IM Label Version Id:   1.25
    IM Object Model        [UpperModel.pont]
    IM Data Dictionary     [dd11179.pins]
    IM Configuration File  [MDPTNConfigClassDisp.xml]
@@ -58,17 +58,17 @@ Parsed Input - Header:
 Parsed Input - Attributes:
 
    name                   best_quality_value
-   version                1.18
+   version                1.19
    value data type        ASCII_Integer
    description             The sb:best_quality_value attribute provides the value used within a quality map to indicate the best quality pixels. When bit flags are in use, for example, the "best" quality is typically 0 (zero) - that is, no quality issues are flagged at all. 
 
    name                   bias_subtraction
-   version                1.18
+   version                1.19
    value data type        ASCII_Boolean
    description             The sb:bias_subtraction attribute should be present and contain the value "true" if bias subtraction has been performed as part of the processing applied to the data comprising the product. 
 
    name                   celestial_north_clock_angle
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The sb:celestial_north_clock_angle attribute is the angle, measured clockwise from "up" to the direction of the celestial north pole. It must be in the range 0-360, calculated with respect to the image display as indicated in the corresponding disp:Display_Settings_Class. 
    minimum value          0.0
@@ -76,88 +76,88 @@ Parsed Input - Attributes:
    unit of measure type   Units_of_Angle
 
    name                   center_wavelength
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The center_wavelength attribute defines the nominal transmission peak of the filter transmission curve, assuming the spectral response is a Gaussian function. 
    minimum value          0.0
    unit of measure type   Units_of_Length
 
    name                   center_wavelength_is_weighted
-   version                1.18
+   version                1.19
    value data type        ASCII_Boolean
    description             If the preceding center_wavelength is actually a weighted center wavelength (rather then the peak of a nominal Gaussian function), then this attribute should be present with a value of "true". The attribute should never appear without the center_wavelength attribute. 
 
    name                   comment
-   version                1.18
+   version                1.19
    value data type        UTF8_Text_Preserved
    description             The comment attribute provides an opportunity to provide additional information in free-format (UTF-8) text. Note that characters special to XML parsing (greater-than, less-than, and ampersand, primarily) must be presented using character entity codes. 
 
    name                   conversion_to_physical_units
-   version                1.18
+   version                1.19
    value data type        ASCII_Boolean
    description             The sb:conversion_to_physical_units attribute should be present and contain the value "true" if the primary data is expressed in physical units once any value offset and scaling factor included in the definition of the data structure have been applied. 
 
    name                   dark_current_removal
-   version                1.18
+   version                1.19
    value data type        ASCII_Boolean
    description             The sb:dark_current_removal attribute should be present and contain the value "true" if dark current removal has been performed as part of the processing applied to the data comprising the product. 
 
    name                   delta_time_from_sequence_start
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The sb:delta_time_from_sequence_start attribute provide the offset of a time of interest in the current frame (as indicated by the containing class) from the start of the sequence in a "Frame Sequence" observation. It is specified as a floating point number of the specified units of time. 
    minimum value          0.0
    unit of measure type   Units_of_Time
 
    name                   exposure_description
-   version                1.18
+   version                1.19
    value data type        UTF8_Text_Preserved
    description             The exposure_description attribute should be used, typically in conjunction with the exposure_duration attribute, when the data collection process involves something other than simple photon collection over a continuous period of time. The exposure_description should define what constitutes as "exposure", and/or how the "duration" is determined. 
 
    name                   exposure_duration
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             As in the Imaging namespace, exposure_duration indicates the total time a detector was exposed to or gathering a "signal". This element is used in cases where non-standard imaging techniques (those not described by the Imaging dictionary) are used, or when the detector is detecting something other than photons. 
    minimum value          0.0
    unit of measure type   Units_of_Time
 
    name                   file_name
-   version                1.18
+   version                1.19
    value data type        ASCII_File_Name
    description             The sb:file_name attribute should contain the name, preferably without path information, of the file referenced more formally by a pds:Internal_Reference class in the same containing class. The file name is provided as a matter of convenience and for use as a validation cross-check when the data are accepted for archiving. Path information is unlikely to be useful once the data are archived, and as the data are curated both paths and file names may change. Consequently, the logical identifier appearing in the pds:Internal_Reference should be considered the positive identification of the file in question within the archive, rather than the name. 
 
    name                   filter_name
-   version                1.18
+   version                1.19
    value data type        ASCII_Short_String_Collapsed
    description             The filter_name is a (frequently informal) identifier for the filter within the context of the source data collection. Typical values will be things like "Red", "Clear", or "CH4". Values should be simple ASCII strings. 
 
    name                   filter_type
-   version                1.18
+   version                1.19
    value data type        ASCII_Short_String_Collapsed
    description             The filter_type attribute is a broad categorization of the nature of the pass band. Permissible values are defined as they are needed - contact the SB Steward for assistance. 
 
    name                   flag_meaning
-   version                1.18
+   version                1.19
    value data type        UTF8_Short_String_Collapsed
    description             The sb:flag_meaning attribute defines the significance of the particular value when it occurs in the associated context (typically a quality map, for example). 
 
    name                   flag_value
-   version                1.18
+   version                1.19
    value data type        ASCII_Integer
    description             The sb:flag_value attribute defines an integer value that corresponds to a specific condition or assessment within the containing data structure, typically a quality map. 
 
    name                   flags_are_bit_flags
-   version                1.18
+   version                1.19
    value data type        ASCII_Boolean
    description             The sb:flag_are_bit_flags attribute contains "true" if the flags being defined within the containing class correspond to specific bits within a single integer field. When this is the case, all flag should have values that are exponents of 2. Typically, when bit flags are used, several flags may be combined within a single field (so a quality value may be 10, indicating that the flags corresponding to the values 8 and 2 are both set, for example). 
 
    name                   flat_field_applied
-   version                1.18
+   version                1.19
    value data type        ASCII_Boolean
    description             The sb:flat_field_applied attribute should be present and contain the value "true" if flat fielding has been performed as part of the processing applied to the data comprising the product. 
 
    name                   frame_center_dec
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The sb:frame_center_dec attribute provide the declination, in degrees, of the center point of a single frame of a "Frame Sequence" observation. 
    minimum value          -90.0
@@ -165,7 +165,7 @@ Parsed Input - Attributes:
    unit of measure type   Units_of_Angle
 
    name                   frame_center_ra
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The sb:frame_center_ra attribute provide the right ascension, in degrees, of the center point of a single frame of a "Frame Sequence" observation. 
    minimum value          0.0
@@ -173,148 +173,148 @@ Parsed Input - Attributes:
    unit of measure type   Units_of_Angle
 
    name                   frame_exposure_duration
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The sb:frame_exposure_duration attribute provides the exposure time for one frame of a framing sequence. 
    minimum value          0.0
    unit of measure type   Units_of_Time
 
    name                   frame_number
-   version                1.18
+   version                1.19
    value data type        ASCII_Integer
    description             The sb:frame_number attribute specifies the sequential frame number, starting with "0", to which the subsequent frame-specific metadata applies. The frame number is the subscript along the axis that defines the "frame" dimension. Frames must be physically stored in sequence in the file, so for a sequence of 2D frames the sb:frame_number will correspond to the (0-based) index along the third axis. 
    minimum value          0
 
    name                   image_observation_type
-   version                1.18
+   version                1.19
    value data type        ASCII_Short_String_Collapsed
    description             The sb:image_observation_type attribute indicates whether the data product is a single, 2D image, or an image "frame sequence" - a series of images obtained in a single observing sequence and processed as a set. If the images were intended to comprise a spectral cube or an movie sequence, then the data should be labeled accordingly and this class may not be present if there is no additional metadata needed. Additiona types can be added to the permissible value list as needs arise. When in doubt, check with the PDS node curating the data or raise an issue on this dictionary. 
 
    name                   known_long_wavelength_leak
-   version                1.18
+   version                1.19
    value data type        ASCII_Boolean
    description             If the filter in use has a known light leak on the long-wavelength side, the known_long_wavelength_leak flag should be present and set to "true". This does NOT indicate that a correction has been applied - check the calibration processing for that information. 
 
    name                   known_short_wavelength_leak
-   version                1.18
+   version                1.19
    value data type        ASCII_Boolean
    description             If the filter in use has a known light leak on the short-wavelength side, the known_short_wavelength_leak flag should be present and set to "true". This does NOT indicate that a correction has been applied - check the calibration processing for that information. 
 
    name                   long_wavelength_limit
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The long_wavelength_limit defines the largest wavelength cutoff of a wavelength range. 
    minimum value          0.0
    unit of measure type   Units_of_Length
 
    name                   midobservation_time_UTC_JD
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The sb:midobservation_time_UTC_JD attribute contains the UTC time corresponding to the midpoint of the observation, in full (as opposed to modified) Julian date format. The unit of "julian day" must be included when this attribute is used. Unusual circumstances relating to the definition of "midobservation" should be explained briefly in the sb:comment field of the containing class. 
    minimum value          0.0
    unit of measure type   Units_of_Time
 
    name                   midobservation_time_UTC_YMD
-   version                1.18
+   version                1.19
    value data type        ASCII_Date_Time_YMD_UTC
    description             The sb:midobservation_time_UTC_YMD attribute contains the UTC time corresponding the midpoint of the observation, in the format YYYY-MM-DDThh:mm:ss.sssZ (that is, the ISO YMD format with the 'Z' timezone indicator required to be present). Unusual circumstances relating to the definition of "midobservation" should be explained briefly in the sb:comment field of the containing class. 
 
    name                   position_velocity_vectors
-   version                1.18
+   version                1.19
    value data type        ASCII_Short_String_Collapsed
    description             The sb:position_velocity_vectors attribute identifies the type of position and velocity vectors relevant to the data provided by naming the start and end point pair. (In some cases the directionality of the velocity vector is opposite that of the position vector.) 
 
    name                   qcos
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The sb:qcos attribute is the "cos(theta/2)" element of a pointing quaternion. 
    minimum value          -1.000
    maximum value          1.000
 
    name                   qsin1
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The sb:qsin1 attribute is the "ax*sin(theta/2)" element of a pointing quaternion. 
 
    name                   qsin2
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The sb:qsin2 attribute is the "ay*sin(theta/2)" element of a pointing quaternion. 
 
    name                   qsin3
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The sb:qsin3 attribute is the "az*sin(theta/2)" element of a pointing quaternion. 
 
    name                   scattered_light_correction
-   version                1.18
+   version                1.19
    value data type        ASCII_Boolean
    description             The sb:scattered_light_correction attribute should be present and contain the value "true" if scattered light correction has been applied as part of the processing of the data comprising the product. 
 
    name                   short_wavelength_limit
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The short_wavelength_limit defines the smallest wavelength cutoff of a wavelength range. 
    minimum value          0.0
    unit of measure type   Units_of_Length
 
    name                   standard_filter_identification
-   version                1.18
+   version                1.19
    value data type        ASCII_Short_String_Collapsed
    description             The standard_filter_identification is used when the filter is one of a standard or well-known bandpass, for example "Johnson V" or "WFPC2 R". 
 
    name                   start_time_UTC_JD
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The start_time_UTC_JD attribute contains the UTC start time of a period of interest, typically the observation period, expressed as a Julian date. Units of "julian day" must be included when using this attribute. 
    minimum value          0.0
    unit of measure type   Units_of_Time
 
    name                   stop_time_UTC_JD
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The stop_time_UTC_JD attribute contains the UTC ending time of a period of interest, typically the observation period, expressed as a Julian date. Units of "julian day" must be included when using this attribute. 
    minimum value          0.0
    unit of measure type   Units_of_Time
 
    name                   time_at_Earth_UTC_JD
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The sb:time_at_Earth_UTC_YMD attribute give the local UTC time for an Earth observer at the time for which the corresponding positions and/or vectors were calculated. The time is stated in Julian date format, and must be given with units of "julian day". 
    minimum value          0.0
    unit of measure type   Units_of_Time
 
    name                   time_at_Earth_UTC_YMD
-   version                1.18
+   version                1.19
    value data type        ASCII_Date_Time_YMD_UTC
    description             The sb:time_at_Earth_UTC_YMD attribute give the local UTC time for an Earth observer at the time for which the corresponding positions and/or vectors were calculated. The time is in the ISO standard YYYY-MM-DDThh:mm:ss.sssZ format. 
 
    name                   time_at_Sun_UTC_JD
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The sb:time_at_Sun_UTC_YMD attribute give the local UTC time for an observer at the Sun at the time for which the corresponding positions and/or vectors were calculated. The time is stated in Julian date format, and must be given with units of "julian day". 
    minimum value          0.0
    unit of measure type   Units_of_Time
 
    name                   time_at_Sun_UTC_YMD
-   version                1.18
+   version                1.19
    value data type        ASCII_Date_Time_YMD_UTC
    description             The sb:time_at_Sun_UTC_YMD attribute give the local UTC time for an observer at the Sun at the time for which the corresponding positions and/or vectors were calculated. The time is in the ISO standard YYYY-MM-DDThh:mm:ss.sssZ format. 
 
    name                   time_at_target_UTC_JD
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The sb:time_at_Sun_UTC_YMD attribute give the local UTC time for an observer at the target at the time for which the corresponding positions and/or vectors were calculated. The time is stated in Julian date format, and must be given with units of "julian day". 
    minimum value          0.0
    unit of measure type   Units_of_Time
 
    name                   time_at_target_UTC_YMD
-   version                1.18
+   version                1.19
    value data type        ASCII_Date_Time_YMD_UTC
    description             The sb:time_at_target_UTC_YMD attribute give the local UTC time for an observer at the target at the time for which the corresponding positions and/or vectors were calculated. The time is in the ISO standard YYYY-MM-DDThh:mm:ss.sssZ format. 
 
    name                   y_axis_position_angle
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The sb:y_axis_position_angle provides the angle measured East from celestial North in the plane of an image to the +Y axis of the instrument boresight. The values are in the range 0-360 degrees. 
    minimum value          0.0
@@ -322,7 +322,7 @@ Parsed Input - Attributes:
    unit of measure type   Units_of_Angle
 
    name                   z_axis_position_angle
-   version                1.18
+   version                1.19
    value data type        ASCII_Real
    description             The sb:z_axis_position_angle provides the angle measured East from celestial North in the plane of an image to the +Z axis of the instrument boresight. The values are in the range 0-360 degrees. 
    minimum value          0.0

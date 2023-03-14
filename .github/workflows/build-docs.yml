@@ -63,7 +63,6 @@ jobs:
   pdfgen: # job 1
     name: 'Build PDF'
     runs-on: ubuntu-latest
-    environment: main
     if: github.actor != 'pdsen-ci'
 
     steps:
@@ -82,13 +81,13 @@ jobs:
           pip install -r docs/requirements.txt
           # Install dependencies for PDF generation
           sudo apt install texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra latexmk
-      - name: Make Sphinx
+      - name: Generate PDF
         id: make
         run: |
           cd docs
           make latexpdf
           cp build/latex/*.pdf .
-      - name: Push LDDs to Github
+      - name: Push PDF to Github
         run: |
           git config --local user.email "pdsen-ci@jpl.nasa.gov"
           git config --local user.name "PDSEN CI Bot"
@@ -99,5 +98,5 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.ADMIN_GITHUB_TOKEN }}
-          branch: main
+          branch: ${{ github.ref }}
           force: true

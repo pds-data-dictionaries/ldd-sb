@@ -1,0 +1,3715 @@
+[
+  {
+    "dataDictionary": {
+      "Title": "PDS4 Data Dictionary" ,
+      "IM Version": "1.19.0.0" ,
+      "LDD Version": "0.1.0.0" ,
+      "Date": "2023-05-04T00:49:58Z" ,
+      "Description": "This document is a dump of the contents of the PDS4 Data Dictionary" ,
+      "namespaces": ["pds:", "sb:"] ,
+      "classDictionary": [
+        {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Additional_Geometry_Metadata" ,
+            "title": "Additional_Geometry_Metadata" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Additional_Geometry_Metadata class provides information to supplement that already provided in the classes of the Geometry (geom:) namespace. This class is only useful in relatively simple cases where there is just a single geom:Geometry class the label, with a single target and orbiter reference. The optional sb:comment attribute may be used to note unusual circumstances. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Additional_Geometry_Metadata.sb.comment" ,
+                "title": "comment" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Additional_Geometry_Metadata.sb.comment"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Additional_Geometry_Metadata.sb.Instrument_Position_Angles" ,
+                "title": "Instrument_Position_Angles" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Instrument_Position_Angles"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Additional_Geometry_Metadata.sb.Geometry_Vector_Time" ,
+                "title": "Geometry_Vector_Time" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "*" ,
+                "classOrder": "1030" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Geometry_Vector_Time"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Additional_Image_Metadata" ,
+            "title": "Additional_Image_Metadata" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Additional_Image_Metadata class provides metadata to supplement the standard image metadata supplied by the more general discipline classes. The sb:comment field may be used to note any unsual circumstances. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Additional_Image_Metadata.sb.comment" ,
+                "title": "comment" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Additional_Image_Metadata.sb.comment"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Additional_Image_Metadata.sb.image_observation_type" ,
+                "title": "image_observation_type" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Additional_Image_Metadata.sb.image_observation_type"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Additional_Image_Metadata.pds.Local_Internal_Reference" ,
+                "title": "Local_Internal_Reference" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "classId": [
+                  "0001_NASA_PDS_1.pds.Local_Internal_Reference"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Additional_Image_Metadata.sb.Ancillary_Data_Objects" ,
+                "title": "Ancillary_Data_Objects" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1040" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Ancillary_Data_Objects"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Additional_Image_Metadata.sb.Additional_Geometry_Metadata" ,
+                "title": "Additional_Geometry_Metadata" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1050" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Additional_Geometry_Metadata"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Additional_Image_Metadata.sb.Per_Frame_Metadata" ,
+                "title": "Per_Frame_Metadata" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "*" ,
+                "classOrder": "1060" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Per_Frame_Metadata"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Ancillary_Data_Objects" ,
+            "title": "Ancillary_Data_Objects" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Ancillary_Data_Objects class provides mappings between the primary image data in the product and the ancillary data (quality maps, error estimates, etc.) provided with it as part of the data product. The optional sb:comment field may be used to note any unusual circumstances. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Ancillary_Data_Objects.sb.comment" ,
+                "title": "comment" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Ancillary_Data_Objects.sb.comment"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Ancillary_Data_Objects.sb.Quality_Map" ,
+                "title": "Quality_Map" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Quality_Map"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Ancillary_Data_Objects.sb.Error_Estimates_Map" ,
+                "title": "Error_Estimates_Map" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Error_Estimates_Map"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Ancillary_Data_Objects.sb.SNR_Map" ,
+                "title": "SNR_Map" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1040" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.SNR_Map"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Bad_Pixel_Map" ,
+            "title": "Bad_Pixel_Map" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Bad_Pixel_Map class identifies the PDS archive product containing the bad pixel map applied in processing the data in the product. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Bad_Pixel_Map.sb.file_name" ,
+                "title": "file_name" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Bad_Pixel_Map.sb.file_name"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Bad_Pixel_Map.sb.comment" ,
+                "title": "comment" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Bad_Pixel_Map.sb.comment"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Bad_Pixel_Map.pds.Internal_Reference" ,
+                "title": "Internal_Reference" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "classId": [
+                  "0001_NASA_PDS_1.pds.Internal_Reference"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Bias_Map" ,
+            "title": "Bias_Map" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Bias_Map class identifies a PDS4 product that contains the pixel-by-pixel bias values applied during a calibration process. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Bias_Map.sb.file_name" ,
+                "title": "file_name" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Bias_Map.sb.file_name"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Bias_Map.pds.Internal_Reference" ,
+                "title": "Internal_Reference" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "classId": [
+                  "0001_NASA_PDS_1.pds.Internal_Reference"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Calibration_Applied" ,
+            "title": "Calibration_Applied" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Calibration_Applied class provide flags to indicate specific calibration processes that have been performed, as well as references to files provided with the archive that were used as part of the processing. The otpional sb:comment field may be used to note any unusual circumstances. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Calibration_Applied.sb.comment" ,
+                "title": "comment" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Calibration_Applied.sb.comment"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Calibration_Applied.sb.bias_subtraction" ,
+                "title": "bias_subtraction" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Calibration_Applied.sb.bias_subtraction"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Calibration_Applied.sb.dark_current_removal" ,
+                "title": "dark_current_removal" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Calibration_Applied.sb.dark_current_removal"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Calibration_Applied.sb.flat_field_applied" ,
+                "title": "flat_field_applied" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1040" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Calibration_Applied.sb.flat_field_applied"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Calibration_Applied.sb.scattered_light_correction" ,
+                "title": "scattered_light_correction" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1050" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Calibration_Applied.sb.scattered_light_correction"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Calibration_Applied.sb.conversion_to_physical_units" ,
+                "title": "conversion_to_physical_units" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1060" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Calibration_Applied.sb.conversion_to_physical_units"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Calibration_Applied.sb.Calibration_Reference_Files" ,
+                "title": "Calibration_Reference_Files" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1070" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Calibration_Reference_Files"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Calibration_Information" ,
+            "title": "Calibration_Information" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Calibration_Information class documents what processing steps have been applied to the data, and links to both the raw data file and the specific calibration files used to produce the processed product presented in the label. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Calibration_Information.sb.Raw_Data_Product" ,
+                "title": "Raw_Data_Product" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Raw_Data_Product"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Calibration_Information.sb.Calibration_Applied" ,
+                "title": "Calibration_Applied" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Calibration_Applied"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Calibration_Information.sb.Calibration_Reference_Files" ,
+                "title": "Calibration_Reference_Files" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Calibration_Reference_Files"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Calibration_Reference_Files" ,
+            "title": "Calibration_Reference_Files" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Calibration_Reference_Files class provides explicit references to key calibration files provided as part of the archive. Note that these references are required to be to specific versions of calibration files, as calibration processes and details typically evolve over time. The optional sb:comment should be used to note any unusual circumstances related to the calibration files as a group. The optional pds:comment field in the pds:Internal_Reference class should be used to note any unusual circumstances related to any particular referenced file. The subclasses mat be listed in any order, and may be repeated if that makes sense - although that should be explained in a \"comment\" field. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Calibration_Reference_Files.sb.comment" ,
+                "title": "comment" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Calibration_Reference_Files.sb.comment"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Calibration_Reference_Files.sb.Bias_Map" ,
+                "title": "Bias_Map" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "true" ,
+                "isAny": "false" ,
+                "groupName": "XSChoice#11" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "*" ,
+                "classOrder": "1030" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Bias_Map",
+                  "0001_NASA_PDS_1.sb.Bad_Pixel_Map",
+                  "0001_NASA_PDS_1.sb.Dark_Field",
+                  "0001_NASA_PDS_1.sb.Flat_Field"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Dark_Field" ,
+            "title": "Dark_Field" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Dark_Field class identifies the PDS archive product containing the dark field used to calibrate the data in the product. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Dark_Field.sb.file_name" ,
+                "title": "file_name" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Dark_Field.sb.file_name"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Dark_Field.sb.comment" ,
+                "title": "comment" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Dark_Field.sb.comment"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Dark_Field.pds.Internal_Reference" ,
+                "title": "Internal_Reference" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "classId": [
+                  "0001_NASA_PDS_1.pds.Internal_Reference"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Error_Estimates_Map" ,
+            "title": "Error_Estimates_Map" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Error_Estimates_Map class links the primary image data in the product to the data object (within the same product) containing the pixel-for-pixel error estimates. The definition of the data object itself should indicate the unit of measure of the errors and related information. The optional sb:comment in this class can be used to note any unusual circumstances not related to reading (that is, input\/output of) the error map data. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Error_Estimates_Map.sb.comment" ,
+                "title": "comment" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Error_Estimates_Map.sb.comment"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Error_Estimates_Map.pds.Local_Internal_Reference" ,
+                "title": "Local_Internal_Reference" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "classId": [
+                  "0001_NASA_PDS_1.pds.Local_Internal_Reference"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Exposure" ,
+            "title": "Exposure" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The Exposure class is used to provide attributes describing what constitutes an \"exposure\" in the particular circumstances of the observation. It is used primarily with non-imaging data, or imaging data that does not fit the circumstances covered by the Imaging namespace. The Imaging namespace class should be used when it is applicable. This class may be used in addition to the Imaging class in order to provide additional detail via the sb:exposure_description attribute. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Exposure.sb.exposure_duration" ,
+                "title": "exposure_duration" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Exposure.sb.exposure_duration"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Exposure.sb.exposure_description" ,
+                "title": "exposure_description" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Exposure.sb.exposure_description"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Filter" ,
+            "title": "Filter" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The Filter class provides local and standard identification of the filter used to make the observation, as well as descriptive parameters to identify types of filter (broadband, LVF, etc.) and basic filter characteristics (bandpass, center wavelegth). "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Filter.sb.filter_name" ,
+                "title": "filter_name" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Filter.sb.filter_name"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Filter.sb.standard_filter_identification" ,
+                "title": "standard_filter_identification" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Filter.sb.standard_filter_identification"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Filter.sb.filter_type" ,
+                "title": "filter_type" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Filter.sb.filter_type"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Filter.sb.center_wavelength" ,
+                "title": "center_wavelength" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1040" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Filter.sb.center_wavelength"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Filter.sb.center_wavelength_is_weighted" ,
+                "title": "center_wavelength_is_weighted" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1050" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Filter.sb.center_wavelength_is_weighted"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Filter.sb.short_wavelength_limit" ,
+                "title": "short_wavelength_limit" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1060" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Filter.sb.short_wavelength_limit"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Filter.sb.long_wavelength_limit" ,
+                "title": "long_wavelength_limit" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1070" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Filter.sb.long_wavelength_limit"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Filter.sb.known_short_wavelength_leak" ,
+                "title": "known_short_wavelength_leak" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1080" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Filter.sb.known_short_wavelength_leak"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Filter.sb.known_long_wavelength_leak" ,
+                "title": "known_long_wavelength_leak" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1090" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Filter.sb.known_long_wavelength_leak"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Filter.sb.comment" ,
+                "title": "comment" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1100" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Filter.sb.comment"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Filter.pds.Internal_Reference" ,
+                "title": "Internal_Reference" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "*" ,
+                "classOrder": "1110" ,
+                "classId": [
+                  "0001_NASA_PDS_1.pds.Internal_Reference"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Flat_Field" ,
+            "title": "Flat_Field" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Flat_Field class identifies the PDS archive product containing the flat field used to calibrate the data in the product. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Flat_Field.sb.file_name" ,
+                "title": "file_name" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Flat_Field.sb.file_name"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Flat_Field.sb.comment" ,
+                "title": "comment" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Flat_Field.sb.comment"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Flat_Field.pds.Internal_Reference" ,
+                "title": "Internal_Reference" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "classId": [
+                  "0001_NASA_PDS_1.pds.Internal_Reference"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Frame_Pointing" ,
+            "title": "Frame_Pointing" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Frame_Pointing class provide pointing information specific to one frame in a \"Frame Sequence\" observation. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Frame_Pointing.sb.frame_center_ra" ,
+                "title": "frame_center_ra" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Frame_Pointing.sb.frame_center_ra"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Frame_Pointing.sb.frame_center_dec" ,
+                "title": "frame_center_dec" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Frame_Pointing.sb.frame_center_dec"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Frame_Pointing.sb.celestial_north_clock_angle" ,
+                "title": "celestial_north_clock_angle" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Frame_Pointing.sb.celestial_north_clock_angle"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Frame_Pointing.sb.Instrument_Position_Angles" ,
+                "title": "Instrument_Position_Angles" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1040" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Instrument_Position_Angles"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Geometry_Vector_Time" ,
+            "title": "Geometry_Vector_Time" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Geometry_Vector_Time class identifies a vector or pair of related vectors included in the geom:Geometry_Orbiter class and provides details about the local time for an observer located at one of the endpoints of the vector at the time for which the vector was calculated. For example, if the geom:Vector_Cartesian_Position_Earth_to_Target vector was calculated for spacecraft UTC timeX, this class can be used to provide the additional information that the UTC time for an Earth Observer at that instant would have been timeY. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.position_velocity_vectors" ,
+                "title": "position_velocity_vectors" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.position_velocity_vectors"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.time_at_Earth_UTC_YMD" ,
+                "title": "time_at_Earth_UTC_YMD" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.time_at_Earth_UTC_YMD"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.time_at_Earth_UTC_JD" ,
+                "title": "time_at_Earth_UTC_JD" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.time_at_Earth_UTC_JD"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.time_at_Sun_UTC_YMD" ,
+                "title": "time_at_Sun_UTC_YMD" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1040" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.time_at_Sun_UTC_YMD"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.time_at_Sun_UTC_JD" ,
+                "title": "time_at_Sun_UTC_JD" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1050" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.time_at_Sun_UTC_JD"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.time_at_target_UTC_YMD" ,
+                "title": "time_at_target_UTC_YMD" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1060" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.time_at_target_UTC_YMD"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.time_at_target_UTC_JD" ,
+                "title": "time_at_target_UTC_JD" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1070" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.time_at_target_UTC_JD"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Instrument_Position_Angles" ,
+            "title": "Instrument_Position_Angles" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Instrument_Position_Angles class provide position angles for the axes of the boresight on the place of the image, measured with respect to the location of the celestial North pole (also projected onto the plane of the image). "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Instrument_Position_Angles.sb.y_axis_position_angle" ,
+                "title": "y_axis_position_angle" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Instrument_Position_Angles.sb.y_axis_position_angle"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Instrument_Position_Angles.sb.z_axis_position_angle" ,
+                "title": "z_axis_position_angle" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Instrument_Position_Angles.sb.z_axis_position_angle"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Instrument_to_J2000_Quaternion" ,
+            "title": "Instrument_to_J2000_Quaternion" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Instrument_to_J2000_Quaternion is provides the quaterion to rotate from coordinates from the intrument frame to the EME J2000 frame for a single specific frame of a \"Frame Sequence\" observation. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Instrument_to_J2000_Quaternion.sb.qcos" ,
+                "title": "qcos" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Instrument_to_J2000_Quaternion.sb.qcos"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Instrument_to_J2000_Quaternion.sb.qsin1" ,
+                "title": "qsin1" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Instrument_to_J2000_Quaternion.sb.qsin1"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Instrument_to_J2000_Quaternion.sb.qsin2" ,
+                "title": "qsin2" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Instrument_to_J2000_Quaternion.sb.qsin2"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Instrument_to_J2000_Quaternion.sb.qsin3" ,
+                "title": "qsin3" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1040" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Instrument_to_J2000_Quaternion.sb.qsin3"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Midframe_Time" ,
+            "title": "Midframe_Time" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Midframe_Time class provides timing information related to the mid-exposure time of one frame of a \"Frame Sequence\" observation. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Midframe_Time.sb.midobservation_time_UTC_YMD" ,
+                "title": "midobservation_time_UTC_YMD" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Midframe_Time.sb.midobservation_time_UTC_YMD"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Midframe_Time.sb.midobservation_time_UTC_JD" ,
+                "title": "midobservation_time_UTC_JD" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Midframe_Time.sb.midobservation_time_UTC_JD"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Midframe_Time.sb.delta_time_from_sequence_start" ,
+                "title": "delta_time_from_sequence_start" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Midframe_Time.sb.delta_time_from_sequence_start"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Observation_Parameters" ,
+            "title": "Observation_Parameters" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Observational_Parameters class provides general attributes that small bodies researches find useful for a variety of types of observations. Not all subclasses will be applicable to all data types. The sb:Filter subclass may be repeated, but note that if this is a spectral observation, the relevant filter characteristics must be included the Spectral Dictionary (sp:). Additional filter information may be provided here if desired, of course. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Observation_Parameters.sb.Exposure" ,
+                "title": "Exposure" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Exposure"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Observation_Parameters.sb.Filter" ,
+                "title": "Filter" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "*" ,
+                "classOrder": "1020" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Filter"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Observation_Parameters.sb.Timing" ,
+                "title": "Timing" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Timing"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Per_Frame_Metadata" ,
+            "title": "Per_Frame_Metadata" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Per_Frame_Metadata class provides timing and pointing information specific to a single, specified frame within a \"Frame Sequence\" observation. It should not be used in the case of single-image observations. For single images, the full geom:Image_Display_Geometry class should be used. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Per_Frame_Metadata.sb.frame_number" ,
+                "title": "frame_number" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Per_Frame_Metadata.sb.frame_number"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Per_Frame_Metadata.sb.frame_exposure_duration" ,
+                "title": "frame_exposure_duration" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Per_Frame_Metadata.sb.frame_exposure_duration"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Per_Frame_Metadata.sb.comment" ,
+                "title": "comment" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Per_Frame_Metadata.sb.comment"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Per_Frame_Metadata.sb.Midframe_Time" ,
+                "title": "Midframe_Time" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1040" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Midframe_Time"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Per_Frame_Metadata.sb.Frame_Pointing" ,
+                "title": "Frame_Pointing" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1050" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Frame_Pointing"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Per_Frame_Metadata.sb.Instrument_to_J2000_Quaternion" ,
+                "title": "Instrument_to_J2000_Quaternion" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1060" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Instrument_to_J2000_Quaternion"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Quality_Flag_Definition" ,
+            "title": "Quality_Flag_Definition" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Quality_Flag_Definition class defines one flag value with its corresponding meaning within a sb:Quality_Map_Definition class. Note that flag values here should not be used to replace pds:Special_Constants values - in particular the pds:missing_constant value - that should be included in the defintion of the data array itself. The pds:Special_Constants class is used for visualization and data validation; the sb:Quality_Flag_Definitions are used for interpretation and analysis. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Quality_Flag_Definition.sb.flag_value" ,
+                "title": "flag_value" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Quality_Flag_Definition.sb.flag_value"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Quality_Flag_Definition.sb.flag_meaning" ,
+                "title": "flag_meaning" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Quality_Flag_Definition.sb.flag_meaning"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Quality_Map" ,
+            "title": "Quality_Map" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Quality_Map class links the primary image data in the product to the data object (within the same product) containing the pixel-for-pixel quality assessment information. It also provides the definitions associated with the quality values. The optional sb:comment field may be used to note any unusual circumstances. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Quality_Map.sb.comment" ,
+                "title": "comment" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Quality_Map.sb.comment"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Quality_Map.pds.Local_Internal_Reference" ,
+                "title": "Local_Internal_Reference" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "classId": [
+                  "0001_NASA_PDS_1.pds.Local_Internal_Reference"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Quality_Map.sb.Quality_Map_Definition" ,
+                "title": "Quality_Map_Definition" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Quality_Map_Definition"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Quality_Map_Definition" ,
+            "title": "Quality_Map_Definition" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Quality_Map_Definition defines attributes related to a \"Quality Map\" data structure - that is, an array with dimensions corresponding to the primary data array that contains pixel-for-pixel quality information for every pixel in the primary array. sb:Quality_Map_Defintion lists the meaning of each quality values used in the map. Note that flag values defined for the Quality Map should not be used to replace pds:Special_Constants values - in particular the pds:missing_constant value - that should be included in the defintion of either the primary data array or the Quality Map array itself. The pds:Special_Constants class is used for visualization and data validation; the quality values defined are used for interpretation and analysis. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Quality_Map_Definition.sb.flags_are_bit_flags" ,
+                "title": "flags_are_bit_flags" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Quality_Map_Definition.sb.flags_are_bit_flags"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Quality_Map_Definition.sb.best_quality_value" ,
+                "title": "best_quality_value" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Quality_Map_Definition.sb.best_quality_value"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Quality_Map_Definition.sb.Quality_Flag_Definition" ,
+                "title": "Quality_Flag_Definition" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "*" ,
+                "classOrder": "1030" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Quality_Flag_Definition"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Raw_Data_Product" ,
+            "title": "Raw_Data_Product" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Raw_Data_Product class identifies the raw data product in the PDS archive that is the immediate predecessor of the current, processed data product. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Raw_Data_Product.sb.file_name" ,
+                "title": "file_name" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Raw_Data_Product.sb.file_name"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Raw_Data_Product.pds.Internal_Reference" ,
+                "title": "Internal_Reference" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "classId": [
+                  "0001_NASA_PDS_1.pds.Internal_Reference"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.SB_Metadata" ,
+            "title": "SB_Metadata" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The SBS_Metadata class provides metadata specific to the techniques and processes of small bodies research. In some cases the metadata is supplemental to more general metadata contained in other namespaces (metadata that should also be present in the product label). "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.SB_Metadata.sb.Observation_Parameters" ,
+                "title": "Observation_Parameters" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Observation_Parameters"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.SB_Metadata.sb.Calibration_Information" ,
+                "title": "Calibration_Information" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Calibration_Information"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.SB_Metadata.sb.Additional_Image_Metadata" ,
+                "title": "Additional_Image_Metadata" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "classId": [
+                  "0001_NASA_PDS_1.sb.Additional_Image_Metadata"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.SNR_Map" ,
+            "title": "SNR_Map" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:SNR_Map class links the primary image data in the product to the data object (within the same product) containing the pixel-for-pixel signal-to-noise ratio information. The optional sb:comment field may be used to note any unusual circumstances. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.SNR_Map.sb.comment" ,
+                "title": "comment" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.SNR_Map.sb.comment"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.SNR_Map.pds.Local_Internal_Reference" ,
+                "title": "Local_Internal_Reference" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "classId": [
+                  "0001_NASA_PDS_1.pds.Local_Internal_Reference"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.sb.Timing" ,
+            "title": "Timing" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": " The sb:Timing class provides additional time specifications related to the observation. These might include times of particular interest, or alternate formats (Julian date, for example) of times expressed in ISO standard formats elsewhere. The sb:comment field should be used to explain any unusual or potentially ambiguous circumstances. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Timing.sb.midobservation_time_UTC_YMD" ,
+                "title": "midobservation_time_UTC_YMD" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1010" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Timing.sb.midobservation_time_UTC_YMD"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Timing.sb.midobservation_time_UTC_JD" ,
+                "title": "midobservation_time_UTC_JD" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1020" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Timing.sb.midobservation_time_UTC_JD"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Timing.sb.start_time_UTC_JD" ,
+                "title": "start_time_UTC_JD" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1030" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Timing.sb.start_time_UTC_JD"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Timing.sb.stop_time_UTC_JD" ,
+                "title": "stop_time_UTC_JD" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1040" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Timing.sb.stop_time_UTC_JD"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.sb.Timing.sb.comment" ,
+                "title": "comment" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "0" ,
+                "maximumCardinality": "1" ,
+                "classOrder": "1050" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.sb.Timing.sb.comment"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      ]
+    , "attributeDictionary": [
+        {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Additional_Geometry_Metadata.sb.comment" ,
+            "title": "comment" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The comment attribute provides an opportunity to provide additional information in free-format (UTF-8) text. Note that characters special to XML parsing (greater-than, less-than, and ampersand, primarily) must be presented using character entity codes. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "UTF8_Text_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.UTF8_Text_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Additional_Image_Metadata.sb.comment" ,
+            "title": "comment" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The comment attribute provides an opportunity to provide additional information in free-format (UTF-8) text. Note that characters special to XML parsing (greater-than, less-than, and ampersand, primarily) must be presented using character entity codes. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "UTF8_Text_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.UTF8_Text_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Additional_Image_Metadata.sb.image_observation_type" ,
+            "title": "image_observation_type" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:image_observation_type attribute indicates whether the data product is a single, 2D image, or an image \"frame sequence\" - a series of images obtained in a single observing sequence and processed as a set. If the images were intended to comprise a spectral cube or an movie sequence, then the data should be labeled accordingly and this class may not be present if there is no additional metadata needed. Additiona types can be added to the permissible value list as needs arise. When in doubt, check with the PDS node curating the data or raise an issue on this dictionary. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "true" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          , "PermissibleValueList": [
+              {"PermissibleValue": {
+                  "value": "Frame Sequence" ,
+                  "valueMeaning": " There are multiple images in the data array, physically organized in the file as a sequence of frames. The images were collected as part of a single observation, but do not comprise a spectral cube, or a movie sequence, or a similar higher-order whole. " ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "Single Image" ,
+                  "valueMeaning": " The data array contains a single image. " ,
+                  "isDeprecated": "false"
+                }
+             }
+           ]
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Ancillary_Data_Objects.sb.comment" ,
+            "title": "comment" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The comment attribute provides an opportunity to provide additional information in free-format (UTF-8) text. Note that characters special to XML parsing (greater-than, less-than, and ampersand, primarily) must be presented using character entity codes. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "UTF8_Text_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.UTF8_Text_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Bad_Pixel_Map.sb.comment" ,
+            "title": "comment" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The comment attribute provides an opportunity to provide additional information in free-format (UTF-8) text. Note that characters special to XML parsing (greater-than, less-than, and ampersand, primarily) must be presented using character entity codes. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "UTF8_Text_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.UTF8_Text_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Bad_Pixel_Map.sb.file_name" ,
+            "title": "file_name" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:file_name attribute should contain the name, preferably without path information, of the file referenced more formally by a pds:Internal_Reference class in the same containing class. The file name is provided as a matter of convenience and for use as a validation cross-check when the data are accepted for archiving. Path information is unlikely to be useful once the data are archived, and as the data are curated both paths and file names may change. Consequently, the logical identifier appearing in the pds:Internal_Reference should be considered the positive identification of the file in question within the archive, rather than the name. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_File_Name" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_File_Name" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Bias_Map.sb.file_name" ,
+            "title": "file_name" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:file_name attribute should contain the name, preferably without path information, of the file referenced more formally by a pds:Internal_Reference class in the same containing class. The file name is provided as a matter of convenience and for use as a validation cross-check when the data are accepted for archiving. Path information is unlikely to be useful once the data are archived, and as the data are curated both paths and file names may change. Consequently, the logical identifier appearing in the pds:Internal_Reference should be considered the positive identification of the file in question within the archive, rather than the name. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_File_Name" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_File_Name" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Calibration_Applied.sb.bias_subtraction" ,
+            "title": "bias_subtraction" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:bias_subtraction attribute should be present and contain the value \"true\" if bias subtraction has been performed as part of the processing applied to the data comprising the product. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Boolean" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Boolean" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Calibration_Applied.sb.comment" ,
+            "title": "comment" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The comment attribute provides an opportunity to provide additional information in free-format (UTF-8) text. Note that characters special to XML parsing (greater-than, less-than, and ampersand, primarily) must be presented using character entity codes. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "UTF8_Text_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.UTF8_Text_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Calibration_Applied.sb.conversion_to_physical_units" ,
+            "title": "conversion_to_physical_units" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:conversion_to_physical_units attribute should be present and contain the value \"true\" if the primary data is expressed in physical units once any value offset and scaling factor included in the definition of the data structure have been applied. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Boolean" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Boolean" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Calibration_Applied.sb.dark_current_removal" ,
+            "title": "dark_current_removal" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:dark_current_removal attribute should be present and contain the value \"true\" if dark current removal has been performed as part of the processing applied to the data comprising the product. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Boolean" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Boolean" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Calibration_Applied.sb.flat_field_applied" ,
+            "title": "flat_field_applied" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:flat_field_applied attribute should be present and contain the value \"true\" if flat fielding has been performed as part of the processing applied to the data comprising the product. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Boolean" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Boolean" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Calibration_Applied.sb.scattered_light_correction" ,
+            "title": "scattered_light_correction" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:scattered_light_correction attribute should be present and contain the value \"true\" if scattered light correction has been applied as part of the processing of the data comprising the product. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Boolean" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Boolean" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Calibration_Reference_Files.sb.comment" ,
+            "title": "comment" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The comment attribute provides an opportunity to provide additional information in free-format (UTF-8) text. Note that characters special to XML parsing (greater-than, less-than, and ampersand, primarily) must be presented using character entity codes. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "UTF8_Text_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.UTF8_Text_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Dark_Field.sb.comment" ,
+            "title": "comment" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The comment attribute provides an opportunity to provide additional information in free-format (UTF-8) text. Note that characters special to XML parsing (greater-than, less-than, and ampersand, primarily) must be presented using character entity codes. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "UTF8_Text_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.UTF8_Text_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Dark_Field.sb.file_name" ,
+            "title": "file_name" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:file_name attribute should contain the name, preferably without path information, of the file referenced more formally by a pds:Internal_Reference class in the same containing class. The file name is provided as a matter of convenience and for use as a validation cross-check when the data are accepted for archiving. Path information is unlikely to be useful once the data are archived, and as the data are curated both paths and file names may change. Consequently, the logical identifier appearing in the pds:Internal_Reference should be considered the positive identification of the file in question within the archive, rather than the name. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_File_Name" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_File_Name" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Error_Estimates_Map.sb.comment" ,
+            "title": "comment" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The comment attribute provides an opportunity to provide additional information in free-format (UTF-8) text. Note that characters special to XML parsing (greater-than, less-than, and ampersand, primarily) must be presented using character entity codes. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "UTF8_Text_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.UTF8_Text_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Exposure.sb.exposure_description" ,
+            "title": "exposure_description" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The exposure_description attribute should be used, typically in conjunction with the exposure_duration attribute, when the data collection process involves something other than simple photon collection over a continuous period of time. The exposure_description should define what constitutes as \"exposure\", and\/or how the \"duration\" is determined. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "UTF8_Text_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.UTF8_Text_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Exposure.sb.exposure_duration" ,
+            "title": "exposure_duration" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " As in the Imaging namespace, exposure_duration indicates the total time a detector was exposed to or gathering a \"signal\". This element is used in cases where non-standard imaging techniques (those not described by the Imaging dictionary) are used, or when the detector is detecting something other than photons. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0.0" ,
+            "maximumValue": "1.7976931348623157e308" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Time" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Time" ,
+            "unitId": "day, hr, julian day, microseconds, min, ms, ns, s, yr" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Filter.sb.center_wavelength" ,
+            "title": "center_wavelength" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The center_wavelength attribute defines the nominal transmission peak of the filter transmission curve, assuming the spectral response is a Gaussian function. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0.0" ,
+            "maximumValue": "1.7976931348623157e308" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Length" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Length" ,
+            "unitId": "AU, Angstrom, cm, km, m, micrometer, mm, nm" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Filter.sb.center_wavelength_is_weighted" ,
+            "title": "center_wavelength_is_weighted" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " If the preceding center_wavelength is actually a weighted center wavelength (rather then the peak of a nominal Gaussian function), then this attribute should be present with a value of \"true\". The attribute should never appear without the center_wavelength attribute. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Boolean" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Boolean" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Filter.sb.comment" ,
+            "title": "comment" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The comment attribute provides an opportunity to provide additional information in free-format (UTF-8) text. Note that characters special to XML parsing (greater-than, less-than, and ampersand, primarily) must be presented using character entity codes. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "UTF8_Text_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.UTF8_Text_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Filter.sb.filter_name" ,
+            "title": "filter_name" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The filter_name is a (frequently informal) identifier for the filter within the context of the source data collection. Typical values will be things like \"Red\", \"Clear\", or \"CH4\". Values should be simple ASCII strings. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Filter.sb.filter_type" ,
+            "title": "filter_type" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The filter_type attribute is a broad categorization of the nature of the pass band. Permissible values are defined as they are needed - contact the SB Steward for assistance. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "true" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          , "PermissibleValueList": [
+              {"PermissibleValue": {
+                  "value": "Broadband" ,
+                  "valueMeaning": "The filter is a broadband filter, with a relatively wide bandpass." ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "Linear Variable Filter (LVF)" ,
+                  "valueMeaning": " The filter is a Linear Variable Filter, with a peak transmission wavelength that varies along its length. " ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "Narrowband" ,
+                  "valueMeaning": "The filter is a narrowband filter, with a relatively small bandpass" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "Neutral" ,
+                  "valueMeaning": "The \"filter\" is clear - that is, it does not differentially filter any of the wavelengths to which the detector is sensitive." ,
+                  "isDeprecated": "false"
+                }
+             }
+           ]
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Filter.sb.known_long_wavelength_leak" ,
+            "title": "known_long_wavelength_leak" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " If the filter in use has a known light leak on the long-wavelength side, the known_long_wavelength_leak flag should be present and set to \"true\". This does NOT indicate that a correction has been applied - check the calibration processing for that information. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Boolean" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Boolean" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Filter.sb.known_short_wavelength_leak" ,
+            "title": "known_short_wavelength_leak" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " If the filter in use has a known light leak on the short-wavelength side, the known_short_wavelength_leak flag should be present and set to \"true\". This does NOT indicate that a correction has been applied - check the calibration processing for that information. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Boolean" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Boolean" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Filter.sb.long_wavelength_limit" ,
+            "title": "long_wavelength_limit" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The long_wavelength_limit defines the largest wavelength cutoff of a wavelength range. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0.0" ,
+            "maximumValue": "1.7976931348623157e308" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Length" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Length" ,
+            "unitId": "AU, Angstrom, cm, km, m, micrometer, mm, nm" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Filter.sb.short_wavelength_limit" ,
+            "title": "short_wavelength_limit" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The short_wavelength_limit defines the smallest wavelength cutoff of a wavelength range. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0.0" ,
+            "maximumValue": "1.7976931348623157e308" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Length" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Length" ,
+            "unitId": "AU, Angstrom, cm, km, m, micrometer, mm, nm" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Filter.sb.standard_filter_identification" ,
+            "title": "standard_filter_identification" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The standard_filter_identification is used when the filter is one of a standard or well-known bandpass, for example \"Johnson V\" or \"WFPC2 R\". " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Flat_Field.sb.comment" ,
+            "title": "comment" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The comment attribute provides an opportunity to provide additional information in free-format (UTF-8) text. Note that characters special to XML parsing (greater-than, less-than, and ampersand, primarily) must be presented using character entity codes. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "UTF8_Text_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.UTF8_Text_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Flat_Field.sb.file_name" ,
+            "title": "file_name" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:file_name attribute should contain the name, preferably without path information, of the file referenced more formally by a pds:Internal_Reference class in the same containing class. The file name is provided as a matter of convenience and for use as a validation cross-check when the data are accepted for archiving. Path information is unlikely to be useful once the data are archived, and as the data are curated both paths and file names may change. Consequently, the logical identifier appearing in the pds:Internal_Reference should be considered the positive identification of the file in question within the archive, rather than the name. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_File_Name" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_File_Name" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Frame_Pointing.sb.celestial_north_clock_angle" ,
+            "title": "celestial_north_clock_angle" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:celestial_north_clock_angle attribute is the angle, measured clockwise from \"up\" to the direction of the celestial north pole. It must be in the range 0-360, calculated with respect to the image display as indicated in the corresponding disp:Display_Settings_Class. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0.0" ,
+            "maximumValue": "360.0" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Angle" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Angle" ,
+            "unitId": "arcmin, arcsec, deg, hr, mrad, rad" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Frame_Pointing.sb.frame_center_dec" ,
+            "title": "frame_center_dec" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:frame_center_dec attribute provide the declination, in degrees, of the center point of a single frame of a \"Frame Sequence\" observation. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "-90.0" ,
+            "maximumValue": "90.0" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Angle" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Angle" ,
+            "unitId": "arcmin, arcsec, deg, hr, mrad, rad" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Frame_Pointing.sb.frame_center_ra" ,
+            "title": "frame_center_ra" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:frame_center_ra attribute provide the right ascension, in degrees, of the center point of a single frame of a \"Frame Sequence\" observation. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0.0" ,
+            "maximumValue": "360.0" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Angle" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Angle" ,
+            "unitId": "arcmin, arcsec, deg, hr, mrad, rad" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.position_velocity_vectors" ,
+            "title": "position_velocity_vectors" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:position_velocity_vectors attribute identifies the type of position and velocity vectors relevant to the data provided by naming the start and end point pair. (In some cases the directionality of the velocity vector is opposite that of the position vector.) " ,
+            "isNillable": "false" ,
+            "isEnumerated": "true" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          , "PermissibleValueList": [
+              {"PermissibleValue": {
+                  "value": "Earth_to_Spacecraft" ,
+                  "valueMeaning": " The associated values are relevant to the Earth_To_Spacecraft position vector and\/or the Spacecraft_Relative_To_Earth velocity vector. " ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "Earth_to_Target" ,
+                  "valueMeaning": " The associated values are relevant to the Earth_To_Target position vector and\/or the Target_Relative_To_Earth velocity vector. " ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "Spacecraft_to_Target" ,
+                  "valueMeaning": " The associated values are relevant to the Spacecraft_To_Target position vector and\/or the Spacecraft_Relative_To_Target velocity vector. " ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "Sun_to_Spacecraft" ,
+                  "valueMeaning": " The associated values are relevant to the Sun_To_Spacecraft position vector and\/or the Spacecraft_Relative_To_Sun velocity vector. " ,
+                  "isDeprecated": "false"
+                }
+             }
+           ]
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.time_at_Earth_UTC_JD" ,
+            "title": "time_at_Earth_UTC_JD" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:time_at_Earth_UTC_YMD attribute give the local UTC time for an Earth observer at the time for which the corresponding positions and\/or vectors were calculated. The time is stated in Julian date format, and must be given with units of \"julian day\". " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0.0" ,
+            "maximumValue": "1.7976931348623157e308" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Time" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Time" ,
+            "unitId": "day, hr, julian day, microseconds, min, ms, ns, s, yr" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.time_at_Earth_UTC_YMD" ,
+            "title": "time_at_Earth_UTC_YMD" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:time_at_Earth_UTC_YMD attribute give the local UTC time for an Earth observer at the time for which the corresponding positions and\/or vectors were calculated. The time is in the ISO standard YYYY-MM-DDThh:mm:ss.sssZ format. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Date_Time_YMD_UTC" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Date_Time_YMD_UTC" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.time_at_Sun_UTC_JD" ,
+            "title": "time_at_Sun_UTC_JD" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:time_at_Sun_UTC_YMD attribute give the local UTC time for an observer at the Sun at the time for which the corresponding positions and\/or vectors were calculated. The time is stated in Julian date format, and must be given with units of \"julian day\". " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0.0" ,
+            "maximumValue": "1.7976931348623157e308" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Time" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Time" ,
+            "unitId": "day, hr, julian day, microseconds, min, ms, ns, s, yr" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.time_at_Sun_UTC_YMD" ,
+            "title": "time_at_Sun_UTC_YMD" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:time_at_Sun_UTC_YMD attribute give the local UTC time for an observer at the Sun at the time for which the corresponding positions and\/or vectors were calculated. The time is in the ISO standard YYYY-MM-DDThh:mm:ss.sssZ format. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Date_Time_YMD_UTC" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Date_Time_YMD_UTC" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.time_at_target_UTC_JD" ,
+            "title": "time_at_target_UTC_JD" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:time_at_Sun_UTC_YMD attribute give the local UTC time for an observer at the target at the time for which the corresponding positions and\/or vectors were calculated. The time is stated in Julian date format, and must be given with units of \"julian day\". " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0.0" ,
+            "maximumValue": "1.7976931348623157e308" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Time" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Time" ,
+            "unitId": "day, hr, julian day, microseconds, min, ms, ns, s, yr" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Geometry_Vector_Time.sb.time_at_target_UTC_YMD" ,
+            "title": "time_at_target_UTC_YMD" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:time_at_target_UTC_YMD attribute give the local UTC time for an observer at the target at the time for which the corresponding positions and\/or vectors were calculated. The time is in the ISO standard YYYY-MM-DDThh:mm:ss.sssZ format. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Date_Time_YMD_UTC" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Date_Time_YMD_UTC" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Instrument_Position_Angles.sb.y_axis_position_angle" ,
+            "title": "y_axis_position_angle" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:y_axis_position_angle provides the angle measured East from celestial North in the plane of an image to the +Y axis of the instrument boresight. The values are in the range 0-360 degrees. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0.0" ,
+            "maximumValue": "360.0" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Angle" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Angle" ,
+            "unitId": "arcmin, arcsec, deg, hr, mrad, rad" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Instrument_Position_Angles.sb.z_axis_position_angle" ,
+            "title": "z_axis_position_angle" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:z_axis_position_angle provides the angle measured East from celestial North in the plane of an image to the +Z axis of the instrument boresight. The values are in the range 0-360 degrees. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0.0" ,
+            "maximumValue": "360.0" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Angle" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Angle" ,
+            "unitId": "arcmin, arcsec, deg, hr, mrad, rad" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Instrument_to_J2000_Quaternion.sb.qcos" ,
+            "title": "qcos" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:qcos attribute is the \"cos(theta\/2)\" element of a pointing quaternion. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "-1.000" ,
+            "maximumValue": "1.000" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Instrument_to_J2000_Quaternion.sb.qsin1" ,
+            "title": "qsin1" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:qsin1 attribute is the \"ax*sin(theta\/2)\" element of a pointing quaternion. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "-1.7976931348623157e308" ,
+            "maximumValue": "1.7976931348623157e308" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Instrument_to_J2000_Quaternion.sb.qsin2" ,
+            "title": "qsin2" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:qsin2 attribute is the \"ay*sin(theta\/2)\" element of a pointing quaternion. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "-1.7976931348623157e308" ,
+            "maximumValue": "1.7976931348623157e308" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Instrument_to_J2000_Quaternion.sb.qsin3" ,
+            "title": "qsin3" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:qsin3 attribute is the \"az*sin(theta\/2)\" element of a pointing quaternion. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "-1.7976931348623157e308" ,
+            "maximumValue": "1.7976931348623157e308" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Midframe_Time.sb.delta_time_from_sequence_start" ,
+            "title": "delta_time_from_sequence_start" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:delta_time_from_sequence_start attribute provide the offset of a time of interest in the current frame (as indicated by the containing class) from the start of the sequence in a \"Frame Sequence\" observation. It is specified as a floating point number of the specified units of time. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0.0" ,
+            "maximumValue": "1.7976931348623157e308" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Time" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Time" ,
+            "unitId": "day, hr, julian day, microseconds, min, ms, ns, s, yr" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Midframe_Time.sb.midobservation_time_UTC_JD" ,
+            "title": "midobservation_time_UTC_JD" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:midobservation_time_UTC_JD attribute contains the UTC time corresponding to the midpoint of the observation, in full (as opposed to modified) Julian date format. The unit of \"julian day\" must be included when this attribute is used. Unusual circumstances relating to the definition of \"midobservation\" should be explained briefly in the sb:comment field of the containing class. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0.0" ,
+            "maximumValue": "1.7976931348623157e308" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Time" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Time" ,
+            "unitId": "day, hr, julian day, microseconds, min, ms, ns, s, yr" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Midframe_Time.sb.midobservation_time_UTC_YMD" ,
+            "title": "midobservation_time_UTC_YMD" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:midobservation_time_UTC_YMD attribute contains the UTC time corresponding the midpoint of the observation, in the format YYYY-MM-DDThh:mm:ss.sssZ (that is, the ISO YMD format with the 'Z' timezone indicator required to be present). Unusual circumstances relating to the definition of \"midobservation\" should be explained briefly in the sb:comment field of the containing class. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Date_Time_YMD_UTC" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Date_Time_YMD_UTC" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Per_Frame_Metadata.sb.comment" ,
+            "title": "comment" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The comment attribute provides an opportunity to provide additional information in free-format (UTF-8) text. Note that characters special to XML parsing (greater-than, less-than, and ampersand, primarily) must be presented using character entity codes. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "UTF8_Text_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.UTF8_Text_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Per_Frame_Metadata.sb.frame_exposure_duration" ,
+            "title": "frame_exposure_duration" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:frame_exposure_duration attribute provides the exposure time for one frame of a framing sequence. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0.0" ,
+            "maximumValue": "1.7976931348623157e308" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Time" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Time" ,
+            "unitId": "day, hr, julian day, microseconds, min, ms, ns, s, yr" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Per_Frame_Metadata.sb.frame_number" ,
+            "title": "frame_number" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:frame_number attribute specifies the sequential frame number, starting with \"0\", to which the subsequent frame-specific metadata applies. The frame number is the subscript along the axis that defines the \"frame\" dimension. Frames must be physically stored in sequence in the file, so for a sequence of 2D frames the sb:frame_number will correspond to the (0-based) index along the third axis. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Integer" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Integer" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0" ,
+            "maximumValue": "9223372036854775807" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Quality_Flag_Definition.sb.flag_meaning" ,
+            "title": "flag_meaning" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:flag_meaning attribute defines the significance of the particular value when it occurs in the associated context (typically a quality map, for example). " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "UTF8_Short_String_Collapsed" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.UTF8_Short_String_Collapsed" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Quality_Flag_Definition.sb.flag_value" ,
+            "title": "flag_value" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:flag_value attribute defines an integer value that corresponds to a specific condition or assessment within the containing data structure, typically a quality map. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Integer" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Integer" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "-9223372036854775808" ,
+            "maximumValue": "9223372036854775807" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Quality_Map.sb.comment" ,
+            "title": "comment" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The comment attribute provides an opportunity to provide additional information in free-format (UTF-8) text. Note that characters special to XML parsing (greater-than, less-than, and ampersand, primarily) must be presented using character entity codes. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "UTF8_Text_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.UTF8_Text_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Quality_Map_Definition.sb.best_quality_value" ,
+            "title": "best_quality_value" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:best_quality_value attribute provides the value used within a quality map to indicate the best quality pixels. When bit flags are in use, for example, the \"best\" quality is typically 0 (zero) - that is, no quality issues are flagged at all. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Integer" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Integer" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "-9223372036854775808" ,
+            "maximumValue": "9223372036854775807" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Quality_Map_Definition.sb.flags_are_bit_flags" ,
+            "title": "flags_are_bit_flags" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:flag_are_bit_flags attribute contains \"true\" if the flags being defined within the containing class correspond to specific bits within a single integer field. When this is the case, all flag should have values that are exponents of 2. Typically, when bit flags are used, several flags may be combined within a single field (so a quality value may be 10, indicating that the flags corresponding to the values 8 and 2 are both set, for example). " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Boolean" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Boolean" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Raw_Data_Product.sb.file_name" ,
+            "title": "file_name" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:file_name attribute should contain the name, preferably without path information, of the file referenced more formally by a pds:Internal_Reference class in the same containing class. The file name is provided as a matter of convenience and for use as a validation cross-check when the data are accepted for archiving. Path information is unlikely to be useful once the data are archived, and as the data are curated both paths and file names may change. Consequently, the logical identifier appearing in the pds:Internal_Reference should be considered the positive identification of the file in question within the archive, rather than the name. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_File_Name" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_File_Name" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.SNR_Map.sb.comment" ,
+            "title": "comment" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The comment attribute provides an opportunity to provide additional information in free-format (UTF-8) text. Note that characters special to XML parsing (greater-than, less-than, and ampersand, primarily) must be presented using character entity codes. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "UTF8_Text_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.UTF8_Text_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Timing.sb.comment" ,
+            "title": "comment" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The comment attribute provides an opportunity to provide additional information in free-format (UTF-8) text. Note that characters special to XML parsing (greater-than, less-than, and ampersand, primarily) must be presented using character entity codes. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "UTF8_Text_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.UTF8_Text_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Timing.sb.midobservation_time_UTC_JD" ,
+            "title": "midobservation_time_UTC_JD" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:midobservation_time_UTC_JD attribute contains the UTC time corresponding to the midpoint of the observation, in full (as opposed to modified) Julian date format. The unit of \"julian day\" must be included when this attribute is used. Unusual circumstances relating to the definition of \"midobservation\" should be explained briefly in the sb:comment field of the containing class. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0.0" ,
+            "maximumValue": "1.7976931348623157e308" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Time" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Time" ,
+            "unitId": "day, hr, julian day, microseconds, min, ms, ns, s, yr" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Timing.sb.midobservation_time_UTC_YMD" ,
+            "title": "midobservation_time_UTC_YMD" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The sb:midobservation_time_UTC_YMD attribute contains the UTC time corresponding the midpoint of the observation, in the format YYYY-MM-DDThh:mm:ss.sssZ (that is, the ISO YMD format with the 'Z' timezone indicator required to be present). Unusual circumstances relating to the definition of \"midobservation\" should be explained briefly in the sb:comment field of the containing class. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Date_Time_YMD_UTC" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Date_Time_YMD_UTC" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Timing.sb.start_time_UTC_JD" ,
+            "title": "start_time_UTC_JD" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The start_time_UTC_JD attribute contains the UTC start time of a period of interest, typically the observation period, expressed as a Julian date. Units of \"julian day\" must be included when using this attribute. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0.0" ,
+            "maximumValue": "1.7976931348623157e308" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Time" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Time" ,
+            "unitId": "day, hr, julian day, microseconds, min, ms, ns, s, yr" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.sb.Timing.sb.stop_time_UTC_JD" ,
+            "title": "stop_time_UTC_JD" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "sb" ,
+            "steward": "sbn" ,
+            "versionId": "1.19" ,
+            "description": " The stop_time_UTC_JD attribute contains the UTC ending time of a period of interest, typically the observation period, expressed as a Julian date. Units of \"julian day\" must be included when using this attribute. " ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Real" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Real" ,
+            "minimumCharacters": "Unbounded" ,
+            "maximumCharacters": "Unbounded" ,
+            "minimumValue": "0.0" ,
+            "maximumValue": "1.7976931348623157e308" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "Units_of_Time" ,
+            "unitOfMeasureId": "0001_NASA_PDS_1.pds.Units_of_Time" ,
+            "unitId": "day, hr, julian day, microseconds, min, ms, ns, s, yr" ,
+            "defaultUnitId": "null"
+          }
+        }
+      ]
+    }
+  }
+]

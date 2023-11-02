@@ -65,7 +65,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
-        
+
   pdfgen: # job 1
     name: 'Build PDF'
     runs-on: ubuntu-latest
@@ -99,7 +99,7 @@ jobs:
           git config --local user.name "PDSEN CI Bot"
           git add -A ./*.pdf
           git commit --allow-empty -m "Auto-gen PDF by PDSEN CI Bot"
-          
+
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:

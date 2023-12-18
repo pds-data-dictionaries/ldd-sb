@@ -17,11 +17,15 @@ Small Bodies Namespace Documentation
 
     
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 3
     :caption: Detailed Documentation
 
     detailed/outline
-    detailed/SB_Metadata
-    detailed/Observation_Parameters
-    detailed/Calibration_Information
-    detailed/Additional_Image_Metadata
+    detailed/classList
+    detailed/attributeList
+
+.. toctree::
+    :maxdepth: 3
+    :caption: Examples
+    
+    examples/metadataTemplate

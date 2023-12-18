@@ -1,0 +1,65 @@
+
+PDS Validate Tool Report
+
+Configuration:
+   Version                       3.1.1
+   Date                          2023-01-30T11:57:18Z
+
+Parameters:
+   Targets                       [file:/home/runner/work/ldd-sb/ldd-sb/test/julian_dates_unit_check_FAIL.xml, file:/home/runner/work/ldd-sb/ldd-sb/test/calfiles_require_lidvids_FAIL.xml]
+   Rule Type                     pds4.label
+   User Specified Schemas        [file:/home/runner/work/ldd-sb/ldd-sb/build/development/791085b59b29aabcc02014865948507829565596/1.18.0.0/PDS4_SB_1I00_0100.xsd, file:/tmp/PDS4_PDS_1I00.xsd]
+   User Specified Schematrons    [file:/home/runner/work/ldd-sb/ldd-sb/build/development/791085b59b29aabcc02014865948507829565596/1.18.0.0/PDS4_SB_1I00_0100.sch, file:/tmp/PDS4_PDS_1I00.sch]
+   Severity Level                WARNING
+   Recurse Directories           true
+   File Filters Used             [*.xml, *.XML]
+   Data Content Validation       off
+   Product Level Validation      on
+   Max Errors                    100000
+   Registered Contexts File      /tmp/validate-3.1.1/resources/registered_context_products.json
+
+
+
+Product Level Validation Results
+
+  FAIL: file:/home/runner/work/ldd-sb/ldd-sb/test/julian_dates_unit_check_FAIL.xml
+      ERROR  [error.label.schematron]   line 52, 65: The attribute "sb:midobservation_time_UTC_JD" must be specified with "unit='julian day'".
+      ERROR  [error.label.schematron]   line 53, 58: The attribute "sb:start_time_UTC_JD" must be specified with "unit='julian day'".
+      ERROR  [error.label.schematron]   line 54, 56: The attribute "sb:stop_time_UTC_JD" must be specified with "unit='julian day'".
+      ERROR  [error.label.schematron]   line 71, 64: The attribute "sb:time_at_target_UTC_JD" must be specified with "unit='julian day'".
+      ERROR  [error.label.schematron]   line 75, 65: The attribute "sb:time_at_Earth_UTC_JD" must be specified with "unit='julian day'".
+      ERROR  [error.label.schematron]   line 79, 62: The attribute "sb:time_at_Sun_UTC_JD" must be specified with "unit='julian day'".
+      ERROR  [error.label.schematron]   line 90, 70: The attribute "sb:midobservation_time_UTC_JD" must be specified with "unit='julian day'".
+      WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
+        1 product validation(s) completed
+
+  FAIL: file:/home/runner/work/ldd-sb/ldd-sb/test/calfiles_require_lidvids_FAIL.xml
+      ERROR  [error.label.schematron]   line 72, 48: In "sb:Flat_Field/pds:Internal_Reference", the file must be referenced using LIDVID rather than LID.
+      ERROR  [error.label.schematron]   line 80, 48: In "sb:Dark_Field/pds:Internal_Reference", the file must be referenced using LIDVID rather than LID.
+      ERROR  [error.label.schematron]   line 88, 48: In "sb:Bias_Map/pds:Internal_Reference", the file must be referenced using LIDVID rather than LID.
+      ERROR  [error.label.schematron]   line 95, 48: In "sb:Bad_Pixel_Map/pds:Internal_Reference", the file must be referenced using LIDVID rather than LID.
+      WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
+        2 product validation(s) completed
+
+Summary:
+
+  11 error(s)
+  2 warning(s)
+
+  Product Validation Summary:
+    0          product(s) passed
+    2          product(s) failed
+    0          product(s) skipped
+
+  Referential Integrity Check Summary:
+    0          check(s) passed
+    0          check(s) failed
+    0          check(s) skipped
+
+  Message Types:
+    11           error.label.schematron
+    2            warning.label.missing_schematron_spec
+
+End of Report
+Completed execution in 5428 ms
+

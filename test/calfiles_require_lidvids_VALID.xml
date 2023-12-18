@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+     This label should produce no validation errors of any kind.
+-->
+
+<Product_Observational 
+    xmlns="http://pds.nasa.gov/pds4/pds/v1" 
+    xmlns:sb="http://pds.nasa.gov/pds4/sb/v0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:bundle:collection:product</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Scratch space for designing dictionary classes</title>
+        <information_model_version>1.19.0.0</information_model_version>
+        <product_class>Product_Observational</product_class>
+    </Identification_Area>
+    <Observation_Area>
+        <Time_Coordinates>
+            <start_date_time xsi:nil="true" nilReason="inapplicable"/>
+            <stop_date_time xsi:nil="true" nilReason="inapplicable"/>
+        </Time_Coordinates>
+        <Investigation_Area>
+            <name>None</name>
+            <type>Individual Investigation</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:investigation:individual.none</lid_reference>
+                <reference_type>data_to_investigation</reference_type>
+            </Internal_Reference>
+        </Investigation_Area>
+        <Observing_System>
+            <Observing_System_Component>
+                <name>None</name>
+                <type>Host</type>
+            </Observing_System_Component>
+        </Observing_System>
+        <Target_Identification>
+            <name>None</name>
+            <type>Comet</type>
+        </Target_Identification>
+
+        <Discipline_Area>
+
+            <sb:SB_Metadata>
+                
+                <sb:Calibration_Information>
+                    <sb:Raw_Data_Product>
+                        <sb:file_name>file.dat</sb:file_name>
+                        <Internal_Reference>
+                            <lidvid_reference>urn:nasa:pds:bundle:collection:product::1.0</lidvid_reference>
+                            <reference_type>processed_data_to_raw_data</reference_type>
+                        </Internal_Reference>
+                    </sb:Raw_Data_Product>
+                    
+                    <sb:Calibration_Applied>
+                        <sb:comment>something</sb:comment>
+                        <sb:bias_subtraction>true</sb:bias_subtraction>
+                        <sb:dark_current_removal>true</sb:dark_current_removal>
+                        <sb:flat_field_applied>true</sb:flat_field_applied>
+                        <sb:scattered_light_correction>false</sb:scattered_light_correction>
+                        <sb:conversion_to_physical_units>true</sb:conversion_to_physical_units>
+                    </sb:Calibration_Applied>
+                    
+                    <sb:Calibration_Reference_Files>
+                        <sb:comment>something</sb:comment>
+                        <sb:Flat_Field>
+                            <sb:file_name>flat.dat</sb:file_name> <!-- optional but recommended -->
+                            <Internal_Reference>                  <!-- required -->
+                                <lidvid_reference>urn:nasa:pds:bundle:collection:product::0.0</lidvid_reference>  <!-- version ID is definitely required -->
+                                <reference_type>image_to_flat_field_file</reference_type>
+                                <comment>something</comment>
+                            </Internal_Reference>
+                        </sb:Flat_Field>
+                        <sb:Dark_Field>
+                            <sb:file_name>dark.dat</sb:file_name>  <!-- optional but recommended -->
+                            <Internal_Reference>                   <!-- required -->
+                                <lidvid_reference>urn:nasa:pds:bundle:collection:product::0.0</lidvid_reference>  <!-- version ID is definitely required -->
+                                <reference_type>image_to_dark_field_file</reference_type>
+                                <comment>something</comment>
+                            </Internal_Reference>
+                        </sb:Dark_Field>
+                        <sb:Bias_Map>
+                            <sb:file_name>bias_frame.dat</sb:file_name>  <!-- optional but recommended -->
+                            <Internal_Reference>                         <!-- required -->
+                                <lidvid_reference>urn:nasa:pds:bundle:collection:product::2.0</lidvid_reference>  <!-- version ID is definitely required -->
+                                <reference_type>image_to_bias_levels</reference_type>
+                            </Internal_Reference>
+                        </sb:Bias_Map>
+                        <sb:Bad_Pixel_Map>
+                            <sb:file_name>badpixel.dat</sb:file_name>  <!-- optional but recommended -->
+                            <Internal_Reference>                       <!-- required -->
+                                <lidvid_reference>urn:nasa:pds:bundle:collection:product::0.0</lidvid_reference>  <!-- version ID is definitely required -->
+                                <reference_type>image_to_bad_pixel_map</reference_type>
+                                <comment>something</comment>
+                            </Internal_Reference>
+                        </sb:Bad_Pixel_Map>
+                    </sb:Calibration_Reference_Files>
+                </sb:Calibration_Information>
+
+            </sb:SB_Metadata>
+        </Discipline_Area>
+
+    </Observation_Area>
+
+    <File_Area_Observational>
+        <File>
+            <file_name>No.Data</file_name>
+            <comment>
+                The scenario here is a file which contains three cubes - one for data,
+                one for error, and one for quality - in which the planes correspond.
+                There is also a single bad pixel map image that applies to all image
+                frames. There are five planes defined for each cube. (offsets and 
+                sizes have been ignored.)
+            </comment>
+        </File>
+        
+        <Array_3D_Image>
+            <name>Image Data</name>
+            <local_identifier>Image</local_identifier>
+            <offset unit="byte">0</offset>
+            <axes>3</axes>
+            <axis_index_order>Last Index Fastest</axis_index_order>
+            <Element_Array>
+                <data_type>SignedByte</data_type>
+                <unit>DN</unit>
+            </Element_Array>
+            <Axis_Array>
+                <axis_name>Line</axis_name>
+                <elements>1</elements>
+                <sequence_number>1</sequence_number>
+            </Axis_Array>
+            <Axis_Array>
+                <axis_name>Sample</axis_name>
+                <elements>1</elements>
+                <sequence_number>2</sequence_number>
+            </Axis_Array>
+            <Axis_Array>
+                <axis_name>Frame</axis_name>
+                <elements>5</elements>
+                <sequence_number>3</sequence_number>
+            </Axis_Array>
+        </Array_3D_Image>
+    </File_Area_Observational>
+    
+</Product_Observational>

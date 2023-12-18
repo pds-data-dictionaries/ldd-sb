@@ -32,9 +32,14 @@ jobs:
     if: github.actor != 'pdsen-ci'
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.ADMIN_GITHUB_TOKEN }}
+
+      - name: Set up Python 3
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
         
       - name: Install dependencies
         run: |
@@ -48,33 +53,32 @@ jobs:
           make github
           cd ..
       - name: Setup Pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v3
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           # Upload entire repository
           path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v2
         
   pdfgen: # job 1
     name: 'Build PDF'
     runs-on: ubuntu-latest
-    environment: main
     if: github.actor != 'pdsen-ci'
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.ADMIN_GITHUB_TOKEN }}
 
       - name: Set up Python 3
         uses: actions/setup-python@v4
         with:
-          python-version: '3.7'
+          python-version: '3.9'
 
       - name: Install dependencies
         run: |
@@ -99,5 +103,5 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.ADMIN_GITHUB_TOKEN }}
-          branch: main
+          branch: ${{ github.ref }}
           force: true

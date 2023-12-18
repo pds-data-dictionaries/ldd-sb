@@ -20,7 +20,7 @@
     
     The initials "ACR" in the "submitter" field indicate Anne Raugh.
   </comment>
-  <last_modification_date_time>2023-01-19</last_modification_date_time>
+  <last_modification_date_time>2023-01-28</last_modification_date_time>
   
   <!-- Attribute Definitions (alphabetical) -->
   
@@ -1981,7 +1981,7 @@
       <maximum_occurrences>1</maximum_occurrences>
     </DD_Association>
     <DD_Association>
-      <identifier_reference>Calibration_Applied</identifier_reference>
+      <identifier_reference>Calibration_Information</identifier_reference>
       <reference_type>component_of</reference_type>
       <minimum_occurrences>0</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
@@ -2004,7 +2004,7 @@
     <DD_Rule_Statement>
       <rule_type>Assert</rule_type>
       <rule_test>if (sb:Per_Frame_Metadata) then (sb:image_observation_type eq 'Frame Sequence') else (true())</rule_test>
-      <rule_message>In sb:Additional_Image_Metadata, the sb:Per_Frame_Metadata class may only be used for when sb:image_observation_type is "Frame Sequence".</rule_message>
+      <rule_message>In sb:Additional_Image_Metadata, the sb:Per_Frame_Metadata class may only be used when sb:image_observation_type is "Frame Sequence".</rule_message>
     </DD_Rule_Statement>
   </DD_Rule>
   
@@ -2041,6 +2041,18 @@
       <rule_type>Assert</rule_type>
       <rule_test>pds:reference_type eq 'image_to_bias_levels'</rule_test>
       <rule_message>In sb:Bias_Map/pds:Internal_Reference, pds:reference_type must be "image_to_bias_map_file".</rule_message>
+    </DD_Rule_Statement>
+  </DD_Rule>
+  
+  <!-- Calibration_Reference_Files/*/pds:Internal_Reference/pds:lid_reference -->
+  
+  <DD_Rule>
+    <local_identifier>crf_require_lidvid</local_identifier>
+    <rule_context>sb:Calibration_Reference_Files//pds:lid_reference</rule_context>
+    <DD_Rule_Statement>
+      <rule_type>Assert</rule_type>
+      <rule_test>false()</rule_test>
+      <rule_message>In "&lt;sch:value-of select="name(../..)"/&gt;/pds:Internal_Reference", the file must be referenced using LIDVID rather than LID.</rule_message>
     </DD_Rule_Statement>
   </DD_Rule>
   
@@ -2116,15 +2128,15 @@
     </DD_Rule_Statement>
   </DD_Rule>
   
-  <!-- Raw_Data_Product_Map/pds:Local_Internal_Reference -->
+  <!-- Raw_Data_Product_Map/pds:Internal_Reference -->
   
   <DD_Rule>
-    <local_identifier>rawdp_lir</local_identifier>
-    <rule_context>sb:Raw_Data_Product/pds:Local_Internal_Reference</rule_context>
+    <local_identifier>rawdp_ir</local_identifier>
+    <rule_context>sb:Raw_Data_Product/pds:Internal_Reference</rule_context>
     <DD_Rule_Statement>
       <rule_type>Assert</rule_type>
-      <rule_test>pds:local_reference_type eq 'processed_data_to_raw_data'</rule_test>
-      <rule_message>In sb:Raw_Data_Product/pds:Local_Internal_Reference, pds:local_reference_type must be "processed_data_to_raw_data".</rule_message>
+      <rule_test>pds:reference_type eq 'processed_data_to_raw_data'</rule_test>
+      <rule_message>In sb:Raw_Data_Product/pds:Internal_Reference, pds:reference_type must be "processed_data_to_raw_data".</rule_message>
     </DD_Rule_Statement>
   </DD_Rule>
   
@@ -2145,7 +2157,6 @@
   <DD_Rule>
     <local_identifier>julian_units_check</local_identifier>
     <rule_context>sb:SB_Metadata//.[ends-with(name(),'_JD')]</rule_context>
-    <rule_assign>name="attname" value="name()"</rule_assign>
     <DD_Rule_Statement>
       <rule_type>Assert</rule_type>
       <rule_test>@unit eq 'julian day'</rule_test>

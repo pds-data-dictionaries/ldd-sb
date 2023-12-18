@@ -1,9 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
+Metadata Template
+##################################################
 
-<Product_Observational 
+This metadata template file is a label mock-up designed to demonstrate
+the order of SB dictionary classes in a label, and the cross-referencing
+needed to properly identify the various data objects that might be
+present. It does not necessarily reflect any "real" case, and in 
+general any cutting and pasting done needs to include a fair amount
+of intelligent interpretation to the real-life circumstances of the 
+data.
+
+It does, however, serve as a "working model", in the sense that it will
+validate against the SB schemas, and a label designer can thus experiment
+with it for use in real labels.
+
+Some comments are included regarding cardinality and required/optional
+status in key places. The definitive source for cardinality information,
+however, is always the schemas - not the examples.
+
+.. code-block:: XML
+
+  <?xml version="1.0" encoding="UTF-8"?>
+  <?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1J00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+  <?xml-model href="https://pds.nasa.gov/pds4/sb/v0/PDS4_SB_1J00_0100.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+  <Product_Observational 
     xmlns="http://pds.nasa.gov/pds4/pds/v1" 
     xmlns:sb="http://pds.nasa.gov/pds4/sb/v0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1J00.xsd
+                        http://pds.nasa.gov/pds4/sb/v0  https://pds.nasa.gov/pds4/sb/v0/PDS4_SB_1J00_0100.xsd">
 
     <Identification_Area>
         <logical_identifier>urn:nasa:pds:bundle:collection:product</logical_identifier>
@@ -19,9 +44,9 @@
         </Time_Coordinates>
         <Investigation_Area>
             <name>None</name>
-            <type>Individual Investigation</type>
+            <type>Mission</type>
             <Internal_Reference>
-                <lid_reference>urn:nasa:pds:context:investigation:individual.none</lid_reference>
+                <lid_reference>urn:nasa:pds:bundle:collection:none</lid_reference>
                 <reference_type>data_to_investigation</reference_type>
             </Internal_Reference>
         </Investigation_Area>
@@ -321,7 +346,7 @@
         
         <Array_3D>
             <local_identifier>QualityMap</local_identifier>
-            <offset unit="byte">50</offset>
+            <offset unit="byte">20</offset>
             <axes>3</axes>
             <axis_index_order>Last Index Fastest</axis_index_order>
             <description>
@@ -349,7 +374,7 @@
         
         <Array_2D>
             <local_identifier>SNRMap</local_identifier>
-            <offset unit="byte">100</offset>
+            <offset unit="byte">30</offset>
             <axes>2</axes>
             <axis_index_order>Last Index Fastest</axis_index_order>
             <description>
@@ -375,4 +400,4 @@
         
     </File_Area_Observational>
     
-</Product_Observational>
+  </Product_Observational>

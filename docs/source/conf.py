@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Small Bodies Namespace'
+project = 'Example Namespace'
 # copyright = overidden by CSS specified below
-author = 'Anne Raugh, NASA Planetary Data System'
+author = 'NASA Planetary Data System'
 
 
 # -- General configuration ---------------------------------------------------
@@ -88,4 +88,13 @@ html_theme_options = {
     'navigation_depth': 4,
     'includehidden': True,
     'titles_only': False
+}
+
+myst_enable_extensions = [
+    "deflist",
+    "fieldlist"
+]
+
+latex_elements = {
+    'maxlistdepth': '10'
 }

@@ -2,7 +2,7 @@ Alphabetical List of Classes
 **************************************************
 
 A complete list of all classes in the Small Bodies Dictionary, in alphabetical
-order, is available through the `PDS4 Data Dictionary <https://pds.nasa.gov/datastandards/documents/dd/current/PDS4_PDS_DD_1J00/webhelp/all/>`_
+order, is available through the `PDS4 Data Dictionary <https://pds.nasa.gov/datastandards/documents/dd/current/PDS4_PDS_DD_1L00/webhelp/all/>`_
 page, which is regenerated automatically with each release of the PDS4 Information Model.
 
 To find the Small Bodies class list, look down the list of (alphabetically sorted) 

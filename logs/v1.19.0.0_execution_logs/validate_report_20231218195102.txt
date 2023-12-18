@@ -1,0 +1,314 @@
+
+PDS Validate Tool Report
+
+Configuration:
+   Version                       3.4.1
+   Date                          2023-12-18T19:51:03Z
+
+Parameters:
+   Targets                       [file:/home/runner/work/ldd-sb/ldd-sb/build/development/f54d8201cbc8be5d71ca0c21dda5f578060995b5/1.19.0.0/PDS4_SB_1J00_0100.xml, file:/home/runner/work/ldd-sb/ldd-sb/test/calfiles_require_lidvids_VALID.xml, file:/home/runner/work/ldd-sb/ldd-sb/test/mc0-Proc_VALID.xml, file:/home/runner/work/ldd-sb/ldd-sb/test/mpf-Proc_VALID.xml, file:/home/runner/work/ldd-sb/ldd-sb/test/julian_dates_unit_check_VALID.xml, file:/home/runner/work/ldd-sb/ldd-sb/test/SBmetadataTemplate_VALID.xml]
+   Rule Type                     pds4.label
+   User Specified Schemas        [file:/home/runner/work/ldd-sb/ldd-sb/build/development/f54d8201cbc8be5d71ca0c21dda5f578060995b5/1.19.0.0/PDS4_SB_1J00_0100.xsd, file:/tmp/PDS4_PDS_1J00.xsd]
+   User Specified Schematrons    [file:/home/runner/work/ldd-sb/ldd-sb/build/development/f54d8201cbc8be5d71ca0c21dda5f578060995b5/1.19.0.0/PDS4_SB_1J00_0100.sch, file:/tmp/PDS4_PDS_1J00.sch]
+   Severity Level                WARNING
+   Recurse Directories           true
+   File Filters Used             [*.xml, *.XML]
+   Data Content Validation       off
+   Product Level Validation      on
+   Max Errors                    100000
+   Registered Contexts File      /tmp/validate-3.4.1/resources/registered_context_products.json
+
+
+
+Product Level Validation Results
+
+  PASS: file:/home/runner/work/ldd-sb/ldd-sb/build/development/f54d8201cbc8be5d71ca0c21dda5f578060995b5/1.19.0.0/PDS4_SB_1J00_0100.xml
+        1 product validation(s) completed
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at gov.nasa.pds.tools.validate.rule.AbstractValidationRule.execute(AbstractValidationRule.java:64)
+	at org.apache.commons.chain.impl.ChainBase.execute(ChainBase.java:191)
+	at gov.nasa.pds.tools.validate.task.ValidationTask.execute(ValidationTask.java:130)
+	at gov.nasa.pds.tools.validate.task.BlockingTaskManager.submit(BlockingTaskManager.java:26)
+	at gov.nasa.pds.tools.label.LocationValidator.validate(LocationValidator.java:285)
+	at gov.nasa.pds.validate.ValidateLauncher.doValidation(ValidateLauncher.java:1454)
+	at gov.nasa.pds.validate.ValidateLauncher.processMain(ValidateLauncher.java:1740)
+	at gov.nasa.pds.validate.ValidateLauncher.main(ValidateLauncher.java:1784)
+Caused by: java.lang.AssertionError
+	at net.sf.saxon.pattern.AnchorPattern.matches(AnchorPattern.java:97)
+	at net.sf.saxon.pattern.BasePatternWithPredicate.matches(BasePatternWithPredicate.java:122)
+	at net.sf.saxon.pattern.AncestorQualifiedPattern.matchesBeneathAnchor(AncestorQualifiedPattern.java:236)
+	at net.sf.saxon.pattern.AncestorQualifiedPattern.matches(AncestorQualifiedPattern.java:202)
+	at net.sf.saxon.pattern.Pattern.matchesItem(Pattern.java:268)
+	at net.sf.saxon.trans.rules.Rule.matches(Rule.java:239)
+	at net.sf.saxon.trans.SimpleMode.ruleMatches(SimpleMode.java:758)
+	at net.sf.saxon.trans.SimpleMode.searchRuleChain(SimpleMode.java:732)
+	at net.sf.saxon.trans.SimpleMode.findBestRuleForNodeInfo(SimpleMode.java:640)
+	at net.sf.saxon.trans.SimpleMode.getRule(SimpleMode.java:550)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:505)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.trans.rules.TextOnlyCopyRuleSet.process(TextOnlyCopyRuleSet.java:72)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:518)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesElaborator.lambda$elaborateForPush$1(ApplyTemplates.java:650)
+	at net.sf.saxon.expr.instruct.Block$BlockElaborator.lambda$elaborateForPush$4(Block.java:895)
+	at net.sf.saxon.expr.instruct.FixedElement$FixedElementElaborator.lambda$elaborateForPush$0(FixedElement.java:640)
+	at net.sf.saxon.expr.instruct.TemplateRule.applyLeavingTail(TemplateRule.java:393)
+	at net.sf.saxon.trans.Mode.handleRuleNotNull(Mode.java:587)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:521)
+	at net.sf.saxon.trans.XsltController.applyTemplates(XsltController.java:684)
+	at net.sf.saxon.s9api.AbstractXsltTransformer.applyTemplatesToSource(AbstractXsltTransformer.java:427)
+	at net.sf.saxon.s9api.XsltTransformer.transform(XsltTransformer.java:356)
+	at net.sf.saxon.jaxp.TransformerImpl.transform(TransformerImpl.java:75)
+	at gov.nasa.pds.tools.label.LabelValidator.parseAndValidate(LabelValidator.java:626)
+	at gov.nasa.pds.tools.validate.rule.pds4.LabelValidationRule.validateLabel(LabelValidationRule.java:316)
+	... 12 more
+
+  FAIL: file:/home/runner/work/ldd-sb/ldd-sb/test/calfiles_require_lidvids_VALID.xml
+      WARNING  [warning.label.schema]   Cannot check versioning because no Schema given.
+      ERROR  [error.validation.internal_error]   Error executing validationTask: java.lang.AssertionError
+        2 product validation(s) completed
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at gov.nasa.pds.tools.validate.rule.AbstractValidationRule.execute(AbstractValidationRule.java:64)
+	at org.apache.commons.chain.impl.ChainBase.execute(ChainBase.java:191)
+	at gov.nasa.pds.tools.validate.task.ValidationTask.execute(ValidationTask.java:130)
+	at gov.nasa.pds.tools.validate.task.BlockingTaskManager.submit(BlockingTaskManager.java:26)
+	at gov.nasa.pds.tools.label.LocationValidator.validate(LocationValidator.java:285)
+	at gov.nasa.pds.validate.ValidateLauncher.doValidation(ValidateLauncher.java:1454)
+	at gov.nasa.pds.validate.ValidateLauncher.processMain(ValidateLauncher.java:1740)
+	at gov.nasa.pds.validate.ValidateLauncher.main(ValidateLauncher.java:1784)
+Caused by: java.lang.AssertionError
+	at net.sf.saxon.pattern.AnchorPattern.matches(AnchorPattern.java:97)
+	at net.sf.saxon.pattern.BasePatternWithPredicate.matches(BasePatternWithPredicate.java:122)
+	at net.sf.saxon.pattern.AncestorQualifiedPattern.matchesBeneathAnchor(AncestorQualifiedPattern.java:236)
+	at net.sf.saxon.pattern.AncestorQualifiedPattern.matches(AncestorQualifiedPattern.java:202)
+	at net.sf.saxon.pattern.Pattern.matchesItem(Pattern.java:268)
+	at net.sf.saxon.trans.rules.Rule.matches(Rule.java:239)
+	at net.sf.saxon.trans.SimpleMode.ruleMatches(SimpleMode.java:758)
+	at net.sf.saxon.trans.SimpleMode.searchRuleChain(SimpleMode.java:732)
+	at net.sf.saxon.trans.SimpleMode.findBestRuleForNodeInfo(SimpleMode.java:640)
+	at net.sf.saxon.trans.SimpleMode.getRule(SimpleMode.java:550)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:505)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.trans.rules.TextOnlyCopyRuleSet.process(TextOnlyCopyRuleSet.java:72)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:518)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesElaborator.lambda$elaborateForPush$1(ApplyTemplates.java:650)
+	at net.sf.saxon.expr.instruct.Block$BlockElaborator.lambda$elaborateForPush$4(Block.java:895)
+	at net.sf.saxon.expr.instruct.FixedElement$FixedElementElaborator.lambda$elaborateForPush$0(FixedElement.java:640)
+	at net.sf.saxon.expr.instruct.TemplateRule.applyLeavingTail(TemplateRule.java:393)
+	at net.sf.saxon.trans.Mode.handleRuleNotNull(Mode.java:587)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:521)
+	at net.sf.saxon.trans.XsltController.applyTemplates(XsltController.java:684)
+	at net.sf.saxon.s9api.AbstractXsltTransformer.applyTemplatesToSource(AbstractXsltTransformer.java:427)
+	at net.sf.saxon.s9api.XsltTransformer.transform(XsltTransformer.java:356)
+	at net.sf.saxon.jaxp.TransformerImpl.transform(TransformerImpl.java:75)
+	at gov.nasa.pds.tools.label.LabelValidator.parseAndValidate(LabelValidator.java:626)
+	at gov.nasa.pds.tools.validate.rule.pds4.LabelValidationRule.validateLabel(LabelValidationRule.java:316)
+	... 12 more
+
+  FAIL: file:/home/runner/work/ldd-sb/ldd-sb/test/mc0-Proc_VALID.xml
+      WARNING  [warning.label.schema]   Cannot check versioning because no Schema given.
+      ERROR  [error.validation.internal_error]   Error executing validationTask: java.lang.AssertionError
+        3 product validation(s) completed
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at gov.nasa.pds.tools.validate.rule.AbstractValidationRule.execute(AbstractValidationRule.java:64)
+	at org.apache.commons.chain.impl.ChainBase.execute(ChainBase.java:191)
+	at gov.nasa.pds.tools.validate.task.ValidationTask.execute(ValidationTask.java:130)
+	at gov.nasa.pds.tools.validate.task.BlockingTaskManager.submit(BlockingTaskManager.java:26)
+	at gov.nasa.pds.tools.label.LocationValidator.validate(LocationValidator.java:285)
+	at gov.nasa.pds.validate.ValidateLauncher.doValidation(ValidateLauncher.java:1454)
+	at gov.nasa.pds.validate.ValidateLauncher.processMain(ValidateLauncher.java:1740)
+	at gov.nasa.pds.validate.ValidateLauncher.main(ValidateLauncher.java:1784)
+Caused by: java.lang.AssertionError
+	at net.sf.saxon.pattern.AnchorPattern.matches(AnchorPattern.java:97)
+	at net.sf.saxon.pattern.BasePatternWithPredicate.matches(BasePatternWithPredicate.java:122)
+	at net.sf.saxon.pattern.AncestorQualifiedPattern.matchesBeneathAnchor(AncestorQualifiedPattern.java:236)
+	at net.sf.saxon.pattern.AncestorQualifiedPattern.matches(AncestorQualifiedPattern.java:202)
+	at net.sf.saxon.pattern.Pattern.matchesItem(Pattern.java:268)
+	at net.sf.saxon.trans.rules.Rule.matches(Rule.java:239)
+	at net.sf.saxon.trans.SimpleMode.ruleMatches(SimpleMode.java:758)
+	at net.sf.saxon.trans.SimpleMode.searchRuleChain(SimpleMode.java:732)
+	at net.sf.saxon.trans.SimpleMode.findBestRuleForNodeInfo(SimpleMode.java:640)
+	at net.sf.saxon.trans.SimpleMode.getRule(SimpleMode.java:550)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:505)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.trans.rules.TextOnlyCopyRuleSet.process(TextOnlyCopyRuleSet.java:72)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:518)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesElaborator.lambda$elaborateForPush$1(ApplyTemplates.java:650)
+	at net.sf.saxon.expr.instruct.Block$BlockElaborator.lambda$elaborateForPush$4(Block.java:895)
+	at net.sf.saxon.expr.instruct.FixedElement$FixedElementElaborator.lambda$elaborateForPush$0(FixedElement.java:640)
+	at net.sf.saxon.expr.instruct.TemplateRule.applyLeavingTail(TemplateRule.java:393)
+	at net.sf.saxon.trans.Mode.handleRuleNotNull(Mode.java:587)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:521)
+	at net.sf.saxon.trans.XsltController.applyTemplates(XsltController.java:684)
+	at net.sf.saxon.s9api.AbstractXsltTransformer.applyTemplatesToSource(AbstractXsltTransformer.java:427)
+	at net.sf.saxon.s9api.XsltTransformer.transform(XsltTransformer.java:356)
+	at net.sf.saxon.jaxp.TransformerImpl.transform(TransformerImpl.java:75)
+	at gov.nasa.pds.tools.label.LabelValidator.parseAndValidate(LabelValidator.java:626)
+	at gov.nasa.pds.tools.validate.rule.pds4.LabelValidationRule.validateLabel(LabelValidationRule.java:316)
+	... 12 more
+
+  FAIL: file:/home/runner/work/ldd-sb/ldd-sb/test/mpf-Proc_VALID.xml
+      WARNING  [warning.label.schema]   Cannot check versioning because no Schema given.
+      ERROR  [error.validation.internal_error]   Error executing validationTask: java.lang.AssertionError
+        4 product validation(s) completed
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at gov.nasa.pds.tools.validate.rule.AbstractValidationRule.execute(AbstractValidationRule.java:64)
+	at org.apache.commons.chain.impl.ChainBase.execute(ChainBase.java:191)
+	at gov.nasa.pds.tools.validate.task.ValidationTask.execute(ValidationTask.java:130)
+	at gov.nasa.pds.tools.validate.task.BlockingTaskManager.submit(BlockingTaskManager.java:26)
+	at gov.nasa.pds.tools.label.LocationValidator.validate(LocationValidator.java:285)
+	at gov.nasa.pds.validate.ValidateLauncher.doValidation(ValidateLauncher.java:1454)
+	at gov.nasa.pds.validate.ValidateLauncher.processMain(ValidateLauncher.java:1740)
+	at gov.nasa.pds.validate.ValidateLauncher.main(ValidateLauncher.java:1784)
+Caused by: java.lang.AssertionError
+	at net.sf.saxon.pattern.AnchorPattern.matches(AnchorPattern.java:97)
+	at net.sf.saxon.pattern.BasePatternWithPredicate.matches(BasePatternWithPredicate.java:122)
+	at net.sf.saxon.pattern.AncestorQualifiedPattern.matchesBeneathAnchor(AncestorQualifiedPattern.java:236)
+	at net.sf.saxon.pattern.AncestorQualifiedPattern.matches(AncestorQualifiedPattern.java:202)
+	at net.sf.saxon.pattern.Pattern.matchesItem(Pattern.java:268)
+	at net.sf.saxon.trans.rules.Rule.matches(Rule.java:239)
+	at net.sf.saxon.trans.SimpleMode.ruleMatches(SimpleMode.java:758)
+	at net.sf.saxon.trans.SimpleMode.searchRuleChain(SimpleMode.java:732)
+	at net.sf.saxon.trans.SimpleMode.findBestRuleForNodeInfo(SimpleMode.java:640)
+	at net.sf.saxon.trans.SimpleMode.getRule(SimpleMode.java:550)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:505)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.trans.rules.TextOnlyCopyRuleSet.process(TextOnlyCopyRuleSet.java:72)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:518)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesElaborator.lambda$elaborateForPush$1(ApplyTemplates.java:650)
+	at net.sf.saxon.expr.instruct.Block$BlockElaborator.lambda$elaborateForPush$4(Block.java:895)
+	at net.sf.saxon.expr.instruct.FixedElement$FixedElementElaborator.lambda$elaborateForPush$0(FixedElement.java:640)
+	at net.sf.saxon.expr.instruct.TemplateRule.applyLeavingTail(TemplateRule.java:393)
+	at net.sf.saxon.trans.Mode.handleRuleNotNull(Mode.java:587)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:521)
+	at net.sf.saxon.trans.XsltController.applyTemplates(XsltController.java:684)
+	at net.sf.saxon.s9api.AbstractXsltTransformer.applyTemplatesToSource(AbstractXsltTransformer.java:427)
+	at net.sf.saxon.s9api.XsltTransformer.transform(XsltTransformer.java:356)
+	at net.sf.saxon.jaxp.TransformerImpl.transform(TransformerImpl.java:75)
+	at gov.nasa.pds.tools.label.LabelValidator.parseAndValidate(LabelValidator.java:626)
+	at gov.nasa.pds.tools.validate.rule.pds4.LabelValidationRule.validateLabel(LabelValidationRule.java:316)
+	... 12 more
+
+  FAIL: file:/home/runner/work/ldd-sb/ldd-sb/test/julian_dates_unit_check_VALID.xml
+      WARNING  [warning.label.schema]   Cannot check versioning because no Schema given.
+      ERROR  [error.validation.internal_error]   Error executing validationTask: java.lang.AssertionError
+        5 product validation(s) completed
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at gov.nasa.pds.tools.validate.rule.AbstractValidationRule.execute(AbstractValidationRule.java:64)
+	at org.apache.commons.chain.impl.ChainBase.execute(ChainBase.java:191)
+	at gov.nasa.pds.tools.validate.task.ValidationTask.execute(ValidationTask.java:130)
+	at gov.nasa.pds.tools.validate.task.BlockingTaskManager.submit(BlockingTaskManager.java:26)
+	at gov.nasa.pds.tools.label.LocationValidator.validate(LocationValidator.java:285)
+	at gov.nasa.pds.validate.ValidateLauncher.doValidation(ValidateLauncher.java:1454)
+	at gov.nasa.pds.validate.ValidateLauncher.processMain(ValidateLauncher.java:1740)
+	at gov.nasa.pds.validate.ValidateLauncher.main(ValidateLauncher.java:1784)
+Caused by: java.lang.AssertionError
+	at net.sf.saxon.pattern.AnchorPattern.matches(AnchorPattern.java:97)
+	at net.sf.saxon.pattern.BasePatternWithPredicate.matches(BasePatternWithPredicate.java:122)
+	at net.sf.saxon.pattern.AncestorQualifiedPattern.matchesBeneathAnchor(AncestorQualifiedPattern.java:236)
+	at net.sf.saxon.pattern.AncestorQualifiedPattern.matches(AncestorQualifiedPattern.java:202)
+	at net.sf.saxon.pattern.Pattern.matchesItem(Pattern.java:268)
+	at net.sf.saxon.trans.rules.Rule.matches(Rule.java:239)
+	at net.sf.saxon.trans.SimpleMode.ruleMatches(SimpleMode.java:758)
+	at net.sf.saxon.trans.SimpleMode.searchRuleChain(SimpleMode.java:732)
+	at net.sf.saxon.trans.SimpleMode.findBestRuleForNodeInfo(SimpleMode.java:640)
+	at net.sf.saxon.trans.SimpleMode.getRule(SimpleMode.java:550)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:505)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesPackage.processLeavingTail(ApplyTemplates.java:548)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:476)
+	at net.sf.saxon.trans.rules.TextOnlyCopyRuleSet.process(TextOnlyCopyRuleSet.java:72)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:518)
+	at net.sf.saxon.expr.instruct.ApplyTemplates$ApplyTemplatesElaborator.lambda$elaborateForPush$1(ApplyTemplates.java:650)
+	at net.sf.saxon.expr.instruct.Block$BlockElaborator.lambda$elaborateForPush$4(Block.java:895)
+	at net.sf.saxon.expr.instruct.FixedElement$FixedElementElaborator.lambda$elaborateForPush$0(FixedElement.java:640)
+	at net.sf.saxon.expr.instruct.TemplateRule.applyLeavingTail(TemplateRule.java:393)
+	at net.sf.saxon.trans.Mode.handleRuleNotNull(Mode.java:587)
+	at net.sf.saxon.trans.Mode.applyTemplates(Mode.java:521)
+	at net.sf.saxon.trans.XsltController.applyTemplates(XsltController.java:684)
+	at net.sf.saxon.s9api.AbstractXsltTransformer.applyTemplatesToSource(AbstractXsltTransformer.java:427)
+	at net.sf.saxon.s9api.XsltTransformer.transform(XsltTransformer.java:356)
+	at net.sf.saxon.jaxp.TransformerImpl.transform(TransformerImpl.java:75)
+	at gov.nasa.pds.tools.label.LabelValidator.parseAndValidate(LabelValidator.java:626)
+	at gov.nasa.pds.tools.validate.rule.pds4.LabelValidationRule.validateLabel(LabelValidationRule.java:316)
+	... 12 more
+
+  FAIL: file:/home/runner/work/ldd-sb/ldd-sb/test/SBmetadataTemplate_VALID.xml
+      WARNING  [warning.label.schema]   Cannot check versioning because no Schema given.
+      ERROR  [error.validation.internal_error]   Error executing validationTask: java.lang.AssertionError
+        6 product validation(s) completed
+
+Summary:
+
+  5 error(s)
+  5 warning(s)
+
+  Product Validation Summary:
+    1          product(s) passed
+    5          product(s) failed
+    0          product(s) skipped
+
+  Referential Integrity Check Summary:
+    0          check(s) passed
+    0          check(s) failed
+    0          check(s) skipped
+
+  Message Types:
+    5            error.validation.internal_error
+    5            warning.label.schema
+
+End of Report
+Completed execution in 4488 ms
+

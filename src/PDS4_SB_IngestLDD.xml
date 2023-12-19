@@ -2156,7 +2156,7 @@
   
   <DD_Rule>
     <local_identifier>julian_units_check</local_identifier>
-    <rule_context>sb:SB_Metadata//.[ends-with(name(),'_JD')]</rule_context>
+    <rule_context>sb:SB_Metadata//*[ends-with(name(),'_JD')]</rule_context>
     <DD_Rule_Statement>
       <rule_type>Assert</rule_type>
       <rule_test>@unit eq 'julian day'</rule_test>

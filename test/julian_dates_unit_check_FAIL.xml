@@ -49,9 +49,11 @@
                 <sb:Observation_Parameters>
 
                     <sb:Timing>
+                        <sb:midobservation_time_UTC_YMD>2023-12-25T01:23:45Z</sb:midobservation_time_UTC_YMD>
                         <sb:midobservation_time_UTC_JD unit="s">2459959.1234</sb:midobservation_time_UTC_JD>
                         <sb:start_time_UTC_JD unit="day">2459959.1111</sb:start_time_UTC_JD>
                         <sb:stop_time_UTC_JD unit="hr">2459959.2222</sb:stop_time_UTC_JD>
+                        <sb:comment>some text</sb:comment>
                     </sb:Timing>
                 </sb:Observation_Parameters>
 

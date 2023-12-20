@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1J00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1K00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
 <Ingest_LDD 
   xmlns="http://pds.nasa.gov/pds4/pds/v1" 
@@ -20,7 +20,7 @@
     
     The initials "ACR" in the "submitter" field indicate Anne Raugh.
   </comment>
-  <last_modification_date_time>2023-12-18</last_modification_date_time>  <!-- changed to version 1.0.0.0 for release -->
+  <last_modification_date_time>2023-12-20</last_modification_date_time>  <!-- changed to version 1.0.0.0 for release -->
   
   <!-- Attribute Definitions (alphabetical) -->
   
@@ -2156,7 +2156,7 @@
   
   <DD_Rule>
     <local_identifier>julian_units_check</local_identifier>
-    <rule_context>sb:SB_Metadata//.[ends-with(name(),'_JD')]</rule_context>
+    <rule_context>descendant::sb:SB_Metadata[ends-with(name(),'_JD')]</rule_context>
     <DD_Rule_Statement>
       <rule_type>Assert</rule_type>
       <rule_test>@unit eq 'julian day'</rule_test>

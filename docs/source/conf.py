@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Small Bodies Discipline Namespace'
+project = 'Small Bodies Namespace'
 # copyright = overidden by CSS specified below
 author = 'NASA Planetary Data System'
 

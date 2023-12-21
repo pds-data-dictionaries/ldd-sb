@@ -20,21 +20,21 @@ however, is always the schemas - not the examples.
 .. code-block:: XML
 
   <?xml version="1.0" encoding="UTF-8"?>
-  <?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1J00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-  <?xml-model href="https://pds.nasa.gov/pds4/sb/v0/PDS4_SB_1J00_0100.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+  <?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1L00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+  <?xml-model href="https://pds.nasa.gov/pds4/sb/v1/PDS4_SB_1L00_1000.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
   <Product_Observational 
     xmlns="http://pds.nasa.gov/pds4/pds/v1" 
-    xmlns:sb="http://pds.nasa.gov/pds4/sb/v0"
+    xmlns:sb="http://pds.nasa.gov/pds4/sb/v1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1J00.xsd
-                        http://pds.nasa.gov/pds4/sb/v0  https://pds.nasa.gov/pds4/sb/v0/PDS4_SB_1J00_0100.xsd">
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1L00.xsd
+                        http://pds.nasa.gov/pds4/sb/v0  https://pds.nasa.gov/pds4/sb/v0/PDS4_SB_1L00_1000.xsd">
 
     <Identification_Area>
         <logical_identifier>urn:nasa:pds:bundle:collection:product</logical_identifier>
         <version_id>1.0</version_id>
         <title>Scratch space for designing dictionary classes</title>
-        <information_model_version>1.19.0.0</information_model_version>
+        <information_model_version>1.21.0.0</information_model_version>
         <product_class>Product_Observational</product_class>
     </Identification_Area>
     <Observation_Area>

@@ -22,6 +22,6 @@ Tests for individual key features are provided in VALID/FAIL pairs:
   
 **julian_dates_unit_check**
 
-  These files demonstrate that every attribute that is identified as contains a 
+  These files demonstrate that every attribute that is identified as containing a 
   Julian date formatted time (they all have names ending in "_JD") has "julian day"
   as the value of its unit attribute, and not some other valid *Units_of_Time* value.

@@ -20,7 +20,8 @@
     
     The initials "ACR" in the "submitter" field indicate Anne Raugh.
   </comment>
-  <last_modification_date_time>2023-12-20</last_modification_date_time>  <!-- changed to version 1.0.0.0 for release -->
+  <last_modification_date_time>2024-02-08</last_modification_date_time>
+  <!-- added x_axis_position_angle attribute -->
   
   <!-- Attribute Definitions (alphabetical) -->
   
@@ -950,6 +951,27 @@
   </DD_Attribute>
   
   <DD_Attribute>
+    <name>x_axis_position_angle</name>
+    <version_id>1.0</version_id>
+    <local_identifier>x_axis_position_angle</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>C. Gobat</submitter_name>
+    <definition>
+      The sb:x_axis_position_angle provides the angle measured East from celestial North
+      in the plane of an image to the +X axis of the instrument boresight. The values
+      are in the range 0-360 degrees.
+    </definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Real</value_data_type>
+      <minimum_value>0.0</minimum_value>
+      <maximum_value>360.0</maximum_value>
+      <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
+      <specified_unit_id>deg</specified_unit_id>
+    </DD_Value_Domain>
+  </DD_Attribute>
+
+  <DD_Attribute>
     <name>y_axis_position_angle</name>
     <version_id>1.0</version_id>
     <local_identifier>y_axis_position_angle</local_identifier>
@@ -1586,7 +1608,7 @@
   
   <DD_Class>
     <name>Instrument_Position_Angles</name>
-    <version_id>1.0</version_id>
+    <version_id>1.1</version_id>
     <local_identifier>Instrument_Position_Angles</local_identifier>
     <submitter_name>ACR</submitter_name>
     <definition>
@@ -1597,16 +1619,13 @@
     </definition>
     
     <DD_Association>
+      <identifier_reference>XSChoice#</identifier_reference>
+      <identifier_reference>x_axis_position_angle</identifier_reference>
       <identifier_reference>y_axis_position_angle</identifier_reference>
-      <reference_type>attribute_of</reference_type>
-      <minimum_occurrences>1</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
-    <DD_Association>
       <identifier_reference>z_axis_position_angle</identifier_reference>
       <reference_type>attribute_of</reference_type>
-      <minimum_occurrences>1</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
+      <minimum_occurrences>2</minimum_occurrences>
+      <maximum_occurrences>3</maximum_occurrences>
     </DD_Association>
   </DD_Class>
   

@@ -1,0 +1,344 @@
+
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Activity.pds.activity_type
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Activity.pds.description
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Activity.pds.title
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Agent.pds.agent_type
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Agent.pds.description
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Agent.pds.title
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.ChangeLog.pds.date
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.ChangeLog.pds.desc
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.DD_Static_Permissible_Value.pds.local_identifier
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.DD_Static_Permissible_Value.pds.value
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Encoded_Telemetry.pds.encoding_standard_id
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Entity.pds.description
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Entity.pds.entity_type
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Entity.pds.title
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Ingest_LDD_File.pds.parsing_standard_id
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Ingest_LDD_File_Desc.pds.description
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Ingest_LDD_File_Desc.pds.ldd_version_id
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Ingest_LDD_File_Desc.pds.name
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.LIDVID_ID_Reference.pds.id_reference
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.LIDVID_ID_Reference.pds.lidvid_reference
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.LID_ID_Reference.pds.id_reference
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.LID_ID_Reference.pds.lid_reference
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Property_Map_External.pds.description
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Property_Map_External.pds.property_map_id
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Assert.pds.assertMsg
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Assert.pds.assertStmt
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Assert.pds.assertType
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Assert.pds.attrTitle
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Assert.pds.identifier
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Assert.pds.specMesg
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Assert.pds.testValArr
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.alwaysInclude
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.attrNameSpaceNC
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.attrTitle
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.classNameSpaceNC
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.classSteward
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.classTitle
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.identifier
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.isMissionOnly
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.roleId
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.schematronAssign
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.schematronAssignPattern
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.type
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.xpath
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Tracking.pds.description
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Tracking.pds.identifier
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Tracking_Detail.pds.archive_status
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Tracking_Detail.pds.archive_status_note
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Tracking_Detail.pds.certified_flag
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Tracking_Detail.pds.modification_date
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Reference.pds.comment
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Reference.pds.id_reference_to
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Reference.pds.virtual_reference_type
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Relation.pds.comment
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Relation.pds.id_reference_from
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Relation.pds.id_reference_to
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Relation.pds.virtual_reference_type
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Structure.pds.description
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Structure.pds.title
+>>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Structure.pds.type_description
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Activity.pds.activity_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Activity.pds.description
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Activity.pds.title
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Agent.pds.agent_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Agent.pds.description
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Agent.pds.title
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.ChangeLog.pds.%3ANAME
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.ChangeLog.pds.date
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.ChangeLog.pds.desc
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.DD_Static_Permissible_Value.pds.local_identifier
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.DD_Static_Permissible_Value.pds.value
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Encoded_Telemetry.pds.encoding_standard_id
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Entity.pds.description
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Entity.pds.entity_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Entity.pds.title
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Ingest_LDD_File.pds.parsing_standard_id
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Ingest_LDD_File_Desc.pds.description
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Ingest_LDD_File_Desc.pds.ldd_version_id
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Ingest_LDD_File_Desc.pds.name
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.LIDVID_ID_Reference.pds.id_reference
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.LIDVID_ID_Reference.pds.lidvid_reference
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.LID_ID_Reference.pds.id_reference
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.LID_ID_Reference.pds.lid_reference
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Property_Map_External.pds.description
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Property_Map_External.pds.property_map_id
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Assert.pds.%3ANAME
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Assert.pds.assertMsg
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Assert.pds.assertStmt
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Assert.pds.assertType
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Assert.pds.attrTitle
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Assert.pds.identifier
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Assert.pds.specMesg
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Assert.pds.testValArr
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Rule.pds.%3ANAME
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Rule.pds.alwaysInclude
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Rule.pds.attrNameSpaceNC
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Rule.pds.attrTitle
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Rule.pds.classNameSpaceNC
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Rule.pds.classSteward
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Rule.pds.classTitle
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Rule.pds.identifier
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Rule.pds.isMissionOnly
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Rule.pds.roleId
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Rule.pds.schematronAssign
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Rule.pds.schematronAssignPattern
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Rule.pds.type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Schematron_Rule.pds.xpath
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Tracking.pds.description
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Tracking.pds.identifier
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Tracking_Detail.pds.archive_status
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Tracking_Detail.pds.archive_status_note
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Tracking_Detail.pds.certified_flag
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Tracking_Detail.pds.modification_date
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Virtual_Reference.pds.comment
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Virtual_Reference.pds.id_reference_to
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Virtual_Reference.pds.virtual_reference_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Virtual_Relation.pds.comment
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Virtual_Relation.pds.id_reference_from
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Virtual_Relation.pds.id_reference_to
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Virtual_Relation.pds.virtual_reference_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Virtual_Structure.pds.description
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Virtual_Structure.pds.title
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Virtual_Structure.pds.type_description
+>>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Activity.pds.activity_type   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Activity.pds.description   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Activity.pds.title   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Agent.pds.agent_type   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Agent.pds.description   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Agent.pds.title   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.ChangeLog.pds.%3ANAME   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.ChangeLog.pds.date   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.ChangeLog.pds.desc   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.DD_Static_Permissible_Value.pds.local_identifier   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.DD_Static_Permissible_Value.pds.value   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Encoded_Telemetry.pds.encoding_standard_id   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Entity.pds.description   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Entity.pds.entity_type   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Entity.pds.title   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Ingest_LDD_File.pds.parsing_standard_id   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Ingest_LDD_File_Desc.pds.description   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Ingest_LDD_File_Desc.pds.ldd_version_id   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Ingest_LDD_File_Desc.pds.name   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.LIDVID_ID_Reference.pds.id_reference   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.LIDVID_ID_Reference.pds.lidvid_reference   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.LID_ID_Reference.pds.id_reference   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.LID_ID_Reference.pds.lid_reference   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Property_Map_External.pds.description   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Property_Map_External.pds.property_map_id   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Assert.pds.%3ANAME   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Assert.pds.assertMsg   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Assert.pds.assertStmt   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Assert.pds.assertType   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Assert.pds.attrTitle   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Assert.pds.identifier   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Assert.pds.specMesg   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Assert.pds.testValArr   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Rule.pds.%3ANAME   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Rule.pds.alwaysInclude   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Rule.pds.attrNameSpaceNC   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Rule.pds.attrTitle   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Rule.pds.classNameSpaceNC   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Rule.pds.classSteward   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Rule.pds.classTitle   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Rule.pds.identifier   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Rule.pds.isMissionOnly   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Rule.pds.roleId   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Rule.pds.schematronAssign   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Rule.pds.schematronAssignPattern   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Rule.pds.type   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Schematron_Rule.pds.xpath   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Tracking.pds.description   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Tracking.pds.identifier   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Tracking_Detail.pds.archive_status   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Tracking_Detail.pds.archive_status_note   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Tracking_Detail.pds.certified_flag   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Tracking_Detail.pds.modification_date   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Virtual_Reference.pds.comment   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Virtual_Reference.pds.id_reference_to   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Virtual_Reference.pds.virtual_reference_type   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Virtual_Relation.pds.comment   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Virtual_Relation.pds.id_reference_from   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Virtual_Relation.pds.id_reference_to   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Virtual_Relation.pds.virtual_reference_type   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Virtual_Structure.pds.description   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Virtual_Structure.pds.title   Value Type:TBD_value_type
+>>  ERROR Could not find a value type for this attribute while checking for attribute overrides - Name:0001_NASA_PDS_1.pds.Virtual_Structure.pds.type_description   Value Type:TBD_value_type
+>>  ERROR hasAttributeOverride2 - valueType is not equivalent - attribute identifier:0001_NASA_PDS_1.pds.Tracking_Detail.pds.archive_status_note
+>>  ERROR sethasAttributeOverride - attribute is not equivalent - Setting unique name - attribute identifier:0001_NASA_PDS_1.pds.Volume_PDS3.pds.archive_status_note
+>>  INFO LDDTOOL Version: 14.4.0
+>>  INFO IM Version Id: 1.19.0.0
+>>  INFO IM Namespace Id: pds
+>>  INFO IM Label Version Id: 1.25
+>>  INFO Date: Wed Mar 06 20:18:36 UTC 2024
+>>  INFO PARENT_DIR: /tmp/lddtool-14.4.0
+>>  INFO SCRIPT_DIR: /tmp/lddtool-14.4.0/bin
+>>  INFO LIB_DIR: /tmp/lddtool-14.4.0/lib
+>>  WARNING sethasAttributeOverride - attributes are not equivalent:0001_NASA_PDS_1.pds.Volume_PDS3.pds.archive_status_note - 0001_NASA_PDS_1.pds.Tracking_Detail.pds.archive_status_note
+
+>>> INFO Init:  - Config.Properties Namespace Id Using:pds
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Attribute: <celestial_north_clock_angle> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <celestial_north_clock_angle> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <center_wavelength> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <center_wavelength> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <comment> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <comment> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <comment> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <comment> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <comment> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <comment> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <comment> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <delta_time_from_sequence_start> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <exposure_duration> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <file_name> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <frame_center_dec> - The default minimum value provided by the attribute's data type is being overridden with -90.0
+>>> INFO Attribute: <frame_center_dec> - The default maximum value provided by the attribute's data type is being overridden with 90.0
+>>> INFO Attribute: <frame_center_ra> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <frame_center_ra> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <frame_exposure_duration> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <frame_number> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <long_wavelength_limit> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <midobservation_time_UTC_JD> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <qcos> - The default minimum value provided by the attribute's data type is being overridden with -1.000
+>>> INFO Attribute: <qcos> - The default maximum value provided by the attribute's data type is being overridden with 1.000
+>>> INFO Attribute: <short_wavelength_limit> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <start_time_UTC_JD> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <stop_time_UTC_JD> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <time_at_Earth_UTC_JD> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <time_at_Sun_UTC_JD> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <time_at_target_UTC_JD> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <x_axis_position_angle> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <x_axis_position_angle> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <y_axis_position_angle> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <y_axis_position_angle> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> INFO Attribute: <z_axis_position_angle> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <z_axis_position_angle> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> WARNING Init:  - Config.Properties Namespace Id Not Found:sb
+>>> WARNING Attribute: <conversion_to_physical_units> - The terms 'unit', 'units', 'unit_of_measure' should not be used as the rightmost part of an attribute's name.
+>>> WARNING Attribute2 <: celestial_north_clock_angle - Invalid Unit of Measure Type: Units_of_Angle
+>>> WARNING Attribute2 <: center_wavelength - Invalid Unit of Measure Type: Units_of_Length
+>>> WARNING Attribute2 <: delta_time_from_sequence_start - Invalid Unit of Measure Type: Units_of_Time
+>>> WARNING Attribute2 <: exposure_duration - Invalid Unit of Measure Type: Units_of_Time
+>>> WARNING Attribute2 <: frame_center_dec - Invalid Unit of Measure Type: Units_of_Angle
+>>> WARNING Attribute2 <: frame_center_ra - Invalid Unit of Measure Type: Units_of_Angle
+>>> WARNING Attribute2 <: frame_exposure_duration - Invalid Unit of Measure Type: Units_of_Time
+>>> WARNING Attribute2 <: long_wavelength_limit - Invalid Unit of Measure Type: Units_of_Length
+>>> WARNING Attribute2 <: midobservation_time_UTC_JD - Invalid Unit of Measure Type: Units_of_Time
+>>> WARNING Attribute2 <: short_wavelength_limit - Invalid Unit of Measure Type: Units_of_Length
+>>> WARNING Attribute2 <: start_time_UTC_JD - Invalid Unit of Measure Type: Units_of_Time
+>>> WARNING Attribute2 <: stop_time_UTC_JD - Invalid Unit of Measure Type: Units_of_Time
+>>> WARNING Attribute2 <: time_at_Earth_UTC_JD - Invalid Unit of Measure Type: Units_of_Time
+>>> WARNING Attribute2 <: time_at_Sun_UTC_JD - Invalid Unit of Measure Type: Units_of_Time
+>>> WARNING Attribute2 <: time_at_target_UTC_JD - Invalid Unit of Measure Type: Units_of_Time
+>>> WARNING Attribute2 <: x_axis_position_angle - Invalid Unit of Measure Type: Units_of_Angle
+>>> WARNING Attribute2 <: y_axis_position_angle - Invalid Unit of Measure Type: Units_of_Angle
+>>> WARNING Attribute2 <: z_axis_position_angle - Invalid Unit of Measure Type: Units_of_Angle
+
+ -- LDDTool Execution Summary --
+     21 warning(s)
+     251 error(s)
+     0 fatal error(s)
+
+Input:
+
+     - IM Version: 1J00
+     - PDS4 Flag: true
+     - LDD Flag: true
+     - IM Version: true
+     - Export JSON Flag: true
+
+     - Ingest LDD(s): /home/runner/work/ldd-sb/ldd-sb/src/PDS4_SB_IngestLDD.xml
+
+Output:
+
+     - ./PDS4_SB_1J00_1000.xsd
+     - ./PDS4_SB_1J00_1000.sch
+     - ./PDS4_SB_1J00_1000.xml
+     - ./export/JSON/PDS4_PDS_1J00.JSON
+
+>>  INFO Exit(1)

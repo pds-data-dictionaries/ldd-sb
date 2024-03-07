@@ -1616,6 +1616,10 @@
       axes of the boresight on the place of the image, measured with respect 
       to the location of the celestial North pole (also projected onto the plane
       of the image).
+      Only two axes should be specified, with the third being the instrument's
+      boresight. Note that the instrument frame's axis orientation is assumed to
+      be right-handed, so the direction of the boresight axis (into or out of the
+      image plane) can be inferred from the relative positions of the other two.
     </definition>
     
     <DD_Association>

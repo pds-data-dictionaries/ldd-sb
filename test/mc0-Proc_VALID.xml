@@ -211,8 +211,8 @@
                             observing sequence.
                         </sb:comment>
                         <sb:Instrument_Position_Angles>
-                            <sb:y_axis_position_angle unit="deg">351.5783804696931</sb:y_axis_position_angle>
-                            <sb:z_axis_position_angle unit="deg">81.57838046969316</sb:z_axis_position_angle>
+                            <sb:x_axis_position_angle unit="deg">351.5783804696931</sb:x_axis_position_angle>
+                            <sb:y_axis_position_angle unit="deg">81.57838046969316</sb:y_axis_position_angle>
                         </sb:Instrument_Position_Angles>
                     </sb:Additional_Geometry_Metadata>
                 </sb:Additional_Image_Metadata>

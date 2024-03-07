@@ -251,17 +251,16 @@
 >>  ERROR hasAttributeOverride2 - valueType is not equivalent - attribute identifier:0001_NASA_PDS_1.pds.Tracking_Detail.pds.archive_status_note
 >>  ERROR sethasAttributeOverride - attribute is not equivalent - Setting unique name - attribute identifier:0001_NASA_PDS_1.pds.Volume_PDS3.pds.archive_status_note
 >>  INFO LDDTOOL Version: 14.4.0
->>  INFO IM Version Id: 1.20.0.0
+>>  INFO IM Version Id: 1.19.0.0
 >>  INFO IM Namespace Id: pds
->>  INFO IM Label Version Id: 1.26
->>  INFO Date: Thu Mar 07 01:04:19 UTC 2024
+>>  INFO IM Label Version Id: 1.25
+>>  INFO Date: Thu Mar 07 16:58:54 UTC 2024
 >>  INFO PARENT_DIR: /tmp/lddtool-14.4.0
 >>  INFO SCRIPT_DIR: /tmp/lddtool-14.4.0/bin
 >>  INFO LIB_DIR: /tmp/lddtool-14.4.0/lib
 >>  WARNING sethasAttributeOverride - attributes are not equivalent:0001_NASA_PDS_1.pds.Volume_PDS3.pds.archive_status_note - 0001_NASA_PDS_1.pds.Tracking_Detail.pds.archive_status_note
 
->>> INFO Init:  - Config.Properties Namespace Id Found:sb
->>> INFO Init:  - Config.Properties Namespace Id Using:sb
+>>> INFO Init:  - Config.Properties Namespace Id Using:pds
 >>> INFO Init:  - LDD Dictionary_Type is Discipline
 >>> INFO Attribute: <celestial_north_clock_angle> - The default minimum value provided by the attribute's data type is being overridden with 0.0
 >>> INFO Attribute: <celestial_north_clock_angle> - The default maximum value provided by the attribute's data type is being overridden with 360.0
@@ -299,6 +298,7 @@
 >>> INFO Attribute: <y_axis_position_angle> - The default maximum value provided by the attribute's data type is being overridden with 360.0
 >>> INFO Attribute: <z_axis_position_angle> - The default minimum value provided by the attribute's data type is being overridden with 0.0
 >>> INFO Attribute: <z_axis_position_angle> - The default maximum value provided by the attribute's data type is being overridden with 360.0
+>>> WARNING Init:  - Config.Properties Namespace Id Not Found:sb
 >>> WARNING Attribute: <conversion_to_physical_units> - The terms 'unit', 'units', 'unit_of_measure' should not be used as the rightmost part of an attribute's name.
 >>> WARNING Attribute2 <: celestial_north_clock_angle - Invalid Unit of Measure Type: Units_of_Angle
 >>> WARNING Attribute2 <: center_wavelength - Invalid Unit of Measure Type: Units_of_Length
@@ -320,13 +320,13 @@
 >>> WARNING Attribute2 <: z_axis_position_angle - Invalid Unit of Measure Type: Units_of_Angle
 
  -- LDDTool Execution Summary --
-     20 warning(s)
+     21 warning(s)
      251 error(s)
      0 fatal error(s)
 
 Input:
 
-     - IM Version: 1K00
+     - IM Version: 1J00
      - PDS4 Flag: true
      - LDD Flag: true
      - IM Version: true
@@ -336,9 +336,9 @@ Input:
 
 Output:
 
-     - ./PDS4_SB_1K00_1000.xsd
-     - ./PDS4_SB_1K00_1000.sch
-     - ./PDS4_SB_1K00_1000.xml
-     - ./export/JSON/PDS4_PDS_1K00.JSON
+     - ./PDS4_SB_1J00_1000.xsd
+     - ./PDS4_SB_1J00_1000.sch
+     - ./PDS4_SB_1J00_1000.xml
+     - ./export/JSON/PDS4_PDS_1J00.JSON
 
 >>  INFO Exit(1)

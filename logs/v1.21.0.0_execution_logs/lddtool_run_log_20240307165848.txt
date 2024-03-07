@@ -1,64 +1,4 @@
 
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Activity.pds.activity_type
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Activity.pds.description
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Activity.pds.title
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Agent.pds.agent_type
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Agent.pds.description
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Agent.pds.title
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.ChangeLog.pds.date
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.ChangeLog.pds.desc
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.DD_Static_Permissible_Value.pds.local_identifier
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.DD_Static_Permissible_Value.pds.value
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Encoded_Telemetry.pds.encoding_standard_id
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Entity.pds.description
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Entity.pds.entity_type
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Entity.pds.title
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Ingest_LDD_File.pds.parsing_standard_id
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Ingest_LDD_File_Desc.pds.description
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Ingest_LDD_File_Desc.pds.ldd_version_id
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Ingest_LDD_File_Desc.pds.name
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.LIDVID_ID_Reference.pds.id_reference
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.LIDVID_ID_Reference.pds.lidvid_reference
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.LID_ID_Reference.pds.id_reference
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.LID_ID_Reference.pds.lid_reference
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Property_Map_External.pds.description
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Property_Map_External.pds.property_map_id
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Assert.pds.assertMsg
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Assert.pds.assertStmt
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Assert.pds.assertType
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Assert.pds.attrTitle
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Assert.pds.identifier
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Assert.pds.specMesg
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Assert.pds.testValArr
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.alwaysInclude
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.attrNameSpaceNC
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.attrTitle
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.classNameSpaceNC
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.classSteward
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.classTitle
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.identifier
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.isMissionOnly
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.roleId
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.schematronAssign
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.schematronAssignPattern
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.type
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Schematron_Rule.pds.xpath
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Tracking.pds.description
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Tracking.pds.identifier
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Tracking_Detail.pds.archive_status
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Tracking_Detail.pds.archive_status_note
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Tracking_Detail.pds.certified_flag
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Tracking_Detail.pds.modification_date
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Reference.pds.comment
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Reference.pds.id_reference_to
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Reference.pds.virtual_reference_type
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Relation.pds.comment
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Relation.pds.id_reference_from
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Relation.pds.id_reference_to
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Relation.pds.virtual_reference_type
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Structure.pds.description
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Structure.pds.title
->>  ERROR 11179 data dictionary attribute is missing for overwrite - Identifier:DataElement.DE.0001_NASA_PDS_1.pds.Virtual_Structure.pds.type_description
 >>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Activity.pds.activity_type
 >>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.valueType:TBD_value_type
 >>  ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - lAttr.identifier:0001_NASA_PDS_1.pds.Activity.pds.description
@@ -251,16 +191,17 @@
 >>  ERROR hasAttributeOverride2 - valueType is not equivalent - attribute identifier:0001_NASA_PDS_1.pds.Tracking_Detail.pds.archive_status_note
 >>  ERROR sethasAttributeOverride - attribute is not equivalent - Setting unique name - attribute identifier:0001_NASA_PDS_1.pds.Volume_PDS3.pds.archive_status_note
 >>  INFO LDDTOOL Version: 14.4.0
->>  INFO IM Version Id: 1.19.0.0
+>>  INFO IM Version Id: 1.21.0.0
 >>  INFO IM Namespace Id: pds
->>  INFO IM Label Version Id: 1.25
->>  INFO Date: Thu Mar 07 01:04:24 UTC 2024
+>>  INFO IM Label Version Id: 1.27
+>>  INFO Date: Thu Mar 07 16:58:48 UTC 2024
 >>  INFO PARENT_DIR: /tmp/lddtool-14.4.0
 >>  INFO SCRIPT_DIR: /tmp/lddtool-14.4.0/bin
 >>  INFO LIB_DIR: /tmp/lddtool-14.4.0/lib
 >>  WARNING sethasAttributeOverride - attributes are not equivalent:0001_NASA_PDS_1.pds.Volume_PDS3.pds.archive_status_note - 0001_NASA_PDS_1.pds.Tracking_Detail.pds.archive_status_note
 
->>> INFO Init:  - Config.Properties Namespace Id Using:pds
+>>> INFO Init:  - Config.Properties Namespace Id Found:sb
+>>> INFO Init:  - Config.Properties Namespace Id Using:sb
 >>> INFO Init:  - LDD Dictionary_Type is Discipline
 >>> INFO Attribute: <celestial_north_clock_angle> - The default minimum value provided by the attribute's data type is being overridden with 0.0
 >>> INFO Attribute: <celestial_north_clock_angle> - The default maximum value provided by the attribute's data type is being overridden with 360.0
@@ -298,7 +239,6 @@
 >>> INFO Attribute: <y_axis_position_angle> - The default maximum value provided by the attribute's data type is being overridden with 360.0
 >>> INFO Attribute: <z_axis_position_angle> - The default minimum value provided by the attribute's data type is being overridden with 0.0
 >>> INFO Attribute: <z_axis_position_angle> - The default maximum value provided by the attribute's data type is being overridden with 360.0
->>> WARNING Init:  - Config.Properties Namespace Id Not Found:sb
 >>> WARNING Attribute: <conversion_to_physical_units> - The terms 'unit', 'units', 'unit_of_measure' should not be used as the rightmost part of an attribute's name.
 >>> WARNING Attribute2 <: celestial_north_clock_angle - Invalid Unit of Measure Type: Units_of_Angle
 >>> WARNING Attribute2 <: center_wavelength - Invalid Unit of Measure Type: Units_of_Length
@@ -320,13 +260,13 @@
 >>> WARNING Attribute2 <: z_axis_position_angle - Invalid Unit of Measure Type: Units_of_Angle
 
  -- LDDTool Execution Summary --
-     21 warning(s)
-     251 error(s)
+     20 warning(s)
+     191 error(s)
      0 fatal error(s)
 
 Input:
 
-     - IM Version: 1J00
+     - IM Version: 1L00
      - PDS4 Flag: true
      - LDD Flag: true
      - IM Version: true
@@ -336,9 +276,9 @@ Input:
 
 Output:
 
-     - ./PDS4_SB_1J00_1000.xsd
-     - ./PDS4_SB_1J00_1000.sch
-     - ./PDS4_SB_1J00_1000.xml
-     - ./export/JSON/PDS4_PDS_1J00.JSON
+     - ./PDS4_SB_1L00_1000.xsd
+     - ./PDS4_SB_1L00_1000.sch
+     - ./PDS4_SB_1L00_1000.xml
+     - ./export/JSON/PDS4_PDS_1L00.JSON
 
 >>  INFO Exit(1)

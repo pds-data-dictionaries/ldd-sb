@@ -1619,13 +1619,22 @@
     </definition>
     
     <DD_Association>
-      <identifier_reference>XSChoice#</identifier_reference>
       <identifier_reference>x_axis_position_angle</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
       <identifier_reference>y_axis_position_angle</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
       <identifier_reference>z_axis_position_angle</identifier_reference>
       <reference_type>attribute_of</reference_type>
-      <minimum_occurrences>2</minimum_occurrences>
-      <maximum_occurrences>3</maximum_occurrences>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
     </DD_Association>
   </DD_Class>
   
@@ -2143,6 +2152,16 @@
       <rule_type>Assert</rule_type>
       <rule_test>if ((count(sb:x_axis_position_angle) gt 1) or (count(sb:y_axis_position_angle) gt 1) or (count(sb:z_axis_position_angle) gt 1)) then false() else true()</rule_test>
       <rule_message>No more than one each of sb:x_axis_position_angle, sb:y_axis_position_angle, and sb:z_axis_position_angle is allowed in sb:Instrument_Position_Angles.</rule_message>
+    </DD_Rule_Statement>
+  </DD_Rule>
+  
+  <DD_Rule>
+    <local_identifier>exactly_2_position_angle_axes</local_identifier>
+    <rule_context>sb:Instrument_Position_Angles</rule_context>
+    <DD_Rule_Statement>
+      <rule_type>Assert</rule_type>
+      <rule_test>if (count(sb:*_axis_position_angle) = 2) then true() else false()</rule_test>
+      <rule_message>In sb:Instrument_Position_Angles, exactly two of sb:x_axis_position_angle, sb:y_axis_position_angle, or sb:z_axis_position_angle must be provided.</rule_message>
     </DD_Rule_Statement>
   </DD_Rule>
   

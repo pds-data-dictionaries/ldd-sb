@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:sb="http://pds.nasa.gov/pds4/sb/v1"> 
+
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:nh_mvic:kem1_cal:mc0_0408625487_0x545_sci</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>New Horizons MVIC Red Channel Observation mc0_0408625487_0x545_sci (Processed Data)</title>
+        <information_model_version>[IM_VERSION]</information_model_version>
+        <product_class>Product_Observational</product_class>
+
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2024-03-06</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    C. Gobat: copied from mc0-Proc_VALID.xml and modified to fail schematron check.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Observation_Area>
+        <Time_Coordinates>
+            <start_date_time>2019-01-01T05:12:55.280Z</start_date_time>
+            <stop_date_time>2019-01-01T05:14:34.148Z</stop_date_time>
+        </Time_Coordinates>
+
+        <Primary_Result_Summary>
+            <purpose>Science</purpose>
+            <processing_level>Partially Processed</processing_level>
+            <Science_Facets>
+                <wavelength_range>Visible</wavelength_range>
+                <discipline_name>Imaging</discipline_name>
+                <facet1>Grayscale</facet1>
+            </Science_Facets>
+        </Primary_Result_Summary>
+
+        <Investigation_Area>
+            <name>New Horizons Kuiper Belt Extended Mission 1</name>
+            <type>Individual Investigation</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:investigation:individual.none</lid_reference>
+                <reference_type>data_to_investigation</reference_type>
+            </Internal_Reference>
+        </Investigation_Area>
+
+        <Observing_System>
+            <Observing_System_Component>
+                <name>New Horizons Spacecraft</name>
+                <type>Host</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.nh</lid_reference>
+                    <reference_type>is_instrument_host</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+<!--
+            <Observing_System_Component>
+                <name>RALPH</name>
+                <type>Instrument Package</type> 
+                <description>
+                    RALPH is an instrument package supporting two independent instrument,
+                    the Multispectral Visible Imaging Camera (MVIC) and the Linear Etalon
+                    Imaging Spectral Array (LEISA), that share a boresight, a focal plane, 
+                    and electronics. Detectors and pipeline processing are unique to each
+                    instrument.
+                </description>
+            </Observing_System_Component>
+-->            
+            <Observing_System_Component>
+                <name>Multispectral Visible Imaging Camera (MVIC)</name>
+                <type>Instrument</type>
+                <description>
+                    Note that the MVIC instrument has seven distinct detectors, identified by
+                    the "nh:Detector" class metadata.
+                </description>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:nh.mvic</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+        </Observing_System>
+
+        <Target_Identification>
+            <name>(486958) Arrokoth</name>
+            <alternate_designation>2014 MU69</alternate_designation>
+            <type>Trans-Neptunian Object</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:target:trans-neptunian_object.486958_2014_mu69</lid_reference>
+                <reference_type>data_to_target</reference_type>
+            </Internal_Reference>
+        </Target_Identification>
+
+        <Discipline_Area>
+            
+            <sb:SB_Metadata>
+                <sb:Observation_Parameters>
+                    <sb:Exposure>
+                        <sb:exposure_duration unit="s">0.79072</sb:exposure_duration>
+                        <sb:exposure_description>
+                            The exposure duration is the amount of time that data was collected
+                            for each pixel in the array. For details of how the MVIC TDI scanning
+                            observations collected data, see "Ralph: A Visible/Infrared Imager for
+                            the New Horizons Pluto/Kuiper Belt Mission" (Reuter, et al. 2008), a 
+                            preprint copy of which is included in the mission archive and 
+                            referenced below.
+                        </sb:exposure_description>
+                    </sb:Exposure>
+                    <sb:Filter>
+                        <sb:filter_name>Red</sb:filter_name>
+                        <sb:filter_type>Broadband</sb:filter_type>
+                        <sb:short_wavelength_limit unit="nm">540</sb:short_wavelength_limit>
+                        <sb:long_wavelength_limit unit="nm">700</sb:long_wavelength_limit>
+                    </sb:Filter>
+                    <sb:Timing>
+                        <sb:midobservation_time_UTC_YMD>2019-01-01T05:13:44.714Z</sb:midobservation_time_UTC_YMD>
+                        <sb:midobservation_time_UTC_JD unit="julian day">2458484.7178786</sb:midobservation_time_UTC_JD>
+                    </sb:Timing>
+                </sb:Observation_Parameters>
+                
+                <sb:Calibration_Information>
+                    <sb:Raw_Data_Product>
+                        <Internal_Reference>
+                            <lidvid_reference>urn:nasa:pds:nh_mvic:kem1_cal:mc0_0408625487_0x545_eng::1.0</lidvid_reference>
+                            <reference_type>processed_data_to_raw_data</reference_type>
+                        </Internal_Reference>
+                    </sb:Raw_Data_Product>
+                    
+                    <sb:Calibration_Applied>
+                        <sb:comment>
+                            The conversion to physical units depends on the spectral characteristics of the 
+                            object and whether it is resolved. Conversion constants are provided as part of
+                            the mission attributes in this label.
+                        </sb:comment>
+                        <sb:bias_subtraction>true</sb:bias_subtraction>
+                        <sb:flat_field_applied>true</sb:flat_field_applied>
+                    </sb:Calibration_Applied>
+                    
+                    <sb:Calibration_Reference_Files>
+                        <sb:Flat_Field>
+                            <sb:file_name>mc0_flat_20160120.fits</sb:file_name>
+                            <Internal_Reference>
+                                <lidvid_reference>urn:nasa:pds:nh_mvic:calibration_files:mc0_flat::4.0</lidvid_reference>
+                                <reference_type>image_to_flat_field_file</reference_type>
+                            </Internal_Reference>
+                        </sb:Flat_Field>
+                    </sb:Calibration_Reference_Files>
+                </sb:Calibration_Information>
+                
+                <sb:Additional_Image_Metadata>
+                    <Local_Internal_Reference>
+                        <local_identifier_reference>Image</local_identifier_reference>
+                        <local_reference_type>image_to_additional_metadata</local_reference_type>
+                    </Local_Internal_Reference>
+                    
+                    <sb:image_observation_type>Single Image</sb:image_observation_type>
+                    
+                    <sb:Ancillary_Data_Objects>
+                        <sb:Quality_Map>
+                            <Local_Internal_Reference>
+                                <local_identifier_reference>Quality</local_identifier_reference>
+                                <local_reference_type>image_to_quality_map</local_reference_type>
+                            </Local_Internal_Reference>
+                            <sb:Quality_Map_Definition>
+                                <sb:flags_are_bit_flags>true</sb:flags_are_bit_flags>
+                                <sb:best_quality_value>0</sb:best_quality_value>
+                                <sb:Quality_Flag_Definition>
+                                    <sb:flag_value>1</sb:flag_value>
+                                    <sb:flag_meaning>Housekeeping keyword out of yellow limits</sb:flag_meaning>
+                                </sb:Quality_Flag_Definition>
+                                <sb:Quality_Flag_Definition>
+                                    <sb:flag_value>2</sb:flag_value>
+                                    <sb:flag_meaning>Defect in one of the reference calibration files</sb:flag_meaning>
+                                </sb:Quality_Flag_Definition>
+                                <sb:Quality_Flag_Definition>
+                                    <sb:flag_value>4</sb:flag_value>
+                                    <sb:flag_meaning>Permanent CCD defect (e.g., dead pixel)</sb:flag_meaning>
+                                </sb:Quality_Flag_Definition>
+                                <sb:Quality_Flag_Definition>
+                                    <sb:flag_value>8</sb:flag_value>
+                                    <sb:flag_meaning>DN level in non-linear regime of detector</sb:flag_meaning>
+                                </sb:Quality_Flag_Definition>
+                                <sb:Quality_Flag_Definition>
+                                    <sb:flag_value>16</sb:flag_value>
+                                    <sb:flag_meaning>Zero-value pixel</sb:flag_meaning>
+                                </sb:Quality_Flag_Definition>
+                                <sb:Quality_Flag_Definition>
+                                    <sb:flag_value>32</sb:flag_value>
+                                    <sb:flag_meaning>Bad pixel not in any of the above categories</sb:flag_meaning>
+                                </sb:Quality_Flag_Definition>
+                            </sb:Quality_Map_Definition>
+                        </sb:Quality_Map>
+                        <sb:Error_Estimates_Map>
+                            <Local_Internal_Reference>
+                                <local_identifier_reference>ErrorEstimate</local_identifier_reference>
+                                <local_reference_type>image_to_error_map</local_reference_type>
+                            </Local_Internal_Reference>
+                        </sb:Error_Estimates_Map>
+                    </sb:Ancillary_Data_Objects>
+                    
+                    <sb:Additional_Geometry_Metadata>
+                        <sb:comment>
+                            Note that the geometry parameters in this label were calculated by the
+                            mission using an unpublished kernel set still in development at the time 
+                            of archiving. These parameters are based on "predict geometry", which is
+                            generally not as accurate as metadata available at a later date.
+                            
+                            The instrument position angles are calculated at the midpoint of the 
+                            observing sequence.
+                        </sb:comment>
+                        <sb:Instrument_Position_Angles>
+                            <sb:x_axis_position_angle unit="deg">1.0</sb:x_axis_position_angle>
+                            <sb:y_axis_position_angle unit="deg">2.0</sb:y_axis_position_angle>
+                            <sb:z_axis_position_angle unit="deg">3.0</sb:z_axis_position_angle>
+                        </sb:Instrument_Position_Angles>
+                    </sb:Additional_Geometry_Metadata>
+                </sb:Additional_Image_Metadata>
+            </sb:SB_Metadata>
+
+        </Discipline_Area>
+    </Observation_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:nh_doc:all:ralph_ssr</lid_reference>
+            <reference_type>data_to_document</reference_type>
+            <comment>
+                This document from Space Science Reviews describes technical and operational 
+                details of the RALPH instruments and detectors.
+            </comment>
+        </Internal_Reference>
+    </Reference_List>
+    
+    <File_Area_Observational>
+        <File>
+            <file_name>No.Data</file_name>
+            <comment>
+                This file contains a single observation from one of the MVIC color channel detectors.
+                The image dimensions reflect the full area of the detector, not all of which contains
+                data in all cases. Pixels for which data was not downloaded are filled with the 
+                "missing_constant" value.
+            </comment>
+        </File>
+        
+        <!-- Primary ("extension 0" in some applications) header and data unit -->
+        
+        <Header>
+            <offset unit="byte">0</offset>
+            <object_length unit="byte">25920</object_length>
+            <parsing_standard_id>FITS 3.0</parsing_standard_id>
+            <description>
+                Primary FITS header unit. The New Horizons pipeline produced data in FITS format.
+            </description>
+        </Header>
+        <Array_2D_Image>
+            <name>Observational Data (DN)</name>
+            <local_identifier>Image</local_identifier>
+            <offset unit="byte">25920</offset>
+            <axes>2</axes>
+            <axis_index_order>Last Index Fastest</axis_index_order>
+            <description>
+                This array contains data only for pixels within the window(s) defined by the
+                Subframe(s) listed for this product. Other pixels have been set to -1.0, the
+                defined "missing_constant". 
+            </description>
+            <Element_Array>
+                <data_type>IEEE754MSBSingle</data_type>
+                <unit>DN</unit>
+            </Element_Array>
+            <Axis_Array>
+                <axis_name>Line</axis_name>
+                <elements>3984</elements>
+                <sequence_number>1</sequence_number>
+            </Axis_Array>
+            <Axis_Array>
+                <axis_name>Sample</axis_name>
+                <elements>5024</elements>
+                <sequence_number>2</sequence_number>
+            </Axis_Array>
+            <Special_Constants>
+                <missing_constant>-1.000</missing_constant>
+            </Special_Constants>
+        </Array_2D_Image>
+        
+        <!-- First extension header and data unit -->
+        
+        <Header>
+            <offset unit="byte">80089920</offset>
+            <object_length unit="byte">2880</object_length>
+            <parsing_standard_id>FITS 3.0</parsing_standard_id>
+            <description>
+                FITS IMAGE extension header - a minimal header.
+            </description>
+        </Header>
+        <Array_2D_Image>
+            <name>Per-pixel Error Estimate (DN)</name>
+            <local_identifier>ErrorEstimate</local_identifier>
+            <offset unit="byte">80092800</offset>
+            <axes>2</axes>
+            <axis_index_order>Last Index Fastest</axis_index_order>
+            <description>
+                This array provides per-pixel error estimates in DN for each of the corresponding
+                pixels in the primary data. It contains data only for pixels within the window(s) 
+                defined by the Subframe(s) listed for this product. Other pixels have been set to 
+                -1.0, the defined "missing_constant". 
+            </description>
+            <Element_Array>
+                <data_type>IEEE754MSBSingle</data_type>
+                <unit>DN</unit>
+            </Element_Array>
+            <Axis_Array>
+                <axis_name>Line</axis_name>
+                <elements>3984</elements>
+                <sequence_number>1</sequence_number>
+            </Axis_Array>
+            <Axis_Array>
+                <axis_name>Sample</axis_name>
+                <elements>5024</elements>
+                <sequence_number>2</sequence_number>
+            </Axis_Array>
+            <Special_Constants>
+                <missing_constant>-1.00</missing_constant>
+            </Special_Constants>
+        </Array_2D_Image>
+        
+        <!-- Second extension header and data unit -->
+        
+        <Header>
+            <offset unit="byte">160156800</offset>
+            <object_length unit="byte">2880</object_length>
+            <parsing_standard_id>FITS 3.0</parsing_standard_id>
+            <description>
+                FITS IMAGE extension header - minimal header. COMMENT cards include terse
+                quality code definitions.
+            </description>
+        </Header>
+        <Array_2D_Image>
+            <name>Per-pixel Quality Assessment</name>
+            <local_identifier>Quality</local_identifier>
+            <offset unit="byte">160159680</offset>
+            <axes>2</axes>
+            <axis_index_order>Last Index Fastest</axis_index_order>
+            <Element_Array>
+                <data_type>SignedMSB2</data_type>
+            </Element_Array>
+            <Axis_Array>
+                <axis_name>Line</axis_name>
+                <elements>3984</elements>
+                <sequence_number>1</sequence_number>
+            </Axis_Array>
+            <Axis_Array>
+                <axis_name>Sample</axis_name>
+                <elements>5024</elements>
+                <sequence_number>2</sequence_number>
+            </Axis_Array>
+            <Special_Constants>
+                <missing_constant>-1</missing_constant>
+            </Special_Constants>
+        </Array_2D_Image>
+    </File_Area_Observational>
+    
+</Product_Observational>

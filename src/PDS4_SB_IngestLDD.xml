@@ -20,8 +20,8 @@
     
     The initials "ACR" in the "submitter" field indicate Anne Raugh.
   </comment>
-  <last_modification_date_time>2024-03-06</last_modification_date_time>
-  <!-- added x_axis_position_angle attribute and pa_axis_duplication rule -->
+  <last_modification_date_time>2024-03-07</last_modification_date_time>
+  <!-- added x_axis_position_angle attribute and exactly_2_position_angle_axes rule -->
   
   <!-- Attribute Definitions (alphabetical) -->
   
@@ -2145,16 +2145,6 @@
   </DD_Rule>
   
   <!-- Instrument_Position_Angles -->
-  <DD_Rule>
-    <local_identifier>pa_axis_duplication</local_identifier>
-    <rule_context>sb:Instrument_Position_Angles</rule_context>
-    <DD_Rule_Statement>
-      <rule_type>Assert</rule_type>
-      <rule_test>if ((count(sb:x_axis_position_angle) gt 1) or (count(sb:y_axis_position_angle) gt 1) or (count(sb:z_axis_position_angle) gt 1)) then false() else true()</rule_test>
-      <rule_message>No more than one each of sb:x_axis_position_angle, sb:y_axis_position_angle, and sb:z_axis_position_angle is allowed in sb:Instrument_Position_Angles.</rule_message>
-    </DD_Rule_Statement>
-  </DD_Rule>
-  
   <DD_Rule>
     <local_identifier>exactly_2_position_angle_axes</local_identifier>
     <rule_context>sb:Instrument_Position_Angles</rule_context>

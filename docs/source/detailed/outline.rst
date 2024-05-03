@@ -161,6 +161,7 @@ alternatives in this outline.
     * <sb:comment>
     * <sb:Instrument_Position_Angles>
 
+      * <sb:x_axis_position_angle>
       * <sb:y_axis_position_angle>
       * <sb:z_axis_position_angle>
 

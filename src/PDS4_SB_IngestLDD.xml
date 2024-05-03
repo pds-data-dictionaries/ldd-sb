@@ -20,7 +20,8 @@
     
     The initials "ACR" in the "submitter" field indicate Anne Raugh.
   </comment>
-  <last_modification_date_time>2023-12-20</last_modification_date_time>  <!-- changed to version 1.0.0.0 for release -->
+  <last_modification_date_time>2024-03-07</last_modification_date_time>
+  <!-- added x_axis_position_angle attribute and exactly_2_position_angle_axes rule -->
   
   <!-- Attribute Definitions (alphabetical) -->
   
@@ -950,6 +951,27 @@
   </DD_Attribute>
   
   <DD_Attribute>
+    <name>x_axis_position_angle</name>
+    <version_id>1.0</version_id>
+    <local_identifier>x_axis_position_angle</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>C. Gobat</submitter_name>
+    <definition>
+      The sb:x_axis_position_angle provides the angle measured East from celestial North
+      in the plane of an image to the +X axis of the instrument boresight. The values
+      are in the range 0-360 degrees.
+    </definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Real</value_data_type>
+      <minimum_value>0.0</minimum_value>
+      <maximum_value>360.0</maximum_value>
+      <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
+      <specified_unit_id>deg</specified_unit_id>
+    </DD_Value_Domain>
+  </DD_Attribute>
+
+  <DD_Attribute>
     <name>y_axis_position_angle</name>
     <version_id>1.0</version_id>
     <local_identifier>y_axis_position_angle</local_identifier>
@@ -1586,7 +1608,7 @@
   
   <DD_Class>
     <name>Instrument_Position_Angles</name>
-    <version_id>1.0</version_id>
+    <version_id>1.1</version_id>
     <local_identifier>Instrument_Position_Angles</local_identifier>
     <submitter_name>ACR</submitter_name>
     <definition>
@@ -1594,18 +1616,28 @@
       axes of the boresight on the place of the image, measured with respect 
       to the location of the celestial North pole (also projected onto the plane
       of the image).
+      Only two axes should be specified, with the third being the instrument's
+      boresight. Note that the instrument frame's axis orientation is assumed to
+      be right-handed, so the direction of the boresight axis (into or out of the
+      image plane) can be inferred from the relative positions of the other two.
     </definition>
     
     <DD_Association>
+      <identifier_reference>x_axis_position_angle</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
       <identifier_reference>y_axis_position_angle</identifier_reference>
       <reference_type>attribute_of</reference_type>
-      <minimum_occurrences>1</minimum_occurrences>
+      <minimum_occurrences>0</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
     </DD_Association>
     <DD_Association>
       <identifier_reference>z_axis_position_angle</identifier_reference>
       <reference_type>attribute_of</reference_type>
-      <minimum_occurrences>1</minimum_occurrences>
+      <minimum_occurrences>0</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
     </DD_Association>
   </DD_Class>
@@ -2113,6 +2145,17 @@
       <rule_type>Assert</rule_type>
       <rule_test>pds:reference_type eq 'image_to_flat_field_file'</rule_test>
       <rule_message>In sb:Flat_Field/pds:Internal_Reference, pds:reference_type must be "image_to_flat_field_file".</rule_message>
+    </DD_Rule_Statement>
+  </DD_Rule>
+  
+  <!-- Instrument_Position_Angles -->
+  <DD_Rule>
+    <local_identifier>exactly_2_position_angle_axes</local_identifier>
+    <rule_context>sb:Instrument_Position_Angles</rule_context>
+    <DD_Rule_Statement>
+      <rule_type>Assert</rule_type>
+      <rule_test>if (count(*) = 2) then true() else false()</rule_test>
+      <rule_message>In sb:Instrument_Position_Angles, exactly two of sb:x_axis_position_angle, sb:y_axis_position_angle, or sb:z_axis_position_angle must be provided.</rule_message>
     </DD_Rule_Statement>
   </DD_Rule>
   

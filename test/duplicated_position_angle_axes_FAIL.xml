@@ -13,10 +13,10 @@
 
         <Modification_History>
             <Modification_Detail>
-                <modification_date>2022-12-26</modification_date>
+                <modification_date>2024-03-06</modification_date>
                 <version_id>1.0</version_id>
                 <description>
-                    A.C.Raugh: Migrated from PDS3 product NH-A-MVIC-3-KEM1-V6.0:MC0_0408625487_0X545_SCI
+                    C. Gobat: copied from mc0-Proc_VALID.xml and modified to fail schematron check.
                 </description>
             </Modification_Detail>
         </Modification_History>
@@ -211,8 +211,8 @@
                             observing sequence.
                         </sb:comment>
                         <sb:Instrument_Position_Angles>
-                            <sb:x_axis_position_angle unit="deg">351.5783804696931</sb:x_axis_position_angle>
-                            <sb:y_axis_position_angle unit="deg">81.57838046969316</sb:y_axis_position_angle>
+                            <sb:y_axis_position_angle unit="deg">351.5783804696931</sb:y_axis_position_angle>
+                            <sb:y_axis_position_angle unit="deg">351.5783804696931</sb:y_axis_position_angle>
                         </sb:Instrument_Position_Angles>
                     </sb:Additional_Geometry_Metadata>
                 </sb:Additional_Image_Metadata>

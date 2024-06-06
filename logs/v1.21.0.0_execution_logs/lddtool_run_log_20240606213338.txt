@@ -1,13 +1,12 @@
 
->>  INFO LDDTOOL Version: 14.3.0
+>>  INFO LDDTOOL Version: 15.1.0
 >>  INFO IM Version Id: 1.21.0.0
 >>  INFO IM Namespace Id: pds
 >>  INFO IM Label Version Id: 1.27
->>  INFO Date: Thu Mar 07 21:12:59 UTC 2024
->>  INFO PARENT_DIR: /tmp/lddtool-14.3.0
->>  INFO SCRIPT_DIR: /tmp/lddtool-14.3.0/bin
->>  INFO LIB_DIR: /tmp/lddtool-14.3.0/lib
+>>  INFO Date: Thu Jun 06 21:33:38 UTC 2024
+>>  INFO PARENT_DIR: /tmp/lddtool-15.1.0/Data/
 
+>>> ERROR Association: comment - Invalid reference type: attribute_Of
 >>> INFO Init:  - Config.Properties Namespace Id Found:sb
 >>> INFO Init:  - Config.Properties Namespace Id Using:sb
 >>> INFO Init:  - LDD Dictionary_Type is Discipline
@@ -51,7 +50,7 @@
 
  -- LDDTool Execution Summary --
      1 warning(s)
-     0 error(s)
+     1 error(s)
      0 fatal error(s)
 
 Input:
@@ -59,6 +58,7 @@ Input:
      - IM Version: 1L00
      - PDS4 Flag: true
      - LDD Flag: true
+     - IM Version: true
      - Export JSON Flag: true
 
      - Ingest LDD(s): /home/runner/work/ldd-sb/ldd-sb/src/PDS4_SB_IngestLDD.xml
@@ -70,4 +70,4 @@ Output:
      - ./PDS4_SB_1L00_1000.xml
      - ./export/JSON/PDS4_PDS_1L00.JSON
 
->>  INFO Exit(0)
+>>  INFO Exit(1)

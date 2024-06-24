@@ -64,32 +64,18 @@ alternatives in this outline.
 
     * <sb:bias_subtraction>
     * <sb:dark_current_removal>
+    * <sb:dead_time_correction>
+    * <sb:effective_area_correction>
     * <sb:flat_field_applied>
     * <sb:scattered_light_correction>
-    * <sb:conversion_to_physical_uni>ts
+    * <sb:smear_removal_applied>
+    * <sb:wavelength_solution_applied>
+    * <sb:conversion_to_physical_units>
     * <sb:comment>
 
   * <sb:Calibration_Reference_Files>
 
     * <sb:comment>
-    * <sb:Flat_Field>
-
-      * <sb:file_name>
-      * <pds:Internal_Reference>
-
-        * <pds:lidvid_reference>
-        * <pds:reference_type>
-        * <pds:comment>
-
-    * <sb:Dark_Field >
-
-      * <sb:file_name>
-      * <pds:Internal_Reference>
-
-        * <pds:lidvid_reference>
-        * <pds:reference_type>
-        * <pds:comment>
-
     * <sb:Bias_Map>
 
       * <sb:file_name>
@@ -101,6 +87,51 @@ alternatives in this outline.
 
     * <sb:Bad_Pixel_Map>
 
+      * <sb:file_name>
+      * <pds:Internal_Reference>
+
+        * <pds:lidvid_reference>
+        * <pds:reference_type>
+        * <pds:comment>
+
+    * <sb:Dark_Field>
+
+      * <sb:file_name>
+      * <pds:Internal_Reference>
+
+        * <pds:lidvid_reference>
+        * <pds:reference_type>
+        * <pds:comment>
+
+    * <sb:Demsear_Matrix>
+
+      * <sb:file_name>
+      * <pds:Internal_Reference>
+
+        * <pds:lidvid_reference>
+        * <pds:reference_type>
+        * <pds:comment>
+
+    * <sb:Effective_Area_Table>
+
+      * <sb:file_name>
+      * <pds:Internal_Reference>
+
+        * <pds:lidvid_reference>
+        * <pds:reference_type>
+        * <pds:comment>
+
+    * <sb:Flat_Field>
+
+      * <sb:file_name>
+      * <pds:Internal_Reference>
+
+        * <pds:lidvid_reference>
+        * <pds:reference_type>
+        * <pds:comment>
+
+    * <sb:Wavelength_Solution>
+      
       * <sb:file_name>
       * <pds:Internal_Reference>
 
@@ -161,6 +192,7 @@ alternatives in this outline.
     * <sb:comment>
     * <sb:Instrument_Position_Angles>
 
+      * <sb:x_axis_position_angle>
       * <sb:y_axis_position_angle>
       * <sb:z_axis_position_angle>
 

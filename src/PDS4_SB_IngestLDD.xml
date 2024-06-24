@@ -7,7 +7,7 @@
   xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1K00.xsd">
   
   <name>Small Bodies Studies</name>
-  <ldd_version_id>1.0.0.0</ldd_version_id>
+  <ldd_version_id>1.1.0.0</ldd_version_id>
   <dictionary_type>Discipline</dictionary_type>
   <full_name>Anne Raugh</full_name>
   <steward_id>sbn</steward_id>
@@ -19,8 +19,22 @@
     provided in other discipline namespaces, which is expected to be present.
     
     The initials "ACR" in the "submitter" field indicate Anne Raugh.
+
+    version 1.1.0 2024-06-23
+     - Added dead_time_correction, effective_area_correction, smear_removal_applied, and
+       wavelength_solution_applied attributes, which are boolean checks that should be
+       present if their respective calibration steps have been applied to the data product.
+     - Updated Calibration_Applied class to allow for the above attributes.
+     - Added Desmear_Matrix, Effective_Area_Table, and Wavelength_Solution classes, which
+       are containers providing a file_name and Internal_Reference to the calibration
+       product associated with a particular calibration process.
+     - Updated Calibration_Reference_File class to allow for the above classes.
+     - Added schematron rules specifying the reference_type used in pds:Internal_Reference
+       for the above classes.
+     - Added x_axis_position_angle attribute to Instrument_Position_Angles class along
+       with schematron rules requiring exactly 2 of the 3 attributes in that class.
   </comment>
-  <last_modification_date_time>2024-04-03</last_modification_date_time>
+  <last_modification_date_time>2024-06-23</last_modification_date_time>
   <!-- added calibration file classes and attributes from the NH LORRI and Alice instruments -->
   
   <!-- Attribute Definitions (alphabetical) -->
@@ -529,12 +543,6 @@
         <value>Single Image</value>
         <value_meaning>
           The data array contains a single image.
-        </value_meaning>
-      </DD_Permissible_Value>
-      <DD_Permissible_Value>
-        <value>Spectral Image</value>
-        <value_meaning>
-          The data array contains a spectral image.
         </value_meaning>
       </DD_Permissible_Value>
     </DD_Value_Domain>

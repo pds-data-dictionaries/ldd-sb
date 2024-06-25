@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 Schematron for Name Space Id:sb  Version:1.0.0.0 - Wed Dec 20 23:45:05 UTC 2023 -->
+  <!-- PDS4 Schematron for Name Space Id:sb  Version:1.0.0.0 - Fri May 24 20:12:38 UTC 2024 -->
   <!-- Generated from the PDS4 Information Model Version 1.20.0.0 - System Build 13.1 -->
   <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
@@ -177,6 +177,20 @@
       <sch:assert test="@unit = ('day', 'hr', 'julian day', 'microseconds', 'min', 'ms', 'ns', 's', 'yr')">
         <title>sb:Geometry_Vector_Time/sb:time_at_target_UTC_JD/sb:time_at_target_UTC_JD</title>
         The attribute @unit must be equal to one of the following values 'day', 'hr', 'julian day', 'microseconds', 'min', 'ms', 'ns', 's', 'yr'.</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:rule context="sb:Instrument_Position_Angles">
+      <sch:assert test="if (count(*) = 2) then true() else false()">
+        <title>sb:Instrument_Position_Angles/Rule</title>
+        In sb:Instrument_Position_Angles, exactly two of sb:x_axis_position_angle, sb:y_axis_position_angle, or sb:z_axis_position_angle must be provided.</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:rule context="sb:Instrument_Position_Angles/sb:x_axis_position_angle">
+      <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad')">
+        <title>sb:Instrument_Position_Angles/sb:x_axis_position_angle/sb:x_axis_position_angle</title>
+        The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad'.</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

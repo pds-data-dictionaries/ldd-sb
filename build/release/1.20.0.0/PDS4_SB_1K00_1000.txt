@@ -1,13 +1,13 @@
 PDS4 Local Data Dictionary Processing Report
 
 Configuration:
-   LDDTool Version        14.3.0
+   LDDTool Version        15.1.0
    LDD Version Id:        1.0.0.0
    LDD Label Version Id:  1.26
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Wed Dec 20 23:45:05 UTC 2023
+   Time                   Fri May 24 20:12:38 UTC 2024
    Common Schema          [PDS4_PDS_1K00.xsd]
    Common Schematron      [PDS4_PDS_1K00.sch]
    IM Version Id:         1.20.0.0
@@ -15,7 +15,6 @@ Configuration:
    IM Label Version Id:   1.26
    IM Object Model        [UpperModel.pont]
    IM Data Dictionary     [dd11179.pins]
-   IM Configuration File  [MDPTNConfigClassDisp.xml]
    IM Glossary            [Glossary.pins]
    IM Document Spec       [DMDocument.pins]
 
@@ -30,8 +29,8 @@ Parameters:
 
 Summary:
    Classes                27
-   Attributes             46
-   Associations           103
+   Attributes             47
+   Associations           104
    Error messages         0
    Warning messages       0
    Information messages   0
@@ -52,7 +51,7 @@ Parsed Input - Header:
     
     The initials "ACR" in the "submitter" field indicate Anne Raugh.
   
-   Last Modification Time 2023-12-20
+   Last Modification Time 2024-03-07
    PDS4 Merge Flag        false
 
 Parsed Input - Attributes:
@@ -312,6 +311,14 @@ Parsed Input - Attributes:
    version                1.20
    value data type        ASCII_Date_Time_YMD_UTC
    description             The sb:time_at_target_UTC_YMD attribute give the local UTC time for an observer at the target at the time for which the corresponding positions and/or vectors were calculated. The time is in the ISO standard YYYY-MM-DDThh:mm:ss.sssZ format. 
+
+   name                   x_axis_position_angle
+   version                1.20
+   value data type        ASCII_Real
+   description             The sb:x_axis_position_angle provides the angle measured East from celestial North in the plane of an image to the +X axis of the instrument boresight. The values are in the range 0-360 degrees. 
+   minimum value          0.0
+   maximum value          360.0
+   unit of measure type   Units_of_Angle
 
    name                   y_axis_position_angle
    version                1.20
@@ -777,20 +784,25 @@ Parsed Input - Classes:
       reference type        attribute_of
 
    name                   Instrument_Position_Angles
-   description             The sb:Instrument_Position_Angles class provide position angles for the axes of the boresight on the place of the image, measured with respect to the location of the celestial North pole (also projected onto the plane of the image). 
+   description             The sb:Instrument_Position_Angles class provide position angles for the axes of the boresight on the place of the image, measured with respect to the location of the celestial North pole (also projected onto the plane of the image). Only two axes should be specified, with the third being the instrument's boresight. Note that the instrument frame's axis orientation is assumed to be right-handed, so the direction of the boresight axis (into or out of the image plane) can be inferred from the relative positions of the other two. 
    is abstract            false
    is choice              false
    subclass of            USER
 
    Associations
 
+      local identifier      sb:x_axis_position_angle
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
       local identifier      sb:y_axis_position_angle
-      minimum occurrences   1
+      minimum occurrences   0
       maximum occurrences   1
       reference type        attribute_of
 
       local identifier      sb:z_axis_position_angle
-      minimum occurrences   1
+      minimum occurrences   0
       maximum occurrences   1
       reference type        attribute_of
 

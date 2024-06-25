@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 XML/Schema for Name Space Id:sb  Version:1.0.0.0 - Wed Dec 20 23:45:09 UTC 2023 -->
+  <!-- PDS4 XML/Schema for Name Space Id:sb  Version:1.0.0.0 - Fri May 24 20:12:40 UTC 2024 -->
   <!-- Generated from the PDS4 Information Model Version 1.19.0.0 - System Build 13.0 -->
   <!-- *** This PDS4 product schema is an operational deliverable. *** -->
   <!--                                                                           -->
@@ -306,11 +306,17 @@
         position angles for the axes of the boresight on the place of
         the image, measured with respect to the location of the
         celestial North pole (also projected onto the plane of the
-        image). </xs:documentation>
+        image). Only two axes should be specified, with the third being
+        the instrument's boresight. Note that the instrument frame's
+        axis orientation is assumed to be right-handed, so the direction
+        of the boresight axis (into or out of the image plane) can be
+        inferred from the relative positions of the other two.
+        </xs:documentation>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="y_axis_position_angle" type="sb:y_axis_position_angle" minOccurs="1" maxOccurs="1"> </xs:element>
-      <xs:element name="z_axis_position_angle" type="sb:z_axis_position_angle" minOccurs="1" maxOccurs="1"> </xs:element>
+      <xs:element name="x_axis_position_angle" type="sb:x_axis_position_angle" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="y_axis_position_angle" type="sb:y_axis_position_angle" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="z_axis_position_angle" type="sb:z_axis_position_angle" minOccurs="0" maxOccurs="1"> </xs:element>
     </xs:sequence>
   </xs:complexType>
 
@@ -1207,6 +1213,27 @@
   <!-- format="YYYY-MM-DDTHH:MM:SS.SSSSSSZ" -->
 	   </xs:restriction>
   </xs:simpleType>
+
+  <xs:simpleType name="x_axis_position_angle_WO_Units">
+    <xs:restriction base="pds:ASCII_Real">
+     <xs:minInclusive value="0.0"/>
+     <xs:maxInclusive value="360.0"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="x_axis_position_angle">
+    <xs:annotation>
+      <xs:documentation> The sb:x_axis_position_angle provides the angle
+        measured East from celestial North in the plane of an image to
+        the +X axis of the instrument boresight. The values are in the
+        range 0-360 degrees. </xs:documentation>
+    </xs:annotation>
+    <xs:simpleContent>
+      <xs:extension base="sb:x_axis_position_angle_WO_Units">
+        <xs:attribute name="unit" type="pds:Units_of_Angle" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
 
   <xs:simpleType name="y_axis_position_angle_WO_Units">
     <xs:restriction base="pds:ASCII_Real">

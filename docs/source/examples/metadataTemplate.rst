@@ -117,29 +117,17 @@ however, is always the schemas - not the examples.
                         <sb:comment>something</sb:comment>
                         <sb:bias_subtraction>true</sb:bias_subtraction>
                         <sb:dark_current_removal>true</sb:dark_current_removal>
+                        <sb:dead_time_correction>true</sb:dead_time_correction>
+                        <sb:effective_area_correction>true</sb:effective_area_correction>
                         <sb:flat_field_applied>true</sb:flat_field_applied>
                         <sb:scattered_light_correction>false</sb:scattered_light_correction>
+                        <sb:smear_removal_applied>true</sb:smear_removal_applied>
+                        <sb:wavelength_solution_applied>true</sb:wavelength_solution_applied>
                         <sb:conversion_to_physical_units>true</sb:conversion_to_physical_units>
                     </sb:Calibration_Applied>
                     
                     <sb:Calibration_Reference_Files>
                         <sb:comment>something</sb:comment>
-                        <sb:Flat_Field>
-                            <sb:file_name>flat.dat</sb:file_name> <!-- optional but recommended -->
-                            <Internal_Reference>                  <!-- required -->
-                                <lidvid_reference>urn:nasa:pds:bundle:collection:product::0.0</lidvid_reference>  <!-- version ID is definitely required -->
-                                <reference_type>image_to_flat_field_file</reference_type>
-                                <comment>something</comment>
-                            </Internal_Reference>
-                        </sb:Flat_Field>
-                        <sb:Dark_Field>
-                            <sb:file_name>dark.dat</sb:file_name>  <!-- optional but recommended -->
-                            <Internal_Reference>                   <!-- required -->
-                                <lidvid_reference>urn:nasa:pds:bundle:collection:product::0.0</lidvid_reference>  <!-- version ID is definitely required -->
-                                <reference_type>image_to_dark_field_file</reference_type>
-                                <comment>something</comment>
-                            </Internal_Reference>
-                        </sb:Dark_Field>
                         <sb:Bias_Map>
                             <sb:file_name>bias_frame.dat</sb:file_name>  <!-- optional but recommended -->
                             <Internal_Reference>                         <!-- required -->
@@ -155,6 +143,46 @@ however, is always the schemas - not the examples.
                                 <comment>something</comment>
                             </Internal_Reference>
                         </sb:Bad_Pixel_Map>
+                        <sb:Dark_Field>
+                            <sb:file_name>dark.dat</sb:file_name>  <!-- optional but recommended -->
+                            <Internal_Reference>                   <!-- required -->
+                                <lidvid_reference>urn:nasa:pds:bundle:collection:product::0.0</lidvid_reference>  <!-- version ID is definitely required -->
+                                <reference_type>image_to_dark_field_file</reference_type>
+                                <comment>something</comment>
+                            </Internal_Reference>
+                        </sb:Dark_Field>
+                        <sb:Demsear_Matrix>
+                            <sb:file_name>desmear.dat</sb:file_name>  <!-- optional but recommended -->
+                            <Internal_Reference>                      <!-- required -->
+                                <lidvid_reference>urn:nasa:pds:bundle:collection:product::0.0</lidvid_reference>  <!-- version ID is definitely required -->
+                                <reference_type>image_to_desmear_matrix</reference_type>
+                                <comment>something</comment>
+                            </Internal_Reference>
+                        </sb:Demsear_Matrix>
+                        <sb:Effective_Area_Table>
+                            <sb:file_name>effective_area.dat</sb:file_name>  <!-- optional but recommended -->
+                            <Internal_Reference>                             <!-- required -->
+                                <lidvid_reference>urn:nasa:pds:bundle:collection:product::0.0</lidvid_reference>  <!-- version ID is definitely required -->
+                                <reference_type>image_to_effective_area_file</reference_type>
+                                <comment>something</comment>
+                            </Internal_Reference>
+                        </sb:Effective_Area_Table>
+                        <sb:Flat_Field>
+                            <sb:file_name>flat.dat</sb:file_name> <!-- optional but recommended -->
+                            <Internal_Reference>                  <!-- required -->
+                                <lidvid_reference>urn:nasa:pds:bundle:collection:product::0.0</lidvid_reference>  <!-- version ID is definitely required -->
+                                <reference_type>image_to_flat_field_file</reference_type>
+                                <comment>something</comment>
+                            </Internal_Reference>
+                        </sb:Flat_Field>
+                        <sb:Wavelength_Solution>
+                            <sb:file_name>wavelength.dat</sb:file_name> <!-- optional but recommended -->
+                            <Internal_Reference>                        <!-- required -->
+                                <lidvid_reference>urn:nasa:pds:bundle:collection:product::0.0</lidvid_reference>  <!-- version ID is definitely required -->
+                                <reference_type>image_to_wavelength_solution_file</reference_type>
+                                <comment>something</comment>
+                            </Internal_Reference>
+                        </sb:Wavelength_Solution>
                     </sb:Calibration_Reference_Files>
                 </sb:Calibration_Information>
 
@@ -260,6 +288,8 @@ however, is always the schemas - not the examples.
                             <sb:frame_center_dec unit="deg">-45.0</sb:frame_center_dec>
                             <sb:celestial_north_clock_angle unit="deg">75.123</sb:celestial_north_clock_angle>
                             <sb:Instrument_Position_Angles>
+                                <!-- exactly 2 of these 3 attributes may be used -->
+                                <!-- <sb:x_axis_position_angle unit="deg">90</sb:x_axis_position_angle> -->
                                 <sb:y_axis_position_angle unit="deg">57.123</sb:y_axis_position_angle>
                                 <sb:z_axis_position_angle unit="deg">123.04</sb:z_axis_position_angle>
                             </sb:Instrument_Position_Angles>

@@ -204,7 +204,7 @@ label order these are:
 
 - <pds:Local_Internal_Reference>
 - <sb:comment>
-- <sb:image_observation_type
+- <sb:image_observation_type>
 - <sb:Ancillary_Data_Objects>
 - <sb:Additional_Geometry_Metadata>
 - <sb:Per_Frame_Metadata>
@@ -263,9 +263,10 @@ assessments when provided in arrays that map pixel-to-pixel with the image.
   - <sb:Geometry_Vector_Times>
   
   The *<sb:Instrument_Position_Angles>* class supplements the *<geom:Image_Display_Geometry>*
-  class by adding position angles for the *y* and *z* axes of the instrument pointing on the
+  class by adding position angles for the *x*, *y*, and *z* axes of the instrument pointing on the
   plane of the image, when displayed according to the directions in the *<disp:Display_Settings>*
-  class (which should be present in all image data labels).
+  class (which should be present in all image data labels). Exactly 2 of the 3 position angles
+  must appear when using the *<sb:Instrument_Position_Angles>* class.
   
   The *<sb:Geometry_Vector_Times>* class provides a method for specifying UTC at an observer
   located at one end point of the geometry vectors included in the *<geom:Geometry_Orbiter>*

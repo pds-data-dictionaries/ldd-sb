@@ -1,9 +1,9 @@
 
 >>  INFO LDDTOOL Version: 15.1.0
->>  INFO IM Version Id: 1.21.0.0
+>>  INFO IM Version Id: 1.22.0.0
 >>  INFO IM Namespace Id: pds
->>  INFO IM Label Version Id: 1.27
->>  INFO Date: Tue Jun 25 15:45:36 UTC 2024
+>>  INFO IM Label Version Id: 1.0
+>>  INFO Date: Wed Aug 07 22:50:28 UTC 2024
 >>  INFO PARENT_DIR: /tmp/lddtool-15.1.0/Data/
 
 >>> INFO Init:  - Config.Properties Namespace Id Found:sb
@@ -54,19 +54,18 @@
 
 Input:
 
-     - IM Version: 1L00
+     - IM Version: 1M00
      - PDS4 Flag: true
      - LDD Flag: true
-     - IM Version: true
      - Export JSON Flag: true
 
      - Ingest LDD(s): /home/runner/work/ldd-sb/ldd-sb/src/PDS4_SB_IngestLDD.xml
 
 Output:
 
-     - ./PDS4_SB_1L00_1100.xsd
-     - ./PDS4_SB_1L00_1100.sch
-     - ./PDS4_SB_1L00_1100.xml
-     - ./export/JSON/PDS4_PDS_1L00.JSON
+     - ./PDS4_SB_1M00_1110.xsd
+     - ./PDS4_SB_1M00_1110.sch
+     - ./PDS4_SB_1M00_1110.xml
+     - ./export/JSON/PDS4_PDS_1M00.JSON
 
 >>  INFO Exit(0)

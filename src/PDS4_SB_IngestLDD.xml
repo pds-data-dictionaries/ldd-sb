@@ -2276,7 +2276,7 @@
     <rule_context>sb:Bias_Map/pds:Internal_Reference</rule_context>
     <DD_Rule_Statement>
       <rule_type>Assert</rule_type>
-      <rule_test>pds:reference_type eq 'image_to_bias_levels'</rule_test>
+      <rule_test>pds:reference_type eq 'image_to_bias_map_file'</rule_test>
       <rule_message>In sb:Bias_Map/pds:Internal_Reference, pds:reference_type must be "image_to_bias_map_file".</rule_message>
     </DD_Rule_Statement>
   </DD_Rule>

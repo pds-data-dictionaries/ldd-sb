@@ -132,7 +132,7 @@ however, is always the schemas - not the examples.
                             <sb:file_name>bias_frame.dat</sb:file_name>  <!-- optional but recommended -->
                             <Internal_Reference>                         <!-- required -->
                                 <lidvid_reference>urn:nasa:pds:bundle:collection:product::2.0</lidvid_reference>  <!-- version ID is definitely required -->
-                                <reference_type>image_to_bias_levels</reference_type>
+                                <reference_type>image_to_bias_map_file</reference_type>
                             </Internal_Reference>
                         </sb:Bias_Map>
                         <sb:Bad_Pixel_Map>

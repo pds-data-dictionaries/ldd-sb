@@ -1,12 +1,13 @@
 
->>  INFO LDDTOOL Version: 15.1.0
->>  INFO IM Version Id: 1.19.0.0
+>>  INFO LDDTOOL Version: 15.2.2
+>>  INFO IM Version Id: 1.22.0.0
 >>  INFO IM Namespace Id: pds
->>  INFO IM Label Version Id: 1.25
->>  INFO Date: Thu Aug 22 16:05:07 UTC 2024
->>  INFO PARENT_DIR: /tmp/lddtool-15.1.0/Data/
+>>  INFO IM Label Version Id: 1.0
+>>  INFO Date: Mon Nov 18 06:55:34 UTC 2024
+>>  INFO PARENT_DIR: /tmp/lddtool-15.2.2/Data/
 
->>> INFO Init:  - Config.Properties Namespace Id Using:pds
+>>> INFO Init:  - Config.Properties Namespace Id Found:sb
+>>> INFO Init:  - Config.Properties Namespace Id Using:sb
 >>> INFO Init:  - LDD Dictionary_Type is Discipline
 >>> INFO Attribute: <celestial_north_clock_angle> - The default minimum value provided by the attribute's data type is being overridden with 0.0
 >>> INFO Attribute: <celestial_north_clock_angle> - The default maximum value provided by the attribute's data type is being overridden with 360.0
@@ -44,17 +45,16 @@
 >>> INFO Attribute: <y_axis_position_angle> - The default maximum value provided by the attribute's data type is being overridden with 360.0
 >>> INFO Attribute: <z_axis_position_angle> - The default minimum value provided by the attribute's data type is being overridden with 0.0
 >>> INFO Attribute: <z_axis_position_angle> - The default maximum value provided by the attribute's data type is being overridden with 360.0
->>> WARNING Init:  - Config.Properties Namespace Id Not Found:sb
 >>> WARNING Attribute: <conversion_to_physical_units> - The terms 'unit', 'units', 'unit_of_measure' should not be used as the rightmost part of an attribute's name.
 
  -- LDDTool Execution Summary --
-     2 warning(s)
+     1 warning(s)
      0 error(s)
      0 fatal error(s)
 
 Input:
 
-     - IM Version: 1J00
+     - IM Version: 1M00
      - PDS4 Flag: true
      - LDD Flag: true
      - IM Version: true
@@ -64,9 +64,9 @@ Input:
 
 Output:
 
-     - ./PDS4_SB_1J00_1110.xsd
-     - ./PDS4_SB_1J00_1110.sch
-     - ./PDS4_SB_1J00_1110.xml
-     - ./export/JSON/PDS4_PDS_1J00.JSON
+     - ./PDS4_SB_1M00_1110.xsd
+     - ./PDS4_SB_1M00_1110.sch
+     - ./PDS4_SB_1M00_1110.xml
+     - ./export/PDS4_PDS_1M00.JSON
 
 >>  INFO Exit(0)

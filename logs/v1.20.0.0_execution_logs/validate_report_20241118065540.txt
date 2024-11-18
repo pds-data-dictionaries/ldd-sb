@@ -2,21 +2,21 @@
 PDS Validate Tool Report
 
 Configuration:
-   Version     3.5.2
-   Date        2024-08-22T16:05:28Z
+   Version     3.6.2
+   Date        2024-11-18T06:55:41Z
 
 Parameters:
    Targets                        [file:/home/runner/work/ldd-sb/ldd-sb/test/calfiles_require_lidvids_VALID.xml]
    Rule Type                      pds4.label
-   User Specified Schemas         [file:/home/runner/work/ldd-sb/ldd-sb/build/development/976e35bf1af13b3bf6a77fad1cda489dc149c3f0/1.19.0.0/PDS4_SB_1J00_1110.xsd, file:/tmp/PDS4_PDS_1J00.xsd]
-   User Specified Schematrons     [file:/home/runner/work/ldd-sb/ldd-sb/build/development/976e35bf1af13b3bf6a77fad1cda489dc149c3f0/1.19.0.0/PDS4_SB_1J00_1110.sch, file:/tmp/PDS4_PDS_1J00.sch]
+   User Specified Schemas         [file:/home/runner/work/ldd-sb/ldd-sb/build/development/8df379d5ac5e0951f6f24d49340385a83b82bbe1/1.20.0.0/PDS4_SB_1K00_1110.xsd, file:/tmp/PDS4_PDS_1K00.xsd]
+   User Specified Schematrons     [file:/home/runner/work/ldd-sb/ldd-sb/build/development/8df379d5ac5e0951f6f24d49340385a83b82bbe1/1.20.0.0/PDS4_SB_1K00_1110.sch, file:/tmp/PDS4_PDS_1K00.sch]
    Severity Level                 WARNING
    Recurse Directories            true
    File Filters Used              [*.xml, *.XML]
    Data Content Validation        off
    Product Level Validation       on
    Max Errors                     100000
-   Registered Contexts File       /tmp/validate-3.5.2/resources/registered_context_products.json
+   Registered Contexts File       /tmp/validate-3.6.2/resources/registered_context_products.json
 
 
 
@@ -25,7 +25,7 @@ Product Level Validation Results
   PASS: file:/home/runner/work/ldd-sb/ldd-sb/test/calfiles_require_lidvids_VALID.xml
       WARNING  [warning.label.schema]   Cannot check versioning because no Schema given.
       WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
-      WARNING  [warning.label.context_ref_mismatch]   line 28: Context reference name mismatch. Value: 'None' Expected one of: '[NO SPECIFIC INVESTIGATION]'
+      WARNING  [warning.label.context_ref_mismatch]   line 28: Context reference name mismatch. Value: 'None' Expected one of: '[No Specific Investigation]'
         1 product validation(s) completed
 
 Summary:
@@ -52,5 +52,5 @@ Summary:
     1            warning.label.schema
 
 End of Report
-Completed execution in 4570 ms
+Completed execution in 4772 ms
 

@@ -1,0 +1,64 @@
+
+PDS Validate Tool Report
+
+Configuration:
+   Version     3.7.1
+   Date        2025-11-05T20:55:01Z
+
+Parameters:
+   Targets                        [file:/home/runner/work/ldd-sb/ldd-sb/test/julian_dates_unit_check_FAIL.xml]
+   Rule Type                      pds4.label
+   User Specified Schemas         [file:/home/runner/work/ldd-sb/ldd-sb/build/development/6ed1c2aab9dedb8733bb0280efe666af3f4c9faf/1.19.0.0/PDS4_SB_1J00_1110.xsd, file:/tmp/PDS4_PDS_1J00.xsd]
+   User Specified Schematrons     [file:/home/runner/work/ldd-sb/ldd-sb/build/development/6ed1c2aab9dedb8733bb0280efe666af3f4c9faf/1.19.0.0/PDS4_SB_1J00_1110.sch, file:/tmp/PDS4_PDS_1J00.sch]
+   Severity Level                 WARNING
+   Recurse Directories            true
+   File Filters Used              [*.xml, *.XML]
+   Data Content Validation        off
+   Product Level Validation       on
+   Max Errors                     100000
+   Registered Contexts File       /tmp/validate-3.7.1/resources/registered_context_products.json
+
+
+
+Product Level Validation Results
+
+  FAIL: file:/home/runner/work/ldd-sb/ldd-sb/test/julian_dates_unit_check_FAIL.xml
+      WARNING  [warning.label.schema]   Cannot check versioning because no Schema given.
+      ERROR  [error.label.schematron]   line 53, 65: The attribute "sb:midobservation_time_UTC_JD" must be specified with "unit='julian day'".
+      ERROR  [error.label.schematron]   line 54, 58: The attribute "sb:start_time_UTC_JD" must be specified with "unit='julian day'".
+      ERROR  [error.label.schematron]   line 55, 56: The attribute "sb:stop_time_UTC_JD" must be specified with "unit='julian day'".
+      ERROR  [error.label.schematron]   line 73, 64: The attribute "sb:time_at_target_UTC_JD" must be specified with "unit='julian day'".
+      ERROR  [error.label.schematron]   line 77, 65: The attribute "sb:time_at_Earth_UTC_JD" must be specified with "unit='julian day'".
+      ERROR  [error.label.schematron]   line 81, 62: The attribute "sb:time_at_Sun_UTC_JD" must be specified with "unit='julian day'".
+      ERROR  [error.label.schematron]   line 92, 70: The attribute "sb:midobservation_time_UTC_JD" must be specified with "unit='julian day'".
+      WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
+      WARNING  [warning.label.context_ref_mismatch]   line 31: Context reference name mismatch. Value: 'None' Expected one of: '[No Specific Investigation]'
+        1 product validation(s) completed
+
+Summary:
+
+  1 product(s)
+  7 error(s)
+  3 warning(s)
+
+  Product Validation Summary:
+    0          product(s) passed
+    1          product(s) failed
+    0          product(s) skipped
+    1          product(s) total
+
+  Referential Integrity Check Summary:
+    0          check(s) passed
+    0          check(s) failed
+    0          check(s) skipped
+    0          check(s) total
+
+  Message Types:
+    7            error.label.schematron
+    1            warning.label.context_ref_mismatch
+    1            warning.label.missing_schematron_spec
+    1            warning.label.schema
+
+End of Report
+Completed execution in 4821 ms
+
